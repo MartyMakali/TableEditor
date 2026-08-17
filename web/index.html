@@ -94,6 +94,8 @@
     <div class="werkzeuge">
       <button id="btn-spalte-neu">+ Spalte</button>
       <button id="btn-zeile-neu">+ Zeile</button>
+      <button id="btn-einlesen" class="haupt">Tabelle einlesen…</button>
+      <input id="dateiauswahl" type="file" accept=".docx,.xlsx,.xlsm,.csv,.tsv,.txt" hidden>
       <span class="luecke"></span>
       <span id="masse" class="masse"></span>
     </div>
@@ -123,6 +125,39 @@
       <span class="luecke"></span>
       <button id="s-loeschen" class="gefahr">Löschen</button>
       <button id="s-fertig" class="haupt">Fertig</button>
+    </div>
+  </div>
+</div>
+
+<div id="einlesedialog" class="dialog verborgen">
+  <div class="dialogkarte breit">
+    <h2>Tabelle einsortieren</h2>
+
+    <div class="zeile-zwei">
+      <label>Gefundene Tabelle
+        <select id="e-tabelle"></select>
+      </label>
+      <label>Einsortieren in
+        <select id="e-ziel"></select>
+      </label>
+    </div>
+
+    <h3>Zuordnung der Spalten</h3>
+    <p class="hinweis">
+      Links die Überschriften aus der eingelesenen Datei, rechts das Ziel.
+      Die Reihenfolge bestimmt, in welcher Folge neue Spalten angelegt werden —
+      mit den Pfeilen verschieben.
+    </p>
+    <ul id="e-zuordnung" class="zuordnung"></ul>
+
+    <h3>Vorschau</h3>
+    <div class="vorschaurahmen"><table id="e-vorschau"></table></div>
+
+    <div class="dialogleiste">
+      <span id="e-info" class="masse"></span>
+      <span class="luecke"></span>
+      <button id="e-abbrechen">Abbrechen</button>
+      <button id="e-uebernehmen" class="haupt">Übernehmen</button>
     </div>
   </div>
 </div>

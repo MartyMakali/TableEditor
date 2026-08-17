@@ -37,10 +37,40 @@ Mitte zeigt das Ergebnis direkt an, in denselben Maßen wie später in Excel.
 als Zahl gespeichert, damit Excel damit rechnen kann. Beginnt ein Eintrag mit
 `=`, gilt er als Formel und wird hervorgehoben.
 
+**Einlesen** — *Tabelle einlesen…* übernimmt Tabellen aus Word, Excel und CSV;
+siehe unten.
+
 **Speichern und Ausgeben** — Mappen liegen als JSON unter `data/` und lassen
 sich jederzeit wieder laden. *Excel* gibt die gefüllte Mappe aus,
 *Excel-Vorlage* eine leere mit denselben Kopfzeilen und wahlweise einer Anzahl
 vorbereiteter Zeilen.
+
+## Tabellen einlesen und einsortieren
+
+Der Knopf **Tabelle einlesen…** über der Tabelle nimmt eine Datei entgegen und
+sortiert deren Inhalt in ein Blatt ein.
+
+**Unterstützt:** `.docx` (alle Tabellen im Dokument), `.xlsx` und `.xlsm` (jedes
+Blatt als eigene Tabelle), `.csv`, `.tsv`, `.txt` (Trennzeichen wird erkannt).
+Die alten Formate `.doc` und `.xls` gehen nicht — vorher in Word bzw. Excel als
+`.docx`/`.xlsx` speichern.
+
+**Ablauf:** Enthält die Datei mehrere Tabellen, wählt man oben im Fenster die
+gewünschte aus. Darunter steht, in welches Blatt einsortiert wird — ein
+vorhandenes oder ein neu angelegtes.
+
+**Zuordnung:** Links stehen die Überschriften aus der Datei, rechts das Ziel.
+Gleichlautende Überschriften werden automatisch erkannt, wobei Groß- und
+Kleinschreibung, Umlaute und Sonderzeichen unerheblich sind. Jede Quellspalte
+lässt sich stattdessen auf eine andere Zielspalte legen, als neue Spalte
+anlegen oder überspringen. Die Reihenfolge in der Liste bestimmt, in welcher
+Folge neue Spalten angelegt werden, und wird mit den Pfeilen geändert. Eine
+Vorschau zeigt die ersten fünf Zeilen so, wie sie übernommen werden.
+
+Die Spaltenfolge der Quelle muss dabei nicht zur Zieltabelle passen — die
+Werte landen in der zugeordneten Spalte, nicht an ihrer ursprünglichen
+Position. Zahlen werden als Zahl übernommen, Kennungen mit führender Null wie
+`007` bleiben Text.
 
 ## Aufbau des Projekts
 
@@ -49,6 +79,7 @@ vorbereiteter Zeilen.
 | `app.py` | Lokaler Server, liefert die Oberfläche und erzeugt die Excel-Datei |
 | `web/` | Oberfläche: `index.html`, `style.css`, `app.js` |
 | `build_xlsx.py` | Baut aus der JSON-Beschreibung die `.xlsx` — auch ohne Oberfläche nutzbar |
+| `einlesen.py` | Holt Tabellen aus Word-, Excel- und CSV-Dateien |
 | `data/*.json` | Gespeicherte Mappen |
 | `output/` | Erzeugte Arbeitsmappen |
 

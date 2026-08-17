@@ -307,6 +307,204 @@ async function exportieren(alsVorlage) {
   meldung("Excel-Datei erzeugt");
 }
 
+/* ---- Einlesen und Einsortieren --------------------------------------- */
+
+let einlese = { tabellen: [], index: 0, zuordnung: [] };
+
+const NEU = "neu", WEG = "weg";
+
+/** Vergleichsform einer Überschrift: ohne Groß/Klein, Umlaute und Sonderzeichen. */
+function schluessel(text) {
+  return String(text || "")
+    .toLowerCase()
+    .replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]/g, "");
+}
+
+function zielblatt() {
+  const wahl = $("e-ziel").value;
+  return wahl === NEU ? null : dok.blaetter[Number(wahl)];
+}
+
+/** Ordnet jede Quellspalte automatisch zu: gleiche Überschrift gewinnt, sonst neue Spalte. */
+function zuordnungVorschlagen() {
+  const quelle = einlese.tabellen[einlese.index];
+  const ziel = zielblatt();
+  const vorhanden = new Map(
+    (ziel ? ziel.spalten : []).map((s, i) => [schluessel(s.name), i])
+  );
+  const belegt = new Set();
+
+  einlese.zuordnung = quelle.kopf.map((name, i) => {
+    const treffer = vorhanden.get(schluessel(name));
+    if (treffer !== undefined && !belegt.has(treffer)) {
+      belegt.add(treffer);
+      return { quelle: i, ziel: treffer };
+    }
+    return { quelle: i, ziel: NEU };
+  });
+}
+
+function zieloptionenFuellen() {
+  $("e-ziel").innerHTML =
+    dok.blaetter.map((b, i) => `<option value="${i}">${b.name}</option>`).join("") +
+    `<option value="${NEU}">— neues Blatt —</option>`;
+  $("e-ziel").value = String(aktiv);
+}
+
+function tabellenoptionenFuellen() {
+  $("e-tabelle").innerHTML = einlese.tabellen
+    .map((t, i) => `<option value="${i}">${t.bezeichnung} — ${t.kopf.length} Spalten, ${t.zeilen.length} Zeilen</option>`)
+    .join("");
+  $("e-tabelle").value = String(einlese.index);
+}
+
+function zuordnungZeichnen() {
+  const quelle = einlese.tabellen[einlese.index];
+  const ziel = zielblatt();
+  const liste = $("e-zuordnung");
+  liste.innerHTML = "";
+
+  einlese.zuordnung.forEach((eintrag, pos) => {
+    const li = document.createElement("li");
+    if (eintrag.ziel === WEG) li.className = "stumm";
+
+    const schieber = document.createElement("span");
+    schieber.className = "schieber";
+    schieber.innerHTML = `<button title="nach oben">▲</button><button title="nach unten">▼</button>`;
+    const [hoch, runter] = schieber.querySelectorAll("button");
+    hoch.disabled = pos === 0;
+    runter.disabled = pos === einlese.zuordnung.length - 1;
+    hoch.onclick = () => zuordnungSchieben(pos, -1);
+    runter.onclick = () => zuordnungSchieben(pos, 1);
+
+    const name = document.createElement("span");
+    name.className = "quelle";
+    name.textContent = quelle.kopf[eintrag.quelle];
+    name.title = quelle.kopf[eintrag.quelle];
+
+    const pfeil = document.createElement("span");
+    pfeil.className = "pfeil";
+    pfeil.textContent = "→";
+
+    const wahl = document.createElement("select");
+    wahl.innerHTML =
+      (ziel ? ziel.spalten.map((s, i) => `<option value="${i}"></option>`).join("") : "") +
+      `<option value="${NEU}">＋ als neue Spalte</option>` +
+      `<option value="${WEG}">✕ nicht übernehmen</option>`;
+    if (ziel) {
+      ziel.spalten.forEach((s, i) => (wahl.options[i].textContent = s.name));
+    }
+    wahl.value = String(eintrag.ziel);
+    wahl.onchange = () => {
+      eintrag.ziel = wahl.value === NEU || wahl.value === WEG ? wahl.value : Number(wahl.value);
+      zuordnungZeichnen();
+      vorschauZeichnen();
+    };
+
+    li.append(schieber, name, pfeil, wahl);
+    liste.appendChild(li);
+  });
+}
+
+function zuordnungSchieben(pos, richtung) {
+  const ziel = pos + richtung;
+  if (ziel < 0 || ziel >= einlese.zuordnung.length) return;
+  const z = einlese.zuordnung;
+  [z[pos], z[ziel]] = [z[ziel], z[pos]];
+  zuordnungZeichnen();
+  vorschauZeichnen();
+}
+
+function vorschauZeichnen() {
+  const quelle = einlese.tabellen[einlese.index];
+  const genommen = einlese.zuordnung.filter((e) => e.ziel !== WEG);
+  const tabelle = $("e-vorschau");
+  tabelle.innerHTML = "";
+
+  const kopf = tabelle.createTHead().insertRow();
+  genommen.forEach((e) => {
+    const th = document.createElement("th");
+    th.textContent = quelle.kopf[e.quelle];
+    kopf.appendChild(th);
+  });
+
+  const koerper = tabelle.createTBody();
+  quelle.zeilen.slice(0, 5).forEach((zeile) => {
+    const tr = koerper.insertRow();
+    genommen.forEach((e) => {
+      const td = tr.insertCell();
+      const wert = zeile[e.quelle];
+      td.textContent = wert === null || wert === undefined ? "" : String(wert);
+    });
+  });
+
+  const neue = einlese.zuordnung.filter((e) => e.ziel === NEU).length;
+  const weg = einlese.zuordnung.filter((e) => e.ziel === WEG).length;
+  $("e-info").textContent =
+    `${quelle.zeilen.length} Zeilen · ${neue} neue Spalten · ${weg} übersprungen`;
+}
+
+async function dateiEinlesen(datei) {
+  const paket = new FormData();
+  paket.append("datei", datei);
+  meldung(`„${datei.name}“ wird gelesen …`);
+
+  const antwort = await fetch("/api/einlesen", { method: "POST", body: paket });
+  if (!antwort.ok) {
+    const fehler = await antwort.json().catch(() => ({}));
+    return meldung(fehler.detail || "Datei konnte nicht gelesen werden");
+  }
+
+  einlese.tabellen = (await antwort.json()).tabellen;
+  einlese.index = 0;
+  tabellenoptionenFuellen();
+  zieloptionenFuellen();
+  zuordnungVorschlagen();
+  zuordnungZeichnen();
+  vorschauZeichnen();
+  $("einlesedialog").classList.remove("verborgen");
+  meldung(`${einlese.tabellen.length} Tabelle(n) gefunden`);
+}
+
+function einleseUebernehmen() {
+  const quelle = einlese.tabellen[einlese.index];
+  let ziel = zielblatt();
+
+  if (!ziel) {
+    ziel = neuesBlatt(quelle.bezeichnung || "Eingelesen");
+    ziel.spalten = [];
+    dok.blaetter.push(ziel);
+    aktiv = dok.blaetter.length - 1;
+  } else {
+    aktiv = dok.blaetter.indexOf(ziel);
+  }
+
+  // Neue Spalten in der eingestellten Reihenfolge anlegen
+  einlese.zuordnung.forEach((eintrag) => {
+    if (eintrag.ziel !== NEU) return;
+    ziel.spalten.push({
+      name: quelle.kopf[eintrag.quelle] || `Spalte ${ziel.spalten.length + 1}`,
+      breite: 24,
+      ausrichtung: "left",
+      umbruch: true,
+    });
+    ziel.zeilen.forEach((z) => z.push(null));
+    eintrag.ziel = ziel.spalten.length - 1;
+  });
+
+  const genommen = einlese.zuordnung.filter((e) => e.ziel !== WEG);
+  quelle.zeilen.forEach((zeile) => {
+    const neu = new Array(ziel.spalten.length).fill(null);
+    genommen.forEach((e) => (neu[e.ziel] = zeile[e.quelle] ?? null));
+    ziel.zeilen.push(neu);
+  });
+
+  $("einlesedialog").classList.add("verborgen");
+  zeichnen();
+  meldung(`${quelle.zeilen.length} Zeilen in „${ziel.name}“ eingesortiert`);
+}
+
 /* ---- Verdrahtung ----------------------------------------------------- */
 
 function verdrahten() {
@@ -391,6 +589,27 @@ function verdrahten() {
   $("spaltendialog").onclick = (e) => {
     if (e.target === $("spaltendialog")) { spalteUebernehmen(); spaltendialogSchliessen(); zeichnen(); }
   };
+
+  // Einlesen
+  $("btn-einlesen").onclick = () => $("dateiauswahl").click();
+  $("dateiauswahl").onchange = async (e) => {
+    const datei = e.target.files[0];
+    e.target.value = "";           // dieselbe Datei soll erneut wählbar bleiben
+    if (datei) await dateiEinlesen(datei);
+  };
+  $("e-tabelle").onchange = () => {
+    einlese.index = Number($("e-tabelle").value);
+    zuordnungVorschlagen();
+    zuordnungZeichnen();
+    vorschauZeichnen();
+  };
+  $("e-ziel").onchange = () => {
+    zuordnungVorschlagen();
+    zuordnungZeichnen();
+    vorschauZeichnen();
+  };
+  $("e-abbrechen").onclick = () => $("einlesedialog").classList.add("verborgen");
+  $("e-uebernehmen").onclick = einleseUebernehmen;
 
   // Dateien
   $("btn-laden").onclick = laden;

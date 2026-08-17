@@ -11,7 +11,8 @@ formatiert, mit Formelspalten.
 |---|---|
 | `data/anforderungskatalog.json` | Inhalt und Layout aller Blätter (Werte, Formeln, Spaltenbreiten, Zeilenhöhen, Ausrichtung) |
 | `build_xlsx.py` | Baut daraus die `.xlsx` |
-| `output/Anforderungskatalog.xlsx` | Erzeugte Arbeitsmappe |
+| `output/Anforderungskatalog.xlsx` | Erzeugte Arbeitsmappe, vollständig gefüllt |
+| `output/Anforderungskatalog_Vorlage.xlsx` | Leere Vorlage zum selbst Ausfüllen, nur Kopfzeilen |
 
 ## Benutzung
 
@@ -35,6 +36,21 @@ python build_xlsx.py -i data/anforderungskatalog.json -o output/Anforderungskata
 
 Inhalte ändert man in der JSON-Datei, danach neu bauen. Die Formatierung liegt
 zentral in `build_xlsx.py` und gilt für alle Blätter.
+
+### Leere Vorlage
+
+Gleiche Blätter, gleiches Format, nur die Kopfzeile ausgefüllt:
+
+```bash
+python build_xlsx.py --vorlage -o output/Anforderungskatalog_Vorlage.xlsx
+```
+
+Mit vorformatierten Datenzeilen — die Formelspalten sind darin schon zeilenweise
+hinterlegt und rechnen mit, sobald man die Kennungen einträgt:
+
+```bash
+python build_xlsx.py --vorlage --zeilen 50 -o output/Vorlage_50.xlsx
+```
 
 ## Die Blätter
 

@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 
 from openpyxl import Workbook
+from openpyxl.formula.translate import Translator
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
@@ -59,10 +60,43 @@ def blatt_bauen(ws, spec):
         ws.auto_filter.ref = f"A1:{letzte}{len(zeilen)}"
 
 
-def mappe_bauen(doc):
+def als_vorlage(spec, zeilen=0):
+    """Leert ein Blatt bis auf die Kopfzeile.
+
+    zeilen > 0 haengt entsprechend viele leere, bereits formatierte Datenzeilen an;
+    Formelspalten werden darin auf die jeweilige Zeile umgeschrieben.
+    """
+    kopf = spec["rows"][0]
+    muster = spec["rows"][1] if len(spec["rows"]) > 1 else []
+    neu = [kopf]
+
+    for i in range(zeilen):
+        zeilennr = i + 2
+        neu.append(
+            [
+                Translator(wert, origin=f"{get_column_letter(c)}2").translate_formula(
+                    f"{get_column_letter(c)}{zeilennr}"
+                )
+                if isinstance(wert, str) and wert.startswith("=")
+                else None
+                for c, wert in enumerate(muster, start=1)
+            ]
+        )
+
+    kopfhoehe = spec["row_heights"].get("1") or spec["row_heights"].get(1)
+    return {
+        **spec,
+        "rows": neu,
+        "row_heights": {"1": kopfhoehe} if kopfhoehe else {},
+    }
+
+
+def mappe_bauen(doc, vorlage=False, zeilen=0):
     wb = Workbook()
     wb.remove(wb.active)
     for spec in doc["sheets"]:
+        if vorlage:
+            spec = als_vorlage(spec, zeilen)
         blatt_bauen(wb.create_sheet(title=spec["name"]), spec)
     return wb
 
@@ -71,16 +105,27 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("-i", "--input", default="data/anforderungskatalog.json")
     p.add_argument("-o", "--output", default="output/Anforderungskatalog.xlsx")
+    p.add_argument(
+        "--vorlage", action="store_true", help="leere Mappe, nur die Kopfzeilen"
+    )
+    p.add_argument(
+        "--zeilen",
+        type=int,
+        default=0,
+        metavar="N",
+        help="mit --vorlage: N leere, vorformatierte Datenzeilen samt Formeln",
+    )
     args = p.parse_args()
 
     doc = json.loads(Path(args.input).read_text(encoding="utf-8"))
     ziel = Path(args.output)
     ziel.parent.mkdir(parents=True, exist_ok=True)
-    mappe_bauen(doc).save(ziel)
+    mappe_bauen(doc, vorlage=args.vorlage, zeilen=args.zeilen).save(ziel)
 
     print(f"geschrieben: {ziel}")
     for s in doc["sheets"]:
-        print(f"  {s['name']}: {len(s['rows']) - 1} Datenzeilen x {len(s['rows'][0])} Spalten")
+        anzahl = args.zeilen if args.vorlage else len(s["rows"]) - 1
+        print(f"  {s['name']}: {anzahl} Datenzeilen x {len(s['rows'][0])} Spalten")
 
 
 if __name__ == "__main__":

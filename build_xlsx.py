@@ -1,7 +1,9 @@
-"""Baut den Anforderungskatalog als Excel-Datei aus der JSON-Beschreibung.
+"""Baut eine Excel-Arbeitsmappe aus einer JSON-Beschreibung.
 
 Aufruf:
-    python build_xlsx.py [-i data/anforderungskatalog.json] [-o output/Anforderungskatalog.xlsx]
+    python build_xlsx.py                     # volle Mappe
+    python build_xlsx.py --vorlage           # nur die Kopfzeilen
+    python build_xlsx.py --vorlage --zeilen 50
 """
 import argparse
 import json
@@ -12,92 +14,117 @@ from openpyxl.formula.translate import Translator
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
-# --- Formatvorgaben, entnommen aus der Originaldatei -------------------------
+# Vorgaben, falls die Beschreibung keinen eigenen Format-Block mitbringt.
 # Farben als ARGB (fuehrendes FF = deckend), sonst weicht der Alphakanal ab.
-SCHRIFT = "Arial"
-GROESSE = 10
-KOPF_FARBE = "FF44546A"     # dunkles Blaugrau der Kopfzeile
-KOPF_SCHRIFT = "FFFFFFFF"   # weisse Kopfschrift
-RAHMEN_FARBE = "FFBFBFBF"   # helles Grau, duenn, rundum
-
-FONT_DATEN = Font(name=SCHRIFT, size=GROESSE)
-FONT_KOPF = Font(name=SCHRIFT, size=GROESSE, bold=True, color=KOPF_SCHRIFT)
-FILL_KOPF = PatternFill(fill_type="solid", start_color=KOPF_FARBE, end_color=KOPF_FARBE)
-_seite = Side(style="thin", color=RAHMEN_FARBE)
-RAHMEN = Border(left=_seite, right=_seite, top=_seite, bottom=_seite)
-ALIGN_KOPF = Alignment(horizontal="general", vertical="center", wrap_text=True)
+STANDARDFORMAT = {
+    "schrift": "Arial",
+    "groesse": 10,
+    "kopf_farbe": "FF44546A",
+    "kopf_schrift": "FFFFFFFF",
+    "kopf_fett": True,
+    "rahmen_farbe": "FFBFBFBF",
+    "rahmen_stil": "thin",
+}
 
 
-def blatt_bauen(ws, spec):
-    """Traegt Werte und Format eines Blattes ein."""
-    zeilen = spec["rows"]
-    stile = spec["column_styles"]
-
-    for r, zeile in enumerate(zeilen, start=1):
-        for c, wert in enumerate(zeile, start=1):
-            zelle = ws.cell(row=r, column=c, value=wert)
-            zelle.border = RAHMEN
-            if r == 1:
-                zelle.font = FONT_KOPF
-                zelle.fill = FILL_KOPF
-                zelle.alignment = ALIGN_KOPF
-            else:
-                stil = stile.get(get_column_letter(c), {"horizontal": "left", "wrap": False})
-                zelle.font = FONT_DATEN
-                zelle.alignment = Alignment(
-                    horizontal=stil["horizontal"], vertical="top", wrap_text=stil["wrap"]
-                )
-
-    for spalte, breite in spec["column_widths"].items():
-        ws.column_dimensions[spalte].width = breite
-    for zeilennr, hoehe in spec["row_heights"].items():
-        ws.row_dimensions[int(zeilennr)].height = hoehe
-
-    if spec.get("freeze_panes"):
-        ws.freeze_panes = spec["freeze_panes"]
-    if spec.get("autofilter"):
-        letzte = get_column_letter(len(zeilen[0]))
-        ws.auto_filter.ref = f"A1:{letzte}{len(zeilen)}"
+def argb(wert, ersatz):
+    """Nimmt '#44546A', '44546A' oder 'FF44546A' und liefert immer ARGB."""
+    if not wert:
+        return ersatz
+    w = wert.lstrip("#").upper()
+    return w if len(w) == 8 else "FF" + w
 
 
-def als_vorlage(spec, zeilen=0):
-    """Leert ein Blatt bis auf die Kopfzeile.
+class Stil:
+    """Buendelt die aus dem Format-Block abgeleiteten openpyxl-Objekte."""
 
-    zeilen > 0 haengt entsprechend viele leere, bereits formatierte Datenzeilen an;
-    Formelspalten werden darin auf die jeweilige Zeile umgeschrieben.
-    """
-    kopf = spec["rows"][0]
-    muster = spec["rows"][1] if len(spec["rows"]) > 1 else []
-    neu = [kopf]
+    def __init__(self, fmt):
+        f = {**STANDARDFORMAT, **(fmt or {})}
+        self.font_daten = Font(name=f["schrift"], size=f["groesse"])
+        self.font_kopf = Font(
+            name=f["schrift"],
+            size=f["groesse"],
+            bold=bool(f["kopf_fett"]),
+            color=argb(f["kopf_schrift"], STANDARDFORMAT["kopf_schrift"]),
+        )
+        kopf = argb(f["kopf_farbe"], STANDARDFORMAT["kopf_farbe"])
+        self.fill_kopf = PatternFill(fill_type="solid", start_color=kopf, end_color=kopf)
+        self.align_kopf = Alignment(horizontal="general", vertical="center", wrap_text=True)
 
-    for i in range(zeilen):
-        zeilennr = i + 2
-        neu.append(
+        stil = f["rahmen_stil"]
+        if stil in (None, "", "keiner"):
+            self.rahmen = Border()
+        else:
+            seite = Side(style=stil, color=argb(f["rahmen_farbe"], STANDARDFORMAT["rahmen_farbe"]))
+            self.rahmen = Border(left=seite, right=seite, top=seite, bottom=seite)
+
+
+def formel_versetzen(formel, spalte, von, nach):
+    """Schreibt eine Formel von Zeile `von` auf Zeile `nach` um."""
+    ursprung = f"{get_column_letter(spalte)}{von}"
+    ziel = f"{get_column_letter(spalte)}{nach}"
+    return Translator(formel, origin=ursprung).translate_formula(ziel)
+
+
+def blatt_bauen(ws, blatt, stil, vorlage=False, leerzeilen=0):
+    spalten = blatt["spalten"]
+
+    for c, spalte in enumerate(spalten, start=1):
+        zelle = ws.cell(row=1, column=c, value=spalte["name"])
+        zelle.font = stil.font_kopf
+        zelle.fill = stil.fill_kopf
+        zelle.alignment = stil.align_kopf
+        zelle.border = stil.rahmen
+
+    if vorlage:
+        muster = blatt["zeilen"][0] if blatt["zeilen"] else []
+        zeilen = [
             [
-                Translator(wert, origin=f"{get_column_letter(c)}2").translate_formula(
-                    f"{get_column_letter(c)}{zeilennr}"
-                )
+                formel_versetzen(wert, c, 2, i + 2)
                 if isinstance(wert, str) and wert.startswith("=")
                 else None
                 for c, wert in enumerate(muster, start=1)
             ]
-        )
+            for i in range(leerzeilen)
+        ]
+    else:
+        zeilen = blatt["zeilen"]
 
-    kopfhoehe = spec["row_heights"].get("1") or spec["row_heights"].get(1)
-    return {
-        **spec,
-        "rows": neu,
-        "row_heights": {"1": kopfhoehe} if kopfhoehe else {},
-    }
+    for r, zeile in enumerate(zeilen, start=2):
+        for c, spalte in enumerate(spalten, start=1):
+            wert = zeile[c - 1] if c - 1 < len(zeile) else None
+            zelle = ws.cell(row=r, column=c, value=wert)
+            zelle.font = stil.font_daten
+            zelle.alignment = Alignment(
+                horizontal=spalte.get("ausrichtung", "left"),
+                vertical="top",
+                wrap_text=bool(spalte.get("umbruch")),
+            )
+            zelle.border = stil.rahmen
+
+    for c, spalte in enumerate(spalten, start=1):
+        if spalte.get("breite"):
+            ws.column_dimensions[get_column_letter(c)].width = spalte["breite"]
+
+    if blatt.get("kopfhoehe"):
+        ws.row_dimensions[1].height = blatt["kopfhoehe"]
+    if not vorlage:
+        for zeilennr, hoehe in (blatt.get("zeilenhoehen") or {}).items():
+            ws.row_dimensions[int(zeilennr)].height = hoehe
+
+    if blatt.get("kopf_fixieren"):
+        ws.freeze_panes = "A2"
+    if blatt.get("autofilter") and spalten:
+        letzte = get_column_letter(len(spalten))
+        ws.auto_filter.ref = f"A1:{letzte}{len(zeilen) + 1}"
 
 
 def mappe_bauen(doc, vorlage=False, zeilen=0):
+    stil = Stil(doc.get("format"))
     wb = Workbook()
     wb.remove(wb.active)
-    for spec in doc["sheets"]:
-        if vorlage:
-            spec = als_vorlage(spec, zeilen)
-        blatt_bauen(wb.create_sheet(title=spec["name"]), spec)
+    for blatt in doc["blaetter"]:
+        blatt_bauen(wb.create_sheet(title=blatt["name"]), blatt, stil, vorlage, zeilen)
     return wb
 
 
@@ -105,9 +132,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("-i", "--input", default="data/anforderungskatalog.json")
     p.add_argument("-o", "--output", default="output/Anforderungskatalog.xlsx")
-    p.add_argument(
-        "--vorlage", action="store_true", help="leere Mappe, nur die Kopfzeilen"
-    )
+    p.add_argument("--vorlage", action="store_true", help="leere Mappe, nur die Kopfzeilen")
     p.add_argument(
         "--zeilen",
         type=int,
@@ -123,9 +148,9 @@ def main():
     mappe_bauen(doc, vorlage=args.vorlage, zeilen=args.zeilen).save(ziel)
 
     print(f"geschrieben: {ziel}")
-    for s in doc["sheets"]:
-        anzahl = args.zeilen if args.vorlage else len(s["rows"]) - 1
-        print(f"  {s['name']}: {anzahl} Datenzeilen x {len(s['rows'][0])} Spalten")
+    for b in doc["blaetter"]:
+        anzahl = args.zeilen if args.vorlage else len(b["zeilen"])
+        print(f"  {b['name']}: {anzahl} Datenzeilen x {len(b['spalten'])} Spalten")
 
 
 if __name__ == "__main__":

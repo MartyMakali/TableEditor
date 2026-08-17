@@ -1,0 +1,343 @@
+:root {
+  --rand: #d6d9de;
+  --flaeche: #ffffff;
+  --grund: #f4f5f7;
+  --text: #1d2027;
+  --gedaempft: #6b7280;
+  --akzent: #2f6feb;
+  --gefahr: #c0392b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font: 14px/1.45 "Segoe UI", system-ui, sans-serif;
+  color: var(--text);
+  background: var(--grund);
+}
+
+/* ---- Kopfleiste ---------------------------------------------------- */
+
+.leiste {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--flaeche);
+  border-bottom: 1px solid var(--rand);
+}
+
+.leiste h1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+.titel {
+  width: 230px;
+  padding: 5px 8px;
+  border: 1px solid var(--rand);
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.luecke { flex: 1; }
+
+.trenner {
+  width: 1px;
+  height: 22px;
+  background: var(--rand);
+  margin: 0 4px;
+}
+
+.status {
+  min-width: 150px;
+  font-size: 12px;
+  color: var(--gedaempft);
+}
+
+button {
+  padding: 5px 11px;
+  border: 1px solid var(--rand);
+  border-radius: 5px;
+  background: var(--flaeche);
+  color: var(--text);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:hover { background: #eef1f5; }
+
+button.haupt {
+  background: var(--akzent);
+  border-color: var(--akzent);
+  color: #fff;
+}
+
+button.haupt:hover { filter: brightness(1.08); }
+
+button.gefahr { color: var(--gefahr); }
+button.breit { width: 100%; margin-top: 6px; }
+
+select, input[type=text], input[type=number] {
+  padding: 4px 7px;
+  border: 1px solid var(--rand);
+  border-radius: 5px;
+  font-size: 13px;
+  background: var(--flaeche);
+  color: var(--text);
+}
+
+/* ---- Aufteilung ---------------------------------------------------- */
+
+.rumpf {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.seite {
+  width: 250px;
+  flex: none;
+  padding: 14px;
+  overflow-y: auto;
+  background: var(--flaeche);
+  border-right: 1px solid var(--rand);
+}
+
+.seite section { margin-bottom: 22px; }
+
+.seite h2 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--gedaempft);
+}
+
+.seite label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--gedaempft);
+}
+
+.seite label > select,
+.seite label > input[type=text],
+.seite label > input[type=number] {
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  color: var(--text);
+}
+
+.seite label > input[type=color] {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 3px;
+  padding: 2px;
+  border: 1px solid var(--rand);
+  border-radius: 5px;
+  background: var(--flaeche);
+}
+
+label.ankreuz {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+/* ---- Blattliste ---------------------------------------------------- */
+
+.blattliste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blattliste li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 9px;
+  margin-bottom: 3px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.blattliste li:hover { background: var(--grund); }
+
+.blattliste li.aktiv {
+  background: #e8effc;
+  border-color: #c3d5f7;
+  font-weight: 600;
+}
+
+.blattliste .griff {
+  color: var(--gedaempft);
+  cursor: grab;
+  font-size: 12px;
+}
+
+.blattliste li.zielt { border-color: var(--akzent); }
+
+/* ---- Arbeitsflaeche ------------------------------------------------ */
+
+.flaeche {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 14px;
+}
+
+.werkzeuge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.masse {
+  font-size: 12px;
+  color: var(--gedaempft);
+}
+
+.tabellenrahmen {
+  flex: 1;
+  overflow: auto;
+  background: var(--flaeche);
+  border: 1px solid var(--rand);
+  border-radius: 6px;
+}
+
+/* ---- Tabelle: spiegelt die Excel-Formatierung ----------------------- */
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 4px 6px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  vertical-align: middle;
+  text-align: left;
+  cursor: pointer;
+  user-select: none;
+}
+
+thead th:hover { filter: brightness(1.15); }
+
+thead th .zahnrad {
+  float: right;
+  opacity: .55;
+  font-size: 11px;
+}
+
+td[contenteditable] { outline: none; }
+td[contenteditable]:focus { box-shadow: inset 0 0 0 2px var(--akzent); }
+
+th.ecke, td.zeilennr {
+  width: 46px;
+  min-width: 46px;
+  padding: 4px 4px;
+  text-align: center;
+  color: var(--gedaempft);
+  background: var(--grund);
+  font-size: 11px;
+  font-weight: 400;
+  cursor: default;
+}
+
+td.zeilennr button {
+  padding: 0 4px;
+  border: none;
+  background: none;
+  color: var(--gefahr);
+  font-size: 12px;
+  line-height: 1;
+  visibility: hidden;
+}
+
+tr:hover td.zeilennr button { visibility: visible; }
+
+td.formel {
+  color: var(--gedaempft);
+  font-style: italic;
+  background: #fbfbfd;
+}
+
+.leerhinweis {
+  padding: 26px;
+  color: var(--gedaempft);
+  font-size: 13px;
+}
+
+/* ---- Dialog -------------------------------------------------------- */
+
+.dialog {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 24, 33, .38);
+  z-index: 10;
+}
+
+.dialog.verborgen { display: none; }
+
+.dialogkarte {
+  width: 330px;
+  padding: 18px;
+  background: var(--flaeche);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .22);
+}
+
+.dialogkarte h2 {
+  margin: 0 0 14px;
+  font-size: 14px;
+}
+
+.dialogkarte label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: var(--gedaempft);
+}
+
+.dialogkarte label > input[type=text],
+.dialogkarte label > input[type=number],
+.dialogkarte label > select {
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  color: var(--text);
+}
+
+.dialogleiste {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+}

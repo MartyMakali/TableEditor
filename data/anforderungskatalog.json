@@ -1,46 +1,59 @@
 {
- "quelle": "Anforderungskatalog.xlsx",
- "sheets": [
+ "titel": "Anforderungskatalog",
+ "format": {
+  "schrift": "Arial",
+  "groesse": 10,
+  "kopf_farbe": "FF44546A",
+  "kopf_schrift": "FFFFFFFF",
+  "kopf_fett": true,
+  "rahmen_farbe": "FFBFBFBF",
+  "rahmen_stil": "thin"
+ },
+ "blaetter": [
   {
    "name": "Kernanforderungen",
-   "freeze_panes": "A2",
+   "kopf_fixieren": true,
    "autofilter": true,
-   "column_widths": {
-    "A": 5.0,
-    "B": 70.0,
-    "C": 26.0,
-    "D": 20.0,
-    "E": 46.0,
-    "F": 11.0
-   },
-   "column_styles": {
-    "A": {
-     "horizontal": "center",
-     "wrap": false
+   "kopfhoehe": 30.0,
+   "spalten": [
+    {
+     "name": "Nr.",
+     "breite": 5.0,
+     "ausrichtung": "center",
+     "umbruch": false
     },
-    "B": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Kernanforderung",
+     "breite": 70.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "C": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Stichwortgruppe",
+     "breite": 26.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "D": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Zusammengefasste Anforderungen",
+     "breite": 20.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "E": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Stuetzende Arbeiten",
+     "breite": 46.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "F": {
-     "horizontal": "left",
-     "wrap": false
+    {
+     "name": "Anzahl stuetzender Arbeiten",
+     "breite": 11.0,
+     "ausrichtung": "left",
+     "umbruch": false
     }
-   },
-   "row_heights": {
-    "1": 30.0,
+   ],
+   "zeilenhoehen": {
     "2": 35.05,
     "3": 23.85,
     "4": 23.85,
@@ -87,15 +100,7 @@
     "45": 35.05,
     "46": 23.85
    },
-   "rows": [
-    [
-     "Nr.",
-     "Kernanforderung",
-     "Stichwortgruppe",
-     "Zusammengefasste Anforderungen",
-     "Stuetzende Arbeiten",
-     "Anzahl stuetzender Arbeiten"
-    ],
+   "zeilen": [
     [
      1,
      "Zu Beginn sind Systemgrenzen, maßgebliche Akteure und tragende Naturgüter zu bestimmen, und die Destination ist als Mensch-Umwelt-System mit wechselseitigen Abhängigkeiten zu fassen.",
@@ -460,53 +465,60 @@
   },
   {
    "name": "Anforderungen",
-   "freeze_panes": "A2",
+   "kopf_fixieren": true,
    "autofilter": true,
-   "column_widths": {
-    "A": 5.0,
-    "B": 60.0,
-    "C": 80.0,
-    "D": 26.0,
-    "E": 40.0,
-    "F": 11.0,
-    "G": 10.0
-   },
-   "column_styles": {
-    "A": {
-     "horizontal": "center",
-     "wrap": false
+   "kopfhoehe": 30.0,
+   "spalten": [
+    {
+     "name": "Nr.",
+     "breite": 5.0,
+     "ausrichtung": "center",
+     "umbruch": false
     },
-    "B": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Anforderung",
+     "breite": 60.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "C": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Erlaeuterung",
+     "breite": 80.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "D": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Stichwortgruppe",
+     "breite": 26.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "E": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Stuetzende Arbeiten",
+     "breite": 40.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "F": {
-     "horizontal": "left",
-     "wrap": false
+    {
+     "name": "Anzahl stuetzender Arbeiten",
+     "breite": 11.0,
+     "ausrichtung": "left",
+     "umbruch": false
     },
-    "G": {
-     "horizontal": "left",
-     "wrap": false
+    {
+     "name": "Einzelbefund",
+     "breite": 10.0,
+     "ausrichtung": "left",
+     "umbruch": false
     },
-    "H": {
-     "horizontal": "left",
-     "wrap": false
+    {
+     "name": "Kernanforderung Nr.",
+     "breite": null,
+     "ausrichtung": "left",
+     "umbruch": false
     }
-   },
-   "row_heights": {
-    "1": 30.0,
+   ],
+   "zeilenhoehen": {
     "2": 46.25,
     "3": 46.25,
     "4": 46.25,
@@ -652,17 +664,7 @@
     "144": 46.25,
     "145": 35.05
    },
-   "rows": [
-    [
-     "Nr.",
-     "Anforderung",
-     "Erlaeuterung",
-     "Stichwortgruppe",
-     "Stuetzende Arbeiten",
-     "Anzahl stuetzender Arbeiten",
-     "Einzelbefund",
-     "Kernanforderung Nr."
-    ],
+   "zeilen": [
     [
      1,
      "Die Anpassungsstrategie ist auf belastbares und örtlich aufgelöstes Wissen über die künftigen Klimafolgen zu stützen.",
@@ -2107,58 +2109,66 @@
   },
   {
    "name": "Arbeiten",
-   "freeze_panes": "A2",
+   "kopf_fixieren": true,
    "autofilter": true,
-   "column_widths": {
-    "A": 9.0,
-    "B": 26.0,
-    "C": 60.0,
-    "D": 20.0,
-    "E": 46.0,
-    "G": 22.0,
-    "H": 52.0,
-    "I": 11.0
-   },
-   "column_styles": {
-    "A": {
-     "horizontal": "center",
-     "wrap": false
+   "kopfhoehe": 30.0,
+   "spalten": [
+    {
+     "name": "Kennung",
+     "breite": 9.0,
+     "ausrichtung": "center",
+     "umbruch": false
     },
-    "B": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Autorenschaft und Jahr",
+     "breite": 26.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "C": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Titel",
+     "breite": 60.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "D": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Publikationstyp",
+     "breite": 20.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "E": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Untersuchungsraum",
+     "breite": 46.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "F": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Destinationstyp",
+     "breite": null,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "G": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Raeumliche Ebene",
+     "breite": 22.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "H": {
-     "horizontal": "left",
-     "wrap": true
+    {
+     "name": "Methodischer Zugang",
+     "breite": 52.0,
+     "ausrichtung": "left",
+     "umbruch": true
     },
-    "I": {
-     "horizontal": "center",
-     "wrap": false
+    {
+     "name": "Anzahl Fundstellen",
+     "breite": 11.0,
+     "ausrichtung": "center",
+     "umbruch": false
     }
-   },
-   "row_heights": {
-    "1": 30.0,
+   ],
+   "zeilenhoehen": {
     "2": 35.05,
     "3": 35.05,
     "4": 35.05,
@@ -2216,18 +2226,7 @@
     "56": 35.05,
     "57": 35.05
    },
-   "rows": [
-    [
-     "Kennung",
-     "Autorenschaft und Jahr",
-     "Titel",
-     "Publikationstyp",
-     "Untersuchungsraum",
-     "Destinationstyp",
-     "Raeumliche Ebene",
-     "Methodischer Zugang",
-     "Anzahl Fundstellen"
-    ],
+   "zeilen": [
     [
      "Q01",
      "Jopp, DeLacy und Mair 2010",

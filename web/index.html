@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TableEditor</title>
+<link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+
+<header class="leiste">
+  <h1>TableEditor</h1>
+  <input id="titel" class="titel" placeholder="Titel der Mappe">
+  <span class="luecke"></span>
+  <select id="dateiwahl" title="Gespeicherte Mappe laden"></select>
+  <button id="btn-laden">Laden</button>
+  <button id="btn-speichern">Speichern</button>
+  <button id="btn-neu">Neu</button>
+  <span class="trenner"></span>
+  <button id="btn-export" class="haupt">Excel</button>
+  <button id="btn-export-vorlage">Excel-Vorlage</button>
+  <span id="status" class="status"></span>
+</header>
+
+<div class="rumpf">
+
+  <aside class="seite">
+    <section>
+      <h2>Blätter</h2>
+      <ul id="blattliste" class="blattliste"></ul>
+      <button id="btn-blatt-neu" class="breit">+ Blatt</button>
+    </section>
+
+    <section>
+      <h2>Aussehen</h2>
+      <label>Schriftart
+        <select id="f-schrift">
+          <option>Arial</option>
+          <option>Calibri</option>
+          <option>Times New Roman</option>
+          <option>Verdana</option>
+          <option>Georgia</option>
+          <option>Tahoma</option>
+          <option>Courier New</option>
+        </select>
+      </label>
+      <label>Schriftgröße
+        <input id="f-groesse" type="number" min="6" max="36" step="1">
+      </label>
+      <label>Kopfzeile Hintergrund
+        <input id="f-kopf-farbe" type="color">
+      </label>
+      <label>Kopfzeile Schrift
+        <input id="f-kopf-schrift" type="color">
+      </label>
+      <label class="ankreuz">
+        <input id="f-kopf-fett" type="checkbox"> Kopfzeile fett
+      </label>
+      <label>Rahmen
+        <select id="f-rahmen-stil">
+          <option value="thin">dünn</option>
+          <option value="medium">mittel</option>
+          <option value="thick">dick</option>
+          <option value="dotted">gepunktet</option>
+          <option value="dashed">gestrichelt</option>
+          <option value="double">doppelt</option>
+          <option value="keiner">ohne</option>
+        </select>
+      </label>
+      <label>Rahmenfarbe
+        <input id="f-rahmen-farbe" type="color">
+      </label>
+    </section>
+
+    <section>
+      <h2>Blatt</h2>
+      <label>Name
+        <input id="b-name" type="text">
+      </label>
+      <label>Kopfzeilenhöhe
+        <input id="b-kopfhoehe" type="number" min="12" max="200" step="0.5">
+      </label>
+      <label class="ankreuz">
+        <input id="b-fixieren" type="checkbox"> Kopfzeile fixieren
+      </label>
+      <label class="ankreuz">
+        <input id="b-autofilter" type="checkbox"> Autofilter
+      </label>
+      <button id="btn-blatt-loeschen" class="breit gefahr">Blatt löschen</button>
+    </section>
+  </aside>
+
+  <main class="flaeche">
+    <div class="werkzeuge">
+      <button id="btn-spalte-neu">+ Spalte</button>
+      <button id="btn-zeile-neu">+ Zeile</button>
+      <span class="luecke"></span>
+      <span id="masse" class="masse"></span>
+    </div>
+    <div id="tabellenrahmen" class="tabellenrahmen">
+      <table id="tabelle"></table>
+    </div>
+  </main>
+
+</div>
+
+<div id="spaltendialog" class="dialog verborgen">
+  <div class="dialogkarte">
+    <h2>Spalte</h2>
+    <label>Überschrift <input id="s-name" type="text"></label>
+    <label>Breite <input id="s-breite" type="number" min="2" max="200" step="0.5"></label>
+    <label>Ausrichtung
+      <select id="s-ausrichtung">
+        <option value="left">links</option>
+        <option value="center">zentriert</option>
+        <option value="right">rechts</option>
+      </select>
+    </label>
+    <label class="ankreuz"><input id="s-umbruch" type="checkbox"> Zeilenumbruch</label>
+    <div class="dialogleiste">
+      <button id="s-links">◀ nach links</button>
+      <button id="s-rechts">nach rechts ▶</button>
+      <span class="luecke"></span>
+      <button id="s-loeschen" class="gefahr">Löschen</button>
+      <button id="s-fertig" class="haupt">Fertig</button>
+    </div>
+  </div>
+</div>
+
+<script src="/web/app.js"></script>
+</body>
+</html>

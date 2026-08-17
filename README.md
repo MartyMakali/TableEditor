@@ -1,58 +1,97 @@
 # TableEditor
 
-Werkzeug zum Erzeugen von Excel-Arbeitsmappen aus einer JSON-Beschreibung.
+Werkzeug zum Entwerfen von Excel-Arbeitsmappen: eine Oberfläche im Browser zum
+Aufbauen, Gestalten und Ausfüllen — Ausgabe ist eine `.xlsx`.
 
 Erster Anwendungsfall: der **Anforderungskatalog** — drei Blätter, einheitlich
 formatiert, mit Formelspalten.
 
-## Aufbau
+## Loslegen
+
+Einmalig die Abhängigkeiten installieren:
+
+```bash
+pip install -r requirements.txt
+```
+
+Oberfläche starten (öffnet den Browser auf `http://127.0.0.1:8000`):
+
+```bash
+python app.py
+```
+
+Beim Start wird `data/anforderungskatalog.json` geladen, sofern vorhanden.
+
+## Was die Oberfläche kann
+
+**Aufbau** — Blätter anlegen, umbenennen, löschen und per Ziehen umsortieren.
+Spalten hinzufügen, umbenennen, verschieben und entfernen; ein Klick auf eine
+Überschrift öffnet die Einstellungen der Spalte. Zeilen anhängen und löschen.
+
+**Aussehen** — Schriftart und -größe, Farbe und Schriftfarbe der Kopfzeile,
+Fettdruck, Rahmenstil und Rahmenfarbe, Spaltenbreiten, Ausrichtung,
+Zeilenumbruch, Kopfzeilenhöhe, Fixierung und Autofilter. Die Tabelle in der
+Mitte zeigt das Ergebnis direkt an, in denselben Maßen wie später in Excel.
+
+**Inhalte** — Zellen werden an Ort und Stelle bearbeitet. Reine Zahlen werden
+als Zahl gespeichert, damit Excel damit rechnen kann. Beginnt ein Eintrag mit
+`=`, gilt er als Formel und wird hervorgehoben.
+
+**Speichern und Ausgeben** — Mappen liegen als JSON unter `data/` und lassen
+sich jederzeit wieder laden. *Excel* gibt die gefüllte Mappe aus,
+*Excel-Vorlage* eine leere mit denselben Kopfzeilen und wahlweise einer Anzahl
+vorbereiteter Zeilen.
+
+## Aufbau des Projekts
 
 | Datei | Zweck |
 |---|---|
-| `data/anforderungskatalog.json` | Inhalt und Layout aller Blätter (Werte, Formeln, Spaltenbreiten, Zeilenhöhen, Ausrichtung) |
-| `build_xlsx.py` | Baut daraus die `.xlsx` |
-| `output/Anforderungskatalog.xlsx` | Erzeugte Arbeitsmappe, vollständig gefüllt |
-| `output/Anforderungskatalog_Vorlage.xlsx` | Leere Vorlage zum selbst Ausfüllen, nur Kopfzeilen |
+| `app.py` | Lokaler Server, liefert die Oberfläche und erzeugt die Excel-Datei |
+| `web/` | Oberfläche: `index.html`, `style.css`, `app.js` |
+| `build_xlsx.py` | Baut aus der JSON-Beschreibung die `.xlsx` — auch ohne Oberfläche nutzbar |
+| `data/*.json` | Gespeicherte Mappen |
+| `output/` | Erzeugte Arbeitsmappen |
 
-## Benutzung
-
-Einmalig die Abhängigkeit installieren:
-
-```bash
-pip install openpyxl
-```
-
-Mappe erzeugen:
+## Ohne Oberfläche
 
 ```bash
-python build_xlsx.py
+python build_xlsx.py                                   # volle Mappe
+python build_xlsx.py --vorlage                         # nur die Kopfzeilen
+python build_xlsx.py --vorlage --zeilen 50             # mit 50 leeren Zeilen
+python build_xlsx.py -i data/meine.json -o output/Meine.xlsx
 ```
 
-Andere Quelle oder anderes Ziel:
+## Aufbau der JSON-Beschreibung
 
-```bash
-python build_xlsx.py -i data/anforderungskatalog.json -o output/Anforderungskatalog.xlsx
+```jsonc
+{
+  "titel": "Anforderungskatalog",
+  "format": {
+    "schrift": "Arial",
+    "groesse": 10,
+    "kopf_farbe": "FF44546A",      // ARGB oder #rrggbb
+    "kopf_schrift": "FFFFFFFF",
+    "kopf_fett": true,
+    "rahmen_farbe": "FFBFBFBF",
+    "rahmen_stil": "thin"          // thin | medium | thick | dotted | dashed | double | keiner
+  },
+  "blaetter": [
+    {
+      "name": "Kernanforderungen",
+      "kopf_fixieren": true,
+      "autofilter": true,
+      "kopfhoehe": 30.0,
+      "spalten": [
+        { "name": "Nr.", "breite": 5.0, "ausrichtung": "center", "umbruch": false }
+      ],
+      "zeilenhoehen": { "2": 35.05 },   // Schlüssel = Zeilennummer in Excel
+      "zeilen": [[1, "…"]]              // nur Datenzeilen, Werte oder Formeln
+    }
+  ]
+}
 ```
 
-Inhalte ändert man in der JSON-Datei, danach neu bauen. Die Formatierung liegt
-zentral in `build_xlsx.py` und gilt für alle Blätter.
-
-### Leere Vorlage
-
-Gleiche Blätter, gleiches Format, nur die Kopfzeile ausgefüllt:
-
-```bash
-python build_xlsx.py --vorlage -o output/Anforderungskatalog_Vorlage.xlsx
-```
-
-Mit vorformatierten Datenzeilen — die Formelspalten sind darin schon zeilenweise
-hinterlegt und rechnen mit, sobald man die Kennungen einträgt:
-
-```bash
-python build_xlsx.py --vorlage --zeilen 50 -o output/Vorlage_50.xlsx
-```
-
-## Die Blätter
+## Die Blätter des Anforderungskatalogs
 
 | Blatt | Zeilen | Spalten |
 |---|---|---|
@@ -60,18 +99,15 @@ python build_xlsx.py --vorlage --zeilen 50 -o output/Vorlage_50.xlsx
 | Anforderungen | 144 | Nr., Anforderung, Erlaeuterung, Stichwortgruppe, Stuetzende Arbeiten, Anzahl stuetzender Arbeiten, Einzelbefund, Kernanforderung Nr. |
 | Arbeiten | 56 | Kennung, Autorenschaft und Jahr, Titel, Publikationstyp, Untersuchungsraum, Destinationstyp, Raeumliche Ebene, Methodischer Zugang, Anzahl Fundstellen |
 
-## Format
-
-Arial 10 durchgehend · Kopfzeile fett weiß auf `#44546A`, fixiert (`A2`) und mit
-Autofilter · dünne Rahmen in `#BFBFBF` rundum · Textspalten linksbündig mit
-Zeilenumbruch, oben ausgerichtet · Nummernspalten zentriert.
-
 ## Formeln
 
-Zwei berechnete Spalten, in der JSON-Datei als Formelstrings hinterlegt und beim
-Öffnen von Excel ausgewertet:
+Zwei berechnete Spalten, als Formelstrings hinterlegt und beim Öffnen von Excel
+ausgewertet:
 
 - **Anzahl stuetzender Arbeiten** — zählt die kommagetrennten Kennungen:
   `=IF(E2="","",LEN(E2)-LEN(SUBSTITUTE(E2,",",""))+1)`
 - **Einzelbefund** (nur Blatt *Anforderungen*) — `ja`, wenn genau eine Arbeit stützt:
   `=IF(F2="","",IF(F2=1,"ja","nein"))`
+
+Beim Anhängen einer Zeile werden Formeln aus der letzten Zeile übernommen und
+um eine Zeile weitergeschrieben.

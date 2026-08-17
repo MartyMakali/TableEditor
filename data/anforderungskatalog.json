@@ -1,0 +1,2850 @@
+{
+ "quelle": "Anforderungskatalog.xlsx",
+ "sheets": [
+  {
+   "name": "Kernanforderungen",
+   "freeze_panes": "A2",
+   "autofilter": true,
+   "column_widths": {
+    "A": 5.0,
+    "B": 70.0,
+    "C": 26.0,
+    "D": 20.0,
+    "E": 46.0,
+    "F": 11.0
+   },
+   "column_styles": {
+    "A": {
+     "horizontal": "center",
+     "wrap": false
+    },
+    "B": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "C": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "D": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "E": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "F": {
+     "horizontal": "left",
+     "wrap": false
+    }
+   },
+   "row_heights": {
+    "1": 30.0,
+    "2": 35.05,
+    "3": 23.85,
+    "4": 23.85,
+    "5": 23.85,
+    "6": 23.85,
+    "7": 23.85,
+    "8": 35.05,
+    "9": 35.05,
+    "10": 35.05,
+    "11": 23.85,
+    "12": 23.85,
+    "13": 23.85,
+    "14": 35.05,
+    "15": 35.05,
+    "16": 23.85,
+    "17": 23.85,
+    "18": 35.05,
+    "19": 35.05,
+    "20": 23.85,
+    "21": 35.05,
+    "22": 35.05,
+    "23": 35.05,
+    "24": 35.05,
+    "25": 23.85,
+    "26": 23.85,
+    "27": 35.05,
+    "28": 35.05,
+    "29": 23.85,
+    "30": 35.05,
+    "31": 35.05,
+    "32": 23.85,
+    "33": 35.05,
+    "34": 23.85,
+    "35": 35.05,
+    "36": 35.05,
+    "37": 35.05,
+    "38": 23.85,
+    "39": 35.05,
+    "40": 23.85,
+    "41": 23.85,
+    "42": 23.85,
+    "43": 35.05,
+    "44": 23.85,
+    "45": 35.05,
+    "46": 23.85
+   },
+   "rows": [
+    [
+     "Nr.",
+     "Kernanforderung",
+     "Stichwortgruppe",
+     "Zusammengefasste Anforderungen",
+     "Stuetzende Arbeiten",
+     "Anzahl stuetzender Arbeiten"
+    ],
+    [
+     1,
+     "Zu Beginn sind Systemgrenzen, maßgebliche Akteure und tragende Naturgüter zu bestimmen, und die Destination ist als Mensch-Umwelt-System mit wechselseitigen Abhängigkeiten zu fassen.",
+     "1 Zuschnitt der Betrachtung",
+     "75, 76, 78, 79, 81",
+     "Q01, Q07, Q08, Q09, Q12, Q14, Q17, Q18, Q24, Q33, Q35, Q36, Q49, Q55, Q57, Q60, Q62",
+     "=IF(E2=\"\",\"\",LEN(E2)-LEN(SUBSTITUTE(E2,\",\",\"\"))+1)"
+    ],
+    [
+     2,
+     "Der Klimawandel ist gemeinsam mit den übrigen Belastungen und mit den örtlich nicht steuerbaren äußeren Antrieben zu betrachten und nicht für sich allein.",
+     "1 Zuschnitt der Betrachtung",
+     "77, 80",
+     "Q17, Q19, Q35, Q44, Q45, Q47, Q57, Q62, Q67",
+     "=IF(E3=\"\",\"\",LEN(E3)-LEN(SUBSTITUTE(E3,\",\",\"\"))+1)"
+    ],
+    [
+     3,
+     "Die Anpassung ist über alle Ebenen zu verankern, vor Ort zu führen und nach der räumlichen Reichweite der Wirkungen abzugrenzen.",
+     "1 Zuschnitt der Betrachtung",
+     "82, 83, 86",
+     "Q02, Q07, Q08, Q12, Q16, Q17, Q26, Q29, Q35, Q46, Q52, Q60, Q67",
+     "=IF(E4=\"\",\"\",LEN(E4)-LEN(SUBSTITUTE(E4,\",\",\"\"))+1)"
+    ],
+    [
+     4,
+     "Die Strategien sind je Handlungsebene, Teilraum und Betriebsart zuzuschneiden und mit einem destinationsweiten Rahmen zu verbinden.",
+     "1 Zuschnitt der Betrachtung",
+     "84, 85",
+     "Q02, Q10, Q15, Q24, Q36, Q43, Q53, Q56, Q67",
+     "=IF(E5=\"\",\"\",LEN(E5)-LEN(SUBSTITUTE(E5,\",\",\"\"))+1)"
+    ],
+    [
+     5,
+     "Der Planung ist ein langer und durchgehaltener Zeithorizont zugrunde zu legen, und für jede Maßnahme ist neben der Art auch der Zeitpunkt zu bestimmen.",
+     "1 Zuschnitt der Betrachtung",
+     "87, 88, 89",
+     "Q05, Q13, Q23, Q24, Q29, Q37, Q42, Q57, Q67",
+     "=IF(E6=\"\",\"\",LEN(E6)-LEN(SUBSTITUTE(E6,\",\",\"\"))+1)"
+    ],
+    [
+     6,
+     "Die vorherrschenden Entwicklungs- und Wertvorstellungen der Destination sind zu bestimmen, und der Strategie ist eine ausdrückliche Leitvorstellung voranzustellen.",
+     "1 Zuschnitt der Betrachtung",
+     "90, 91, 92",
+     "Q03, Q04, Q06, Q13, Q20, Q26, Q36",
+     "=IF(E7=\"\",\"\",LEN(E7)-LEN(SUBSTITUTE(E7,\",\",\"\"))+1)"
+    ],
+    [
+     7,
+     "Die Anpassungsstrategie ist auf belastbares örtliches Klimawissen, auf das überlieferte örtliche Wissen und auf fachliche Beiträge mehrerer Fachrichtungen zu stützen.",
+     "2 Wissensgrundlage und Analyse",
+     "1, 2, 4",
+     "Q01, Q02, Q10, Q11, Q16, Q17, Q24, Q34, Q44, Q53, Q57, Q58",
+     "=IF(E8=\"\",\"\",LEN(E8)-LEN(SUBSTITUTE(E8,\",\",\"\"))+1)"
+    ],
+    [
+     8,
+     "Qualitative und mengenmäßige Verfahren sind zu verbinden, bei dünner Datenlage sind darauf zugeschnittene Verfahren zu wählen, und die vorhandenen Pläne sind vorab durchzusehen.",
+     "2 Wissensgrundlage und Analyse",
+     "3, 5, 6",
+     "Q04, Q10, Q11, Q22, Q23, Q33, Q57, Q67",
+     "=IF(E9=\"\",\"\",LEN(E9)-LEN(SUBSTITUTE(E9,\",\",\"\"))+1)"
+    ],
+    [
+     9,
+     "Der Entwicklung der Strategie ist eine Verwundbarkeitsanalyse vorzuschalten, die ihre Bestandteile ausweist und biophysische wie gesellschaftlich-wirtschaftliche Folgen gleichermaßen erfasst.",
+     "2 Wissensgrundlage und Analyse",
+     "7, 8, 9",
+     "Q01, Q10, Q12, Q23, Q33, Q47, Q57, Q62",
+     "=IF(E10=\"\",\"\",LEN(E10)-LEN(SUBSTITUTE(E10,\",\",\"\"))+1)"
+    ],
+    [
+     10,
+     "Die Analyse hat die übrigen Belastungen, die Wetterextreme, die Handlungsfähigkeit der Akteure und die Betroffenheit jedes tragenden Angebots einzuschließen.",
+     "2 Wissensgrundlage und Analyse",
+     "10, 11, 12, 13",
+     "Q07, Q10, Q12, Q16, Q17, Q22, Q24, Q25, Q34, Q49",
+     "=IF(E11=\"\",\"\",LEN(E11)-LEN(SUBSTITUTE(E11,\",\",\"\"))+1)"
+    ],
+    [
+     11,
+     "Die Anpassung ist vorbeugend zu planen, langlebige Entscheidungen sind früh zu treffen, und das Risikobewusstsein ist vor dem Ereignis aufzubauen.",
+     "2 Wissensgrundlage und Analyse",
+     "14, 15, 16, 17",
+     "Q01, Q02, Q05, Q06, Q13, Q22, Q26, Q29, Q52, Q54, Q56, Q57, Q60, Q62, Q67",
+     "=IF(E12=\"\",\"\",LEN(E12)-LEN(SUBSTITUTE(E12,\",\",\"\"))+1)"
+    ],
+    [
+     12,
+     "Vorlieben, Verhalten und Verlagerungen der Nachfrage sowie die Rückwirkung der erwogenen Maßnahmen auf sie sind vor der Entscheidung zu erheben.",
+     "2 Wissensgrundlage und Analyse",
+     "18, 19, 20",
+     "Q01, Q05, Q09, Q11, Q17, Q32, Q49, Q67",
+     "=IF(E13=\"\",\"\",LEN(E13)-LEN(SUBSTITUTE(E13,\",\",\"\"))+1)"
+    ],
+    [
+     13,
+     "Die Planung ist gegen eine Spanne möglicher Szenarien zu prüfen, die Unsicherheit ist auszuweisen und zu vermitteln, und fehlende Gewissheit rechtfertigt keinen Aufschub.",
+     "2 Wissensgrundlage und Analyse",
+     "21, 22, 23",
+     "Q01, Q04, Q11, Q17, Q32, Q37, Q42, Q43, Q56, Q57, Q67",
+     "=IF(E14=\"\",\"\",LEN(E14)-LEN(SUBSTITUTE(E14,\",\",\"\"))+1)"
+    ],
+    [
+     14,
+     "Die Folgenabschätzung hat Chancen wie Risiken zu erfassen, die maßgeblichen Gefahren einzeln zu benennen und jedes Risiko nach Wahrscheinlichkeit und Tragweite einzustufen.",
+     "2 Wissensgrundlage und Analyse",
+     "24, 25, 26, 27",
+     "Q01, Q09, Q29, Q47, Q55, Q57, Q60",
+     "=IF(E15=\"\",\"\",LEN(E15)-LEN(SUBSTITUTE(E15,\",\",\"\"))+1)"
+    ],
+    [
+     15,
+     "Die Handlungsoptionen sind anhand offengelegter und gemeinsam mit den Betroffenen erarbeiteter Kriterien nach einem benannten Verfahren zu bewerten.",
+     "3 Bewertung und Auswahl",
+     "46, 47, 52",
+     "Q01, Q07, Q23, Q24, Q29, Q33, Q34, Q45, Q48, Q57",
+     "=IF(E16=\"\",\"\",LEN(E16)-LEN(SUBSTITUTE(E16,\",\",\"\"))+1)"
+    ],
+    [
+     16,
+     "Die Bewertung ist auf biophysikalische und gesellschaftlich-wirtschaftliche Größen zu stützen, örtlich aufzulösen und in ihren Gewichten auszuweisen.",
+     "3 Bewertung und Auswahl",
+     "48, 49, 50",
+     "Q08, Q22, Q24, Q43, Q47, Q55, Q57, Q59, Q62, Q67",
+     "=IF(E17=\"\",\"\",LEN(E17)-LEN(SUBSTITUTE(E17,\",\",\"\"))+1)"
+    ],
+    [
+     17,
+     "Die Wirkungen einer einzelnen Entscheidung auf die übrigen Systeme, auf Gerechtigkeit und Umwelt sowie auf die übergeordneten Ebenen sind ausdrücklich zu prüfen.",
+     "3 Bewertung und Auswahl",
+     "51, 65",
+     "Q16, Q19, Q28, Q34",
+     "=IF(E18=\"\",\"\",LEN(E18)-LEN(SUBSTITUTE(E18,\",\",\"\"))+1)"
+    ],
+    [
+     18,
+     "Die Anpassungsvorhaben sind in eine offengelegte Rangfolge zu bringen, die Verwundbarkeit, gesellschaftliche Bedeutung und Bindungsdauer der Investitionen verbindet.",
+     "3 Bewertung und Auswahl",
+     "53, 54, 55, 56",
+     "Q13, Q20, Q23, Q42, Q48, Q49, Q55, Q56, Q57, Q67",
+     "=IF(E19=\"\",\"\",LEN(E19)-LEN(SUBSTITUTE(E19,\",\",\"\"))+1)"
+    ],
+    [
+     19,
+     "Die Anpassung ist als Bedingung der Tragfähigkeit zu führen und an örtlichen Nutzen, Zustimmung, Dauerhaftigkeit und die Minderung zu binden.",
+     "3 Bewertung und Auswahl",
+     "57, 58, 59, 60",
+     "Q04, Q07, Q09, Q18, Q36, Q56, Q60, Q67",
+     "=IF(E20=\"\",\"\",LEN(E20)-LEN(SUBSTITUTE(E20,\",\",\"\"))+1)"
+    ],
+    [
+     20,
+     "Die Maßnahmen sind auf Fehlanpassung zu prüfen, nicht umkehrbare Zustände sind zu vermeiden, und vor Ausbau- und Umlenkungsentscheidungen ist die Tragfähigkeit zu prüfen.",
+     "3 Bewertung und Auswahl",
+     "61, 62, 63, 66",
+     "Q06, Q12, Q27, Q35, Q37, Q57, Q62, Q67",
+     "=IF(E21=\"\",\"\",LEN(E21)-LEN(SUBSTITUTE(E21,\",\",\"\"))+1)"
+    ],
+    [
+     21,
+     "Die nicht gegeneinander aufrechenbaren Ziele sind offenzulegen, und der Entscheidung ist eine Abwägung der Kosten und Nutzen von Handeln und Nichthandeln zugrunde zu legen.",
+     "3 Bewertung und Auswahl",
+     "64, 67, 68, 69",
+     "Q01, Q16, Q19, Q24, Q43, Q54, Q56, Q60",
+     "=IF(E22=\"\",\"\",LEN(E22)-LEN(SUBSTITUTE(E22,\",\",\"\"))+1)"
+    ],
+    [
+     22,
+     "Kenngrößen und Schwellenwerte sind eindeutig zu bestimmen, der hinnehmbare Verlust ist vorab festzulegen, und die Einzelmaßnahmen sind in Anpassungspfade einzubetten.",
+     "3 Bewertung und Auswahl",
+     "70, 71, 72, 73, 74",
+     "Q15, Q23, Q35, Q56, Q59, Q67",
+     "=IF(E23=\"\",\"\",LEN(E23)-LEN(SUBSTITUTE(E23,\",\",\"\"))+1)"
+    ],
+    [
+     23,
+     "Die betroffenen Akteure sind von Beginn an einzubeziehen, ihr Kreis ist ausdrücklich zu bestimmen, und die Ortsansässigen sind als Mitentscheidende und nicht als Empfänger zu behandeln.",
+     "4 Beteiligung und Verständigung",
+     "28, 29, 30",
+     "Q01, Q14, Q15, Q16, Q19, Q20, Q24, Q30, Q44, Q45, Q47, Q48, Q52, Q59, Q67",
+     "=IF(E24=\"\",\"\",LEN(E24)-LEN(SUBSTITUTE(E24,\",\",\"\"))+1)"
+    ],
+    [
+     24,
+     "Die Beteiligung ist auf Zusammenarbeit anzulegen, für ungleich ausgestattete Gruppen zu öffnen und mit der datengestützten Bewertung zu verbinden.",
+     "4 Beteiligung und Verständigung",
+     "31, 32, 33",
+     "Q02, Q04, Q19, Q26, Q33, Q48, Q54, Q57, Q58",
+     "=IF(E25=\"\",\"\",LEN(E25)-LEN(SUBSTITUTE(E25,\",\",\"\"))+1)"
+    ],
+    [
+     25,
+     "Zwischen öffentlicher Hand, Betrieben und Verbänden ist eine dauerhafte Zusammenarbeit einzurichten, in der die öffentliche Hand anstößt und ergänzt.",
+     "4 Beteiligung und Verständigung",
+     "34, 44",
+     "Q24, Q25, Q27, Q30, Q35, Q41, Q46, Q52",
+     "=IF(E26=\"\",\"\",LEN(E26)-LEN(SUBSTITUTE(E26,\",\",\"\"))+1)"
+    ],
+    [
+     26,
+     "Zwischen Forschung und Anwendenden ist ein beidseitiger Austausch mit eigenen Mittlerrollen einzurichten, und die Ergebnisse sind allen Betroffenen zugänglich zu machen.",
+     "4 Beteiligung und Verständigung",
+     "35, 36, 37, 40",
+     "Q01, Q10, Q14, Q23, Q25, Q34, Q35, Q41, Q52",
+     "=IF(E27=\"\",\"\",LEN(E27)-LEN(SUBSTITUTE(E27,\",\",\"\"))+1)"
+    ],
+    [
+     27,
+     "Die Verständigung ist vorwegnehmend anzulegen, die Aufklärung hat vor der Maßnahmenplanung zu erfolgen, und die Risikoangaben sind auf Gefahr und Maßnahme zuzuschneiden.",
+     "4 Beteiligung und Verständigung",
+     "38, 39",
+     "Q18, Q26, Q37, Q47, Q52",
+     "=IF(E28=\"\",\"\",LEN(E28)-LEN(SUBSTITUTE(E28,\",\",\"\"))+1)"
+    ],
+    [
+     28,
+     "Die bestehenden Machtverhältnisse sind in Frage zu stellen, die Steuerungsstrukturen und Zuständigkeiten vorab zu klären und die Verteilungswirkungen auszugleichen.",
+     "4 Beteiligung und Verständigung",
+     "41, 42, 43, 45",
+     "Q03, Q04, Q16, Q24, Q28, Q30, Q34, Q36, Q52, Q57, Q59, Q60, Q61",
+     "=IF(E29=\"\",\"\",LEN(E29)-LEN(SUBSTITUTE(E29,\",\",\"\"))+1)"
+    ],
+    [
+     29,
+     "Die Anpassungsplanung ist in die bestehenden Entscheidungsprozesse, in die Raum- und Entwicklungsplanung sowie über Fachbereiche und Handlungsebenen hinweg einzubinden.",
+     "5 Verankerung und Umsetzung",
+     "93, 94, 95, 96",
+     "Q01, Q02, Q05, Q10, Q17, Q20, Q22, Q24, Q25, Q28, Q32, Q33, Q35, Q36, Q67",
+     "=IF(E30=\"\",\"\",LEN(E30)-LEN(SUBSTITUTE(E30,\",\",\"\"))+1)"
+    ],
+    [
+     30,
+     "Der Tourismus ist in den übergeordneten Klimastrategien als Vorrang zu benennen, die bestehenden Rechtswerke sind zu überarbeiten und mit der Katastrophenrisikosteuerung zu verzahnen.",
+     "5 Verankerung und Umsetzung",
+     "97, 98, 99, 100",
+     "Q12, Q25, Q33, Q57, Q59, Q60, Q62",
+     "=IF(E31=\"\",\"\",LEN(E31)-LEN(SUBSTITUTE(E31,\",\",\"\"))+1)"
+    ],
+    [
+     31,
+     "Für die Umsetzung sind Zuständigkeit, Mittelbedarf und Zeitplan festzulegen, die Hemmnisse sind vorab zu klären, und die Zeit bis zur Umsetzung ist zu verkürzen.",
+     "5 Verankerung und Umsetzung",
+     "101, 102, 106",
+     "Q01, Q02, Q12, Q20, Q26, Q30, Q57, Q58, Q62",
+     "=IF(E32=\"\",\"\",LEN(E32)-LEN(SUBSTITUTE(E32,\",\",\"\"))+1)"
+    ],
+    [
+     32,
+     "Die örtliche Bewältigungsfähigkeit ist aufzubauen, die stützenden Regelungen sind zu benennen und durchzusetzen, und die Maßnahmen sind zweigübergreifend anzulegen.",
+     "5 Verankerung und Umsetzung",
+     "103, 104, 105",
+     "Q17, Q24, Q43, Q46, Q57, Q59, Q61, Q62",
+     "=IF(E33=\"\",\"\",LEN(E33)-LEN(SUBSTITUTE(E33,\",\",\"\"))+1)"
+    ],
+    [
+     33,
+     "Die Folgewirkungen einer Maßnahme sind mitzuplanen, und die Übernahme der Ergebnisse in die örtliche Planung ist förmlich zu vereinbaren.",
+     "5 Verankerung und Umsetzung",
+     "107, 108",
+     "Q09, Q19, Q47, Q57, Q60",
+     "=IF(E34=\"\",\"\",LEN(E34)-LEN(SUBSTITUTE(E34,\",\",\"\"))+1)"
+    ],
+    [
+     34,
+     "Die nötigen Mittel sind vor dem Beschluss zu sichern, auf mehrere Träger zu verteilen, durch Anreize zu ergänzen und vorrangig dorthin zu lenken, wo die Destination aus eigener Kraft wirken kann.",
+     "5 Verankerung und Umsetzung",
+     "109, 110, 111, 112",
+     "Q12, Q15, Q25, Q26, Q30, Q33, Q55, Q56, Q59, Q61",
+     "=IF(E35=\"\",\"\",LEN(E35)-LEN(SUBSTITUTE(E35,\",\",\"\"))+1)"
+    ],
+    [
+     35,
+     "Das Vorgehen ist als ausdrückliche Schrittfolge anzulegen, die mit der Klärung des Rahmens beginnt, die Risikobewertung voranstellt und die Befunde vor der Maßnahmenwahl zusammenführt.",
+     "6 Aufbau und Güte des Verfahrens",
+     "113, 114, 115, 116",
+     "Q10, Q11, Q12, Q23, Q49, Q55, Q57, Q62, Q67",
+     "=IF(E36=\"\",\"\",LEN(E36)-LEN(SUBSTITUTE(E36,\",\",\"\"))+1)"
+    ],
+    [
+     36,
+     "Die Strategie hat ihre Bestandteile vollständig zu umfassen, die Lücke zu den nötigen Maßnahmen zu bestimmen und auf die Anpassungsfähigkeit statt auf Einzelmaßnahmen zu zielen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "117, 118, 119, 120",
+     "Q34, Q43, Q53, Q57, Q67",
+     "=IF(E37=\"\",\"\",LEN(E37)-LEN(SUBSTITUTE(E37,\",\",\"\"))+1)"
+    ],
+    [
+     37,
+     "Das Hilfsmittel ist auf die Nutzenden zuzuschneiden, hat zwischen Zielen und Handlungen zu vermitteln und ist erkundend statt vorhersagend zu verwenden.",
+     "6 Aufbau und Güte des Verfahrens",
+     "121, 122, 123, 127",
+     "Q19, Q28, Q29, Q32, Q37, Q53, Q58",
+     "=IF(E38=\"\",\"\",LEN(E38)-LEN(SUBSTITUTE(E38,\",\",\"\"))+1)"
+    ],
+    [
+     38,
+     "Ungleichartige Modelle und Kenngrößen sind über ein ausgewiesenes Verfahren zusammenzuführen, und ein Rahmen ist als bewegliche Betrachtungshilfe und nicht als Handlungsvorschrift zu verwenden.",
+     "6 Aufbau und Güte des Verfahrens",
+     "124, 125, 126",
+     "Q22, Q47, Q55, Q57, Q61, Q62, Q67",
+     "=IF(E39=\"\",\"\",LEN(E39)-LEN(SUBSTITUTE(E39,\",\",\"\"))+1)"
+    ],
+    [
+     39,
+     "Das Verfahren ist durchsichtig anzulegen, die verwendeten Begriffe sind vorab zu bestimmen, und die Strategie ist planvoll und nicht anlassbezogen zu führen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "128, 129, 131",
+     "Q01, Q04, Q13, Q15, Q19, Q41, Q42, Q56, Q57",
+     "=IF(E40=\"\",\"\",LEN(E40)-LEN(SUBSTITUTE(E40,\",\",\"\"))+1)"
+    ],
+    [
+     40,
+     "Zu jeder Schätzung sind Vertrauensniveau, Reichweite und Fehlerquellen anzugeben.",
+     "6 Aufbau und Güte des Verfahrens",
+     "130",
+     "Q23, Q48, Q55, Q57",
+     "=IF(E41=\"\",\"\",LEN(E41)-LEN(SUBSTITUTE(E41,\",\",\"\"))+1)"
+    ],
+    [
+     41,
+     "Das Verfahren ist auf die einzelne Destination zuzuschneiden, übernommene Rahmen sind örtlich zu prüfen, und die Kenngrößen sind für den Vergleich zu vereinheitlichen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "132, 133, 134, 135",
+     "Q01, Q05, Q08, Q24, Q43, Q57, Q61, Q62, Q67",
+     "=IF(E42=\"\",\"\",LEN(E42)-LEN(SUBSTITUTE(E42,\",\",\"\"))+1)"
+    ],
+    [
+     42,
+     "Die Wirkung der umgesetzten Anpassung ist über lange Zeit zu beobachten, die Wirkungen der Maßnahmen selbst eingeschlossen, und die Beteiligten sind bis zur Wirkungskontrolle zu binden.",
+     "7 Nachsteuerung",
+     "136, 137, 140",
+     "Q01, Q02, Q26, Q27, Q28, Q45, Q62",
+     "=IF(E43=\"\",\"\",LEN(E43)-LEN(SUBSTITUTE(E43,\",\",\"\"))+1)"
+    ],
+    [
+     43,
+     "Die Wahl der Anpassungsoptionen ist über die Zeit erneut zu prüfen, und die Anpassungsplanung ist fortlaufend zu bewerten und nachzuschärfen.",
+     "7 Nachsteuerung",
+     "138, 142",
+     "Q04, Q29, Q48, Q53, Q56, Q57, Q67",
+     "=IF(E44=\"\",\"\",LEN(E44)-LEN(SUBSTITUTE(E44,\",\",\"\"))+1)"
+    ],
+    [
+     44,
+     "Zwischen übergeordneter Vorgabe und örtlicher Umsetzung ist über Beobachtung zurückzumelden, und die Wirksamkeit der bereits festgelegten Maßnahmen ist zu überprüfen.",
+     "7 Nachsteuerung",
+     "139, 141",
+     "Q30, Q34, Q62",
+     "=IF(E45=\"\",\"\",LEN(E45)-LEN(SUBSTITUTE(E45,\",\",\"\"))+1)"
+    ],
+    [
+     45,
+     "Die Regelwerke und Steuerungsmittel sind fortschreibbar anzulegen, und die Ergebnisse einer Planungsstufe sind als Ausgangspunkt der nächsten zu führen.",
+     "7 Nachsteuerung",
+     "143, 144",
+     "Q22, Q27, Q41, Q42, Q52, Q54",
+     "=IF(E46=\"\",\"\",LEN(E46)-LEN(SUBSTITUTE(E46,\",\",\"\"))+1)"
+    ]
+   ]
+  },
+  {
+   "name": "Anforderungen",
+   "freeze_panes": "A2",
+   "autofilter": true,
+   "column_widths": {
+    "A": 5.0,
+    "B": 60.0,
+    "C": 80.0,
+    "D": 26.0,
+    "E": 40.0,
+    "F": 11.0,
+    "G": 10.0
+   },
+   "column_styles": {
+    "A": {
+     "horizontal": "center",
+     "wrap": false
+    },
+    "B": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "C": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "D": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "E": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "F": {
+     "horizontal": "left",
+     "wrap": false
+    },
+    "G": {
+     "horizontal": "left",
+     "wrap": false
+    },
+    "H": {
+     "horizontal": "left",
+     "wrap": false
+    }
+   },
+   "row_heights": {
+    "1": 30.0,
+    "2": 46.25,
+    "3": 46.25,
+    "4": 46.25,
+    "5": 35.05,
+    "6": 35.05,
+    "7": 46.25,
+    "8": 35.05,
+    "9": 46.25,
+    "10": 46.25,
+    "11": 46.25,
+    "12": 46.25,
+    "13": 35.05,
+    "14": 46.25,
+    "15": 35.05,
+    "16": 35.05,
+    "17": 57.45,
+    "18": 35.05,
+    "19": 35.05,
+    "20": 57.45,
+    "21": 35.05,
+    "22": 46.25,
+    "23": 46.25,
+    "24": 46.25,
+    "25": 23.85,
+    "26": 46.25,
+    "27": 23.85,
+    "28": 35.05,
+    "29": 35.05,
+    "30": 46.25,
+    "31": 46.25,
+    "32": 46.25,
+    "33": 46.25,
+    "34": 46.25,
+    "35": 46.25,
+    "36": 35.05,
+    "37": 35.05,
+    "38": 46.25,
+    "39": 46.25,
+    "40": 35.05,
+    "41": 35.05,
+    "42": 46.25,
+    "43": 35.05,
+    "44": 57.45,
+    "45": 46.25,
+    "46": 46.25,
+    "47": 35.05,
+    "48": 46.25,
+    "49": 57.45,
+    "50": 46.25,
+    "51": 35.05,
+    "52": 46.25,
+    "53": 35.05,
+    "54": 35.05,
+    "55": 46.25,
+    "56": 35.05,
+    "57": 23.85,
+    "58": 35.05,
+    "59": 46.25,
+    "60": 46.25,
+    "61": 35.05,
+    "62": 46.25,
+    "63": 35.05,
+    "64": 46.25,
+    "65": 46.25,
+    "66": 23.85,
+    "67": 35.05,
+    "68": 35.05,
+    "69": 46.25,
+    "70": 35.05,
+    "71": 35.05,
+    "72": 35.05,
+    "73": 23.85,
+    "74": 35.05,
+    "75": 35.05,
+    "76": 46.25,
+    "77": 46.25,
+    "78": 57.45,
+    "79": 46.25,
+    "80": 46.25,
+    "81": 46.25,
+    "82": 35.05,
+    "83": 46.25,
+    "84": 35.05,
+    "85": 46.25,
+    "86": 46.25,
+    "87": 46.25,
+    "88": 57.45,
+    "89": 35.05,
+    "90": 35.05,
+    "91": 35.05,
+    "92": 35.05,
+    "93": 46.25,
+    "94": 57.45,
+    "95": 68.65,
+    "96": 35.05,
+    "97": 57.45,
+    "98": 46.25,
+    "99": 57.45,
+    "100": 46.25,
+    "101": 35.05,
+    "102": 35.05,
+    "103": 57.45,
+    "104": 35.05,
+    "105": 57.45,
+    "106": 35.05,
+    "107": 46.25,
+    "108": 57.45,
+    "109": 35.05,
+    "110": 46.25,
+    "111": 35.05,
+    "112": 35.05,
+    "113": 35.05,
+    "114": 46.25,
+    "115": 57.45,
+    "116": 46.25,
+    "117": 35.05,
+    "118": 23.85,
+    "119": 35.05,
+    "120": 57.45,
+    "121": 23.85,
+    "122": 35.05,
+    "123": 35.05,
+    "124": 35.05,
+    "125": 46.25,
+    "126": 35.05,
+    "127": 35.05,
+    "128": 35.05,
+    "129": 57.45,
+    "130": 35.05,
+    "131": 57.45,
+    "132": 35.05,
+    "133": 35.05,
+    "134": 57.45,
+    "135": 35.05,
+    "136": 23.85,
+    "137": 46.25,
+    "138": 35.05,
+    "139": 35.05,
+    "140": 46.25,
+    "141": 35.05,
+    "142": 35.05,
+    "143": 35.05,
+    "144": 46.25,
+    "145": 35.05
+   },
+   "rows": [
+    [
+     "Nr.",
+     "Anforderung",
+     "Erlaeuterung",
+     "Stichwortgruppe",
+     "Stuetzende Arbeiten",
+     "Anzahl stuetzender Arbeiten",
+     "Einzelbefund",
+     "Kernanforderung Nr."
+    ],
+    [
+     1,
+     "Die Anpassungsstrategie ist auf belastbares und örtlich aufgelöstes Wissen über die künftigen Klimafolgen zu stützen.",
+     "Verlangt sind Klimadaten von ausgewiesener Güte in einer Auflösung, die der Destination entspricht, dazu das Verstehen der bereits beobachteten und der erwarteten Veränderungen sowie eine Einschätzung, wie das tragende Ökosystem darauf antwortet. Der Zugang zu solchen Daten fehlt den touristischen Beteiligten häufig.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01, Q11, Q44, Q57, Q58",
+     "=IF(E2=\"\",\"\",LEN(E2)-LEN(SUBSTITUTE(E2,\",\",\"\"))+1)",
+     "=IF(F2=\"\",\"\",IF(F2=1,\"ja\",\"nein\"))",
+     7
+    ],
+    [
+     2,
+     "Das örtliche und überlieferte Wissen ist als eigenständige Wissensart in die Anpassungsplanung aufzunehmen.",
+     "Gemeint ist nicht die Befragung als Beteiligungsform, sondern das Wissen selbst als Quelle neben den wissenschaftlichen Daten. Es ist handlungsbezogen und ganzheitlich, entsteht als fortlaufendes Lernergebnis und eröffnet zugleich einen Weg der Mitwirkung an der örtlichen Entwicklung.",
+     "2 Wissensgrundlage und Analyse",
+     "Q10, Q16, Q24, Q34",
+     "=IF(E3=\"\",\"\",LEN(E3)-LEN(SUBSTITUTE(E3,\",\",\"\"))+1)",
+     "=IF(F3=\"\",\"\",IF(F3=1,\"ja\",\"nein\"))",
+     7
+    ],
+    [
+     3,
+     "Die Bestimmung der Anpassungsfähigkeit ist auf qualitative und mengenmäßige Verfahren gemeinsam zu stützen.",
+     "Die Erhebung der verfügbaren Mittel allein erfasst die Anpassungsfähigkeit nicht. Ergänzend sind qualitative Verfahren nötig, die den örtlichen Zusammenhang aufnehmen, und die wahrgenommenen Risiken der Gemeinschaft sind mit sachlichen Zahlen über die Umweltveränderung zu verbinden.",
+     "2 Wissensgrundlage und Analyse",
+     "Q04, Q10, Q22",
+     "=IF(E4=\"\",\"\",LEN(E4)-LEN(SUBSTITUTE(E4,\",\",\"\"))+1)",
+     "=IF(F4=\"\",\"\",IF(F4=1,\"ja\",\"nein\"))",
+     8
+    ],
+    [
+     4,
+     "Für die Anpassungsplanung sind fachliche Beiträge von außen und aus mehreren Fachrichtungen heranzuziehen.",
+     "Genannt werden Klimaforschung und regionale Projektionen, Tourismusstatistik, wirtschaftliche Modellierung, öffentliche Gesundheit, Raumplanung, Baukunst und Risikosteuerung. Hinzu kommt Fachwissen über das jeweilige Gebiet sowie das wissenschaftliche und fachliche Schrifttum.",
+     "2 Wissensgrundlage und Analyse",
+     "Q02, Q17, Q53, Q57",
+     "=IF(E5=\"\",\"\",LEN(E5)-LEN(SUBSTITUTE(E5,\",\",\"\"))+1)",
+     "=IF(F5=\"\",\"\",IF(F5=1,\"ja\",\"nein\"))",
+     7
+    ],
+    [
+     5,
+     "Bei unzureichender Datenlage sind Verfahren zu wählen, die ohne belastbare Datenreihen auskommen, und fachliche Beratung ist ersatzweise heranzuziehen.",
+     "Die Fortschreibung vorhandener Reihen ist bei schlecht bestimmten Fragen kaum brauchbar. Fehlen Daten in der nötigen Menge und Güte oder fehlen Zeit und Mittel für vertiefte Untersuchungen, tritt fachliche Beratung an ihre Stelle.",
+     "2 Wissensgrundlage und Analyse",
+     "Q11, Q57",
+     "=IF(E6=\"\",\"\",LEN(E6)-LEN(SUBSTITUTE(E6,\",\",\"\"))+1)",
+     "=IF(F6=\"\",\"\",IF(F6=1,\"ja\",\"nein\"))",
+     8
+    ],
+    [
+     6,
+     "Vor der Analyse sind die bestehenden Politiken und Pläne sowie die Merkmale des betrachteten Gebietes durchzusehen.",
+     "Die Durchsicht der vorliegenden tourismus- und klimabezogenen Politiken und Pläne bildet die Grundlage der Systemanalyse. Für ein neu in Betracht gezogenes Gebiet sind räumliche Merkmale, einrichtungsbezogene Fähigkeit und Nachhaltigkeitsausrichtung zu prüfen, und die vorgebrachte Kenngröße ist auf die dahinterliegende wirkliche Frage zu prüfen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q23, Q33, Q67",
+     "=IF(E7=\"\",\"\",LEN(E7)-LEN(SUBSTITUTE(E7,\",\",\"\"))+1)",
+     "=IF(F7=\"\",\"\",IF(F7=1,\"ja\",\"nein\"))",
+     8
+    ],
+    [
+     7,
+     "Der Entwicklung von Anpassungsstrategien ist eine Verwundbarkeitsanalyse der Destination vorzuschalten.",
+     "Die Analyse steht vor der Bewertung und Einordnung der Handlungsoptionen, weil sich nur so erkennen lässt, welche Anpassung in der jeweiligen Lage angemessen ist. Dazu gehört die Bestimmung der Ausgangsbedingungen und der bereits bestehenden Belastungen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01, Q33",
+     "=IF(E8=\"\",\"\",LEN(E8)-LEN(SUBSTITUTE(E8,\",\",\"\"))+1)",
+     "=IF(F8=\"\",\"\",IF(F8=1,\"ja\",\"nein\"))",
+     9
+    ],
+    [
+     8,
+     "Die Verwundbarkeit ist aus Aussetzung, Empfindlichkeit, Bewältigungsfähigkeit und Anpassungsfähigkeit zusammenzusetzen, und die Wirkungskette ist ausdrücklich zu bestimmen.",
+     "Verwundbarkeit ist keine einzelne Größe, sondern setzt sich aus Ausmaß und Geschwindigkeit der Veränderung sowie der Fähigkeit zusammen, deren Folgen zu bewältigen. Gefahren und Verwundbarkeiten sind dabei zu unterscheiden, und die wesentlichen Merkmale der Ursache-Wirkungs-Kette sind kritisch zu bestimmen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q12, Q23, Q57, Q62",
+     "=IF(E9=\"\",\"\",LEN(E9)-LEN(SUBSTITUTE(E9,\",\",\"\"))+1)",
+     "=IF(F9=\"\",\"\",IF(F9=1,\"ja\",\"nein\"))",
+     9
+    ],
+    [
+     9,
+     "Die Analyse hat biophysische und gesellschaftlich-wirtschaftliche Folgen gleichermaßen zu erfassen.",
+     "Beide Folgenarten wirken zusammen und lassen sich nicht getrennt beurteilen. Die Verwundbarkeit ist im jeweiligen umweltbezogenen und wirtschaftlichen Zusammenhang des ausgesetzten Wertes zu bestimmen, einschließlich der Wirkungen auf Leben, Erreichbarkeit, Bauwerke, Betriebskosten und Alltag der Ortsansässigen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01, Q10, Q47",
+     "=IF(E10=\"\",\"\",LEN(E10)-LEN(SUBSTITUTE(E10,\",\",\"\"))+1)",
+     "=IF(F10=\"\",\"\",IF(F10=1,\"ja\",\"nein\"))",
+     9
+    ],
+    [
+     10,
+     "Neben den klimatischen sind die gleichzeitig wirkenden übrigen Belastungen der Destination zu erfassen.",
+     "Die Wirkungen des Klimawandels hängen von den gesellschaftlichen, wirtschaftlichen, einrichtungsbezogenen und kulturellen Verhältnissen ab, in die sie treffen. Eine Destination ist stets mehreren Belastungen zugleich ausgesetzt, weshalb die Betrachtung allein der klimatischen Störung zu kurz greift.",
+     "2 Wissensgrundlage und Analyse",
+     "Q07, Q16, Q34",
+     "=IF(E11=\"\",\"\",LEN(E11)-LEN(SUBSTITUTE(E11,\",\",\"\"))+1)",
+     "=IF(F11=\"\",\"\",IF(F11=1,\"ja\",\"nein\"))",
+     10
+    ],
+    [
+     11,
+     "Die Anpassungsfähigkeit ist über den Bestand an Mitteln hinaus über Fertigkeiten, Handlungsfähigkeit und die Fähigkeit zum gemeinsamen Handeln zu bestimmen.",
+     "Fähigkeit meint die Gesamtheit der Mittel und der einzelnen wie gemeinsamen Fertigkeiten, mit denen sich eine Störung vorwegnehmen, beantworten, überstehen und ausgleichen lässt. Anpassungsfähigkeit und tatsächliches Handeln fallen auseinander, und die Neigung der Betroffenen zu Faustregeln und kurzsichtigem Handeln ist mitzubedenken.",
+     "2 Wissensgrundlage und Analyse",
+     "Q10, Q17, Q22, Q24",
+     "=IF(E12=\"\",\"\",LEN(E12)-LEN(SUBSTITUTE(E12,\",\",\"\"))+1)",
+     "=IF(F12=\"\",\"\",IF(F12=1,\"ja\",\"nein\"))",
+     10
+    ],
+    [
+     12,
+     "Die Klimawirkung ist für den Tourismus eigens und für jedes tragende Angebot gesondert zu bestimmen.",
+     "Die allgemeine Folgenbewertung des Landes genügt nicht, weil die touristische Betroffenheit eine eigene ist. Bei naturgestützten Destinationen hängt die Ableitung der Maßnahmen davon ab, wie die einzelne Sehenswürdigkeit auf die Klimawirkung antwortet.",
+     "2 Wissensgrundlage und Analyse",
+     "Q25, Q49",
+     "=IF(E13=\"\",\"\",LEN(E13)-LEN(SUBSTITUTE(E13,\",\",\"\"))+1)",
+     "=IF(F13=\"\",\"\",IF(F13=1,\"ja\",\"nein\"))",
+     10
+    ],
+    [
+     13,
+     "Neben den mittleren Veränderungen sind die Wetterextreme und die Hemmnisse wirksamer Vorsorge aufzunehmen.",
+     "Der Blick der Klimaanpassung ist auf die mittlere Veränderung gerichtet, doch nehmen Häufigkeit und Schwere der Extremereignisse zu. Neben den innewohnenden Bewältigungsweisen sind eigens Maßnahmen zu entwickeln, die die Verwundbarkeit verringern und die Hemmnisse der Vorsorge angehen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q10, Q12",
+     "=IF(E14=\"\",\"\",LEN(E14)-LEN(SUBSTITUTE(E14,\",\",\"\"))+1)",
+     "=IF(F14=\"\",\"\",IF(F14=1,\"ja\",\"nein\"))",
+     10
+    ],
+    [
+     14,
+     "Die Anpassung ist vorausschauend und vorbeugend zu planen und nicht erst nach eingetretenem Schaden einzuleiten.",
+     "Die Anpassung ist als Vorsorge zu betreiben, nicht als Antwort auf ein bereits eingetretenes Ereignis und nicht als vorübergehende Maßnahme. Die Steuerung der Destination ist dabei ausdrücklich auf die von außen ausgelösten Veränderungen auszurichten.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01, Q02, Q05, Q29, Q54, Q56, Q60, Q62, Q67",
+     "=IF(E15=\"\",\"\",LEN(E15)-LEN(SUBSTITUTE(E15,\",\",\"\"))+1)",
+     "=IF(F15=\"\",\"\",IF(F15=1,\"ja\",\"nein\"))",
+     11
+    ],
+    [
+     15,
+     "Die laufende Bewältigung der Witterungsschwankung ist von der geplanten Anpassung an die systematische Klimaveränderung zu unterscheiden.",
+     "Die laufenden und häufig kleinschrittigen Eingriffe sind gelegenheitsbezogen und beantworten die Schwankung. Davon zu trennen ist die längerfristige Strategie, die die systematische Veränderung des Klimas zum Gegenstand hat.",
+     "2 Wissensgrundlage und Analyse",
+     "Q13",
+     "=IF(E16=\"\",\"\",LEN(E16)-LEN(SUBSTITUTE(E16,\",\",\"\"))+1)",
+     "=IF(F16=\"\",\"\",IF(F16=1,\"ja\",\"nein\"))",
+     11
+    ],
+    [
+     16,
+     "Langlebige und schwer umkehrbare Entscheidungen sind früh und auf der Grundlage der vorausberechneten Veränderungen zu treffen.",
+     "Die Flächennutzung ändert sich langsam und ist in der Regel unumkehrbar, weshalb die vorausberechneten Änderungen von Klima und Meeresspiegel ihr zugrunde zu legen sind. Auch die Ausrichtung der Tourismusentwicklung ist früh zu beginnen, weil die Mittel für spätere Aufgaben sonst fehlen, und Ausmaß, Häufigkeit und Dauer der Klimagefahren sind für Gegenwart und Zukunft vorwegzunehmen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q06, Q22, Q57",
+     "=IF(E17=\"\",\"\",LEN(E17)-LEN(SUBSTITUTE(E17,\",\",\"\"))+1)",
+     "=IF(F17=\"\",\"\",IF(F17=1,\"ja\",\"nein\"))",
+     11
+    ],
+    [
+     17,
+     "Das Risikobewusstsein der Öffentlichkeit ist in der Zeit vor dem Ereignis aufzubauen.",
+     "Statt auf ein Extremereignis zu warten, sind das örtliche Wissen und das Risikobewusstsein vorher zu erhöhen. Die öffentliche Wahrnehmung ist langsam und weit im Voraus zu entwickeln, weil sie sich kurzfristig nicht herstellen lässt.",
+     "2 Wissensgrundlage und Analyse",
+     "Q26, Q52",
+     "=IF(E18=\"\",\"\",LEN(E18)-LEN(SUBSTITUTE(E18,\",\",\"\"))+1)",
+     "=IF(F18=\"\",\"\",IF(F18=1,\"ja\",\"nein\"))",
+     11
+    ],
+    [
+     18,
+     "Die Rückwirkung der erwogenen Anpassungsmaßnahmen auf die Nachfrage ist vor der Entscheidung zu prüfen.",
+     "Die erarbeiteten Handlungsoptionen sind mit den Gästen rückzukoppeln, bevor über sie entschieden wird. Bleibt die Reaktion der Nachfrage unklar, ist vor der Investition eine ergänzende Markterhebung durchzuführen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01, Q05, Q09",
+     "=IF(E19=\"\",\"\",LEN(E19)-LEN(SUBSTITUTE(E19,\",\",\"\"))+1)",
+     "=IF(F19=\"\",\"\",IF(F19=1,\"ja\",\"nein\"))",
+     12
+    ],
+    [
+     19,
+     "Vorlieben, Verhalten und Wahrnehmung der Gäste unter veränderten Klimabedingungen sind zu erheben.",
+     "Am Anfang der Entscheidung steht die genaue Kenntnis dessen, was die Gäste unter veränderten Bedingungen suchen. Dabei ist zu berücksichtigen, dass sich die Maßstäbe künftiger Gästegenerationen selbst verändern, dass neben den klimatischen auch räumliche und erlebnisbezogene Größen die Wahl bestimmen und dass das Fachurteil das Urteil der Gäste nicht verdrängen darf.",
+     "2 Wissensgrundlage und Analyse",
+     "Q05, Q11, Q17, Q49, Q67",
+     "=IF(E20=\"\",\"\",LEN(E20)-LEN(SUBSTITUTE(E20,\",\",\"\"))+1)",
+     "=IF(F20=\"\",\"\",IF(F20=1,\"ja\",\"nein\"))",
+     12
+    ],
+    [
+     20,
+     "Die Ungleichartigkeit der Nachfrage und die möglichen Verlagerungen in den Quellmärkten sind gesondert zu prüfen.",
+     "Die Teilmärkte antworten verschieden, und für stark auf eine Aktivität festgelegte Gäste bietet sich kein Ersatzangebot an. Die möglichen Verlagerungen der Nachfrage in den Quellmärkten sind deshalb als eigene Größe zu führen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q05, Q32",
+     "=IF(E21=\"\",\"\",LEN(E21)-LEN(SUBSTITUTE(E21,\",\",\"\"))+1)",
+     "=IF(F21=\"\",\"\",IF(F21=1,\"ja\",\"nein\"))",
+     12
+    ],
+    [
+     21,
+     "Die Planung ist gegen eine Spanne möglicher Klimaszenarien zu prüfen und nicht gegen ein einzelnes.",
+     "Der Folgenabschätzung sind kurzfristige und langfristige Szenarien zugrunde zu legen, und die volle Spanne möglicher Entwicklungen ist trotz der bestehenden Unsicherheiten einzubeziehen. Der Entscheidungsrahmen hat die Klimaprojektionen aufzunehmen und unter unsicheren Bedingungen tragfähig zu bleiben.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01, Q37, Q42, Q56, Q67",
+     "=IF(E22=\"\",\"\",LEN(E22)-LEN(SUBSTITUTE(E22,\",\",\"\"))+1)",
+     "=IF(F22=\"\",\"\",IF(F22=1,\"ja\",\"nein\"))",
+     13
+    ],
+    [
+     22,
+     "Die Unsicherheit ist zu erfassen, auszuweisen und den Entscheidenden zu vermitteln.",
+     "Der Klimawandel ist als eigene äußere Unsicherheit in die Planungsentscheidung einzubauen. Die Entscheidung hat die tiefen Unsicherheiten, die Vielfalt der Wertvorstellungen und die verfügbaren Mittel zugleich einzubeziehen, und die Unsicherheit ist so zu vermitteln, dass angemessene Maßnahmen möglich bleiben.",
+     "2 Wissensgrundlage und Analyse",
+     "Q04, Q32, Q57",
+     "=IF(E23=\"\",\"\",LEN(E23)-LEN(SUBSTITUTE(E23,\",\",\"\"))+1)",
+     "=IF(F23=\"\",\"\",IF(F23=1,\"ja\",\"nein\"))",
+     13
+    ],
+    [
+     23,
+     "Fehlende Gewissheit ist kein Grund zum Aufschub, und ein unverändertes Weiter-so darf der Planung nicht zugrunde gelegt werden.",
+     "Bei drohenden schweren oder nicht behebbaren Schäden gilt der Vorsorgegrundsatz, wonach fehlende vollständige Gewissheit wirksame Maßnahmen nicht aufschiebt. Fehlen örtliche Klimaprojektionen, ist schrittweise und langfristig zu planen, und Annahmen eines unveränderten Weiter-so begrenzen die Widerstandsfähigkeit.",
+     "2 Wissensgrundlage und Analyse",
+     "Q11, Q17, Q43",
+     "=IF(E24=\"\",\"\",LEN(E24)-LEN(SUBSTITUTE(E24,\",\",\"\"))+1)",
+     "=IF(F24=\"\",\"\",IF(F24=1,\"ja\",\"nein\"))",
+     13
+    ],
+    [
+     24,
+     "In der Folgenabschätzung sind neben den Risiken auch die Chancen zu erfassen.",
+     "Der Klimawandel ist nicht allein als Bedrohung zu behandeln, sondern auch als Treiber einer Neuordnung des Wettbewerbs zwischen Destinationen, aus der sich Vorteile ergeben können.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01, Q09, Q60",
+     "=IF(E25=\"\",\"\",LEN(E25)-LEN(SUBSTITUTE(E25,\",\",\"\"))+1)",
+     "=IF(F25=\"\",\"\",IF(F25=1,\"ja\",\"nein\"))",
+     14
+    ],
+    [
+     25,
+     "Die maßgeblichen Klimagefahren sind einzeln zu benennen und über die bisher betrachtete Hauptgefahr hinaus zu erweitern.",
+     "Zu benennen sind die für das Gebiet bedeutsamen Gefahren wie Starkregen, Dürre und Hitzewellen. Die Betrachtung ist über die jeweils im Vordergrund stehende Gefahr hinaus auf die Bandbreite der klimabedingten Umweltrisiken zu erweitern, die Nutzung und Erleben der Gäste beeinflussen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q29, Q55, Q57",
+     "=IF(E26=\"\",\"\",LEN(E26)-LEN(SUBSTITUTE(E26,\",\",\"\"))+1)",
+     "=IF(F26=\"\",\"\",IF(F26=1,\"ja\",\"nein\"))",
+     14
+    ],
+    [
+     26,
+     "Jedes ermittelte Risiko ist nach Eintrittswahrscheinlichkeit und Tragweite einzuschätzen.",
+     "Die bloße Auflistung der Gefahren genügt nicht. Für jedes Risiko sind die Wahrscheinlichkeit des Eintritts und die Folgen des Eintritts gesondert einzuschätzen.",
+     "2 Wissensgrundlage und Analyse",
+     "Q01",
+     "=IF(E27=\"\",\"\",LEN(E27)-LEN(SUBSTITUTE(E27,\",\",\"\"))+1)",
+     "=IF(F27=\"\",\"\",IF(F27=1,\"ja\",\"nein\"))",
+     14
+    ],
+    [
+     27,
+     "Stoffliche Klimarisiken und Übergangsrisiken aus der Klimapolitik sind getrennt zu erfassen und gemeinsam zu berücksichtigen.",
+     "Neben den stofflichen Risiken aus Umweltgefahren stehen die Übergangsrisiken, die aus der Entwicklung der Klimapolitik entstehen. Beide sind für die strategische Planung und die Auslegung der Einrichtungen zusammen zu betrachten.",
+     "2 Wissensgrundlage und Analyse",
+     "Q47",
+     "=IF(E28=\"\",\"\",LEN(E28)-LEN(SUBSTITUTE(E28,\",\",\"\"))+1)",
+     "=IF(F28=\"\",\"\",IF(F28=1,\"ja\",\"nein\"))",
+     14
+    ],
+    [
+     28,
+     "Die betroffenen Akteure sind von Beginn an und in allen Abschnitten des Verfahrens einzubeziehen.",
+     "Die Einbeziehung erst bei der Umsetzung lässt die Anpassung scheitern. Sie hat bereits die Verwundbarkeitsbestimmung und die Risikoauswertung zu tragen, damit die Optionen wirklichkeitsnah bleiben und mit den bestehenden Einrichtungen und Abläufen vereinbar sind.",
+     "4 Beteiligung und Verständigung",
+     "Q01, Q14, Q15, Q19, Q20, Q47",
+     "=IF(E29=\"\",\"\",LEN(E29)-LEN(SUBSTITUTE(E29,\",\",\"\"))+1)",
+     "=IF(F29=\"\",\"\",IF(F29=1,\"ja\",\"nein\"))",
+     23
+    ],
+    [
+     29,
+     "Der Kreis der Beteiligten ist ausdrücklich zu bestimmen und als sich veränderndes Gefüge zu führen.",
+     "Zu bestimmen sind nicht nur die handelnden Betriebe, sondern auch die Akteure, deren Unterstützung eine Maßnahme braucht. Der Kreis leitet sich aus der Wirtschaftsstruktur des Gebietes ab, umfasst Forschung, Planung, Politik, Betriebe, Verkehr, Öffentlichkeit und Gäste und ist nach Gleichartigkeit und Ungleichartigkeit zu unterscheiden.",
+     "4 Beteiligung und Verständigung",
+     "Q30, Q44, Q52, Q59, Q67",
+     "=IF(E30=\"\",\"\",LEN(E30)-LEN(SUBSTITUTE(E30,\",\",\"\"))+1)",
+     "=IF(F30=\"\",\"\",IF(F30=1,\"ja\",\"nein\"))",
+     23
+    ],
+    [
+     30,
+     "Die Ortsansässigen und die verwundbarsten Gruppen sind als Mitentscheidende und nicht als Empfänger zu behandeln.",
+     "Werden die verwundbarsten Bewohnenden bei der Ausarbeitung übergangen, werden sie zu bloßen Empfängern von Entwicklung. Ihre Erfahrung als Nutzende tritt ergänzend neben das Fachurteil, und die Meinung aller Beteiligten einschließlich der aufnehmenden Gemeinschaft ist vor der Umsetzung zu erheben.",
+     "4 Beteiligung und Verständigung",
+     "Q16, Q19, Q24, Q45, Q48",
+     "=IF(E31=\"\",\"\",LEN(E31)-LEN(SUBSTITUTE(E31,\",\",\"\"))+1)",
+     "=IF(F31=\"\",\"\",IF(F31=1,\"ja\",\"nein\"))",
+     23
+    ],
+    [
+     31,
+     "Für die Zusammenarbeit ungleich ausgestatteter Gruppen ist ein eigener Verfahrensrahmen vorzusehen, der abweichende Werte aufnimmt.",
+     "Die Beteiligten unterscheiden sich in technischer, einrichtungsbezogener, finanzieller und kultureller Hinsicht sowie in Interesse und Bewusstsein. Zu schaffen ist ein Umfeld, in dem abweichende Meinungen gehört werden, und die Alters-, Zeit- und Generationsstruktur der Bevölkerung ist bei der Gestaltung der Beteiligung zu berücksichtigen.",
+     "4 Beteiligung und Verständigung",
+     "Q26, Q48, Q54",
+     "=IF(E32=\"\",\"\",LEN(E32)-LEN(SUBSTITUTE(E32,\",\",\"\"))+1)",
+     "=IF(F32=\"\",\"\",IF(F32=1,\"ja\",\"nein\"))",
+     24
+    ],
+    [
+     32,
+     "Die Form der Beteiligung ist auf Zusammenarbeit anzulegen und nicht auf das rechtlich vorgeschriebene Mindestverfahren zu beschränken.",
+     "Pflichtverfahren erfüllen die Ziele der Beteiligung häufig nicht, sondern erzeugen Misstrauen. Genannt werden begleitende Themenarbeitsgruppen, die die öffentlichen Versammlungen vorbereiten, eine unabhängige Moderation bei zu erwartenden Interessenkonflikten und Werkstätten von etwa fünfzehn bis zwanzig Teilnehmenden.",
+     "4 Beteiligung und Verständigung",
+     "Q02, Q19, Q26",
+     "=IF(E33=\"\",\"\",LEN(E33)-LEN(SUBSTITUTE(E33,\",\",\"\"))+1)",
+     "=IF(F33=\"\",\"\",IF(F33=1,\"ja\",\"nein\"))",
+     24
+    ],
+    [
+     33,
+     "Die datengestützte Bewertung und das beteiligungsoffene Verfahren sind miteinander zu verbinden.",
+     "Die Bewertung ist im Zusammenwirken von Fachleuten und örtlichen Akteuren von unten her zu führen, die Anpassungseingriffe sind gemeinsam mit einer breiten Bandbreite von Akteuren zu erkunden, und die Endnutzenden sind über die gemeinsame Erarbeitung in die Entwicklung des Hilfsmittels einzubeziehen.",
+     "4 Beteiligung und Verständigung",
+     "Q04, Q33, Q57, Q58",
+     "=IF(E34=\"\",\"\",LEN(E34)-LEN(SUBSTITUTE(E34,\",\",\"\"))+1)",
+     "=IF(F34=\"\",\"\",IF(F34=1,\"ja\",\"nein\"))",
+     24
+    ],
+    [
+     34,
+     "Zwischen öffentlicher Hand, Betrieben und Verbänden ist eine dauerhafte Zusammenarbeit einzurichten und die Verantwortung örtlich anzusiedeln.",
+     "Die Anpassung ist im Kern eine örtliche Angelegenheit, weshalb Einbeziehung, Beteiligung und Eigentümerschaft vor Ort liegen. Auf der örtlichen Ebene sind Behörden, Gemeinschaften und Nichtregierungsorganisationen zusammenzuführen, und die Strategie hat aus Beratungen mit den örtlichen Akteuren hervorzugehen und den örtlichen Ertrag zu sichern.",
+     "4 Beteiligung und Verständigung",
+     "Q24, Q27, Q30, Q41, Q46",
+     "=IF(E35=\"\",\"\",LEN(E35)-LEN(SUBSTITUTE(E35,\",\",\"\"))+1)",
+     "=IF(F35=\"\",\"\",IF(F35=1,\"ja\",\"nein\"))",
+     25
+    ],
+    [
+     35,
+     "Zwischen Forschung und Anwendenden ist ein regelmäßiger und beidseitiger Austausch einzurichten.",
+     "Die Klimainformation ist im Gespräch zu vermitteln und nicht von oben zuzuteilen. Die Wissensbildung ist als wiederkehrender Vorgang in beide Richtungen anzulegen, wofür eigene Steuerungsvorkehrungen für das gemeinsame Hervorbringen von Wissen zu schaffen sind.",
+     "4 Beteiligung und Verständigung",
+     "Q01, Q14, Q23, Q35, Q41, Q52",
+     "=IF(E36=\"\",\"\",LEN(E36)-LEN(SUBSTITUTE(E36,\",\",\"\"))+1)",
+     "=IF(F36=\"\",\"\",IF(F36=1,\"ja\",\"nein\"))",
+     26
+    ],
+    [
+     36,
+     "Für die Vermittlung sind Vertrauensaufbau und eigene Mittlerrollen einzuplanen.",
+     "Die Zusammenarbeit zwischen Klimafachleuten und Anwendenden setzt ein Vertrauensverhältnis voraus, das Zeit braucht. Vorgeschlagen wird, bestimmte Beteiligtengruppen als Botschafter zu bestimmen und zu ermächtigen, die zwischen Wissenschaft und Gemeinschaft vermitteln.",
+     "4 Beteiligung und Verständigung",
+     "Q23, Q52",
+     "=IF(E37=\"\",\"\",LEN(E37)-LEN(SUBSTITUTE(E37,\",\",\"\"))+1)",
+     "=IF(F37=\"\",\"\",IF(F37=1,\"ja\",\"nein\"))",
+     26
+    ],
+    [
+     37,
+     "Die Ergebnisse sind nicht nur den Entscheidenden, sondern allen Betroffenen und über alle Ebenen hinweg zugänglich zu machen.",
+     "Jeder Teilbereich des Tourismussystems hat seine eigene Verwundbarkeit einzuschätzen und das Ergebnis den übrigen zugänglich zu machen. Das übergeordnete Wissen ist über die nationalen Einrichtungen bis auf die örtliche Ebene weiterzugeben, und zwischen den für Anpassungspolitik und den für Tourismus Verantwortlichen ist ein gegenseitiger Austausch einzurichten.",
+     "4 Beteiligung und Verständigung",
+     "Q01, Q10, Q25, Q34",
+     "=IF(E38=\"\",\"\",LEN(E38)-LEN(SUBSTITUTE(E38,\",\",\"\"))+1)",
+     "=IF(F38=\"\",\"\",IF(F38=1,\"ja\",\"nein\"))",
+     26
+    ],
+    [
+     38,
+     "Die Verständigung ist vorwegnehmend anzulegen, und die Aufklärung hat vor dem Beginn der Maßnahmenplanung zu erfolgen.",
+     "Die übliche Strategie aus einer Vorstellung zu Beginn und anschließenden Veranstaltungen genügt nicht. Nötig sind eine über den gesamten Planungsvorgang vorbereitete Verständigungsstrategie, eine vorherige Analyse der örtlichen Medienlandschaft und eine frühzeitige öffentliche Erläuterung der geplanten Anpassungen.",
+     "4 Beteiligung und Verständigung",
+     "Q26, Q37, Q47",
+     "=IF(E39=\"\",\"\",LEN(E39)-LEN(SUBSTITUTE(E39,\",\",\"\"))+1)",
+     "=IF(F39=\"\",\"\",IF(F39=1,\"ja\",\"nein\"))",
+     27
+    ],
+    [
+     39,
+     "Die weitergegebenen Risikoangaben sind zuzuschneiden, und die Wirkung der Vermittlung selbst ist zu erfassen.",
+     "Die mit der örtlichen Gemeinschaft geteilten Ergebnisse sollen sich auf die einzelne Gefahr und die Wirkung jeder Maßnahme richten. Zugleich ist zu erfassen, wie Risiken wahrgenommen und vermittelt werden und wie das die Entscheidungen prägt.",
+     "4 Beteiligung und Verständigung",
+     "Q18, Q52",
+     "=IF(E40=\"\",\"\",LEN(E40)-LEN(SUBSTITUTE(E40,\",\",\"\"))+1)",
+     "=IF(F40=\"\",\"\",IF(F40=1,\"ja\",\"nein\"))",
+     27
+    ],
+    [
+     40,
+     "Der Planungshorizont ist im Austausch zwischen allen Beteiligten festzulegen.",
+     "Die unbestimmten Angaben zum Planungshorizont sind mit den ihrerseits unsicheren Klimaangaben in Beziehung zu setzen. Das gelingt nur über zusammengeführte Gespräche und Wissensübertragung zwischen den Beteiligten und nicht durch Vorgabe.",
+     "4 Beteiligung und Verständigung",
+     "Q23",
+     "=IF(E41=\"\",\"\",LEN(E41)-LEN(SUBSTITUTE(E41,\",\",\"\"))+1)",
+     "=IF(F41=\"\",\"\",IF(F41=1,\"ja\",\"nein\"))",
+     26
+    ],
+    [
+     41,
+     "Die bestehenden Machtverhältnisse sind in der Anpassungsplanung ausdrücklich in Frage zu stellen.",
+     "Die bloße Betonung von Einbeziehung verkürzt die Anpassung auf kleine Schritte innerhalb der vorhandenen Ordnung und übersieht die Möglichkeit tiefgreifenden Wandels. Die Steuerungsstrukturen sind auf mehr Einbeziehung, Antwortbereitschaft und Rechenschaft hin zu verändern und über gemeinschaftliche Entscheidungsformen und anerkannte Rechte abzusichern.",
+     "4 Beteiligung und Verständigung",
+     "Q03, Q28",
+     "=IF(E42=\"\",\"\",LEN(E42)-LEN(SUBSTITUTE(E42,\",\",\"\"))+1)",
+     "=IF(F42=\"\",\"\",IF(F42=1,\"ja\",\"nein\"))",
+     28
+    ],
+    [
+     42,
+     "Die Werte und Interessen der Beteiligten sind anzuerkennen, und Sonderinteressen sind von den gemeinsamen zu unterscheiden.",
+     "Entscheidungen fallen in einem größeren und weitgehend wertgeprägten Zusammenhang. Sonderinteressen nützen nur einem Teil der Gemeinschaft, geben sich aber als gemeinsame aus, und vorgefasste Lösungen, die sich als Problembeschreibung ausgeben, sind auszuschließen.",
+     "4 Beteiligung und Verständigung",
+     "Q04, Q16, Q34",
+     "=IF(E43=\"\",\"\",LEN(E43)-LEN(SUBSTITUTE(E43,\",\",\"\"))+1)",
+     "=IF(F43=\"\",\"\",IF(F43=1,\"ja\",\"nein\"))",
+     28
+    ],
+    [
+     43,
+     "Vor der inhaltlichen Anpassungsplanung sind Steuerungsstrukturen zu schaffen und die Zuständigkeiten klar abzugrenzen.",
+     "Zu klären ist, wer den Wandel tatsächlich herbeiführen kann, und die Verantwortlichkeiten der touristischen Akteure sind im Steuerungsrahmen zu bestimmen. Nötig sind förmliche Strukturen, um Standards durchzusetzen, Mittel zuzuweisen und über die Ebenen hinweg abzustimmen, und die Rollen der öffentlichen Hand als anpassende, anstoßende und regelsetzende Stelle sind zu benennen.",
+     "4 Beteiligung und Verständigung",
+     "Q30, Q36, Q52, Q57, Q59, Q61",
+     "=IF(E44=\"\",\"\",LEN(E44)-LEN(SUBSTITUTE(E44,\",\",\"\"))+1)",
+     "=IF(F44=\"\",\"\",IF(F44=1,\"ja\",\"nein\"))",
+     28
+    ],
+    [
+     44,
+     "Die öffentliche Hand hat die Anpassung anzustoßen und zu ergänzen, wobei Befehl und Kontrolle allein nicht genügen.",
+     "In der frühen Phase liegt die Führung bei der Verwaltung. Die Anpassung privater Betriebe ist zu ergänzen, weil deren Zusammenarbeit am Wettbewerb scheitert, und umgestaltende Anpassung verlangt einen Anstoß von der übergeordneten Ebene, während der herkömmliche Befehls- und Kontrollansatz für die Anpassungsplanung nicht ausreicht.",
+     "4 Beteiligung und Verständigung",
+     "Q25, Q35, Q52",
+     "=IF(E45=\"\",\"\",LEN(E45)-LEN(SUBSTITUTE(E45,\",\",\"\"))+1)",
+     "=IF(F45=\"\",\"\",IF(F45=1,\"ja\",\"nein\"))",
+     25
+    ],
+    [
+     45,
+     "Die Verteilungswirkungen der Anpassung sind auszuweisen und auszugleichen.",
+     "Die Anpassung hat auf die räumliche Ungleichverteilung der Klimarisiken zu antworten und dabei Rechenschaft und Gerechtigkeit zu sichern. Die ungleiche Verteilung klimabedingter Vorteile ist in die Vorgaben aufzunehmen, bestehende Versorgungslücken sind mit zu schließen, und eine Ungleichbehandlung von Gästen und Ortsansässigen bei Anpassungsangeboten ist zu vermeiden.",
+     "4 Beteiligung und Verständigung",
+     "Q24, Q36, Q60, Q61",
+     "=IF(E46=\"\",\"\",LEN(E46)-LEN(SUBSTITUTE(E46,\",\",\"\"))+1)",
+     "=IF(F46=\"\",\"\",IF(F46=1,\"ja\",\"nein\"))",
+     28
+    ],
+    [
+     46,
+     "Die Handlungsoptionen sind anhand offengelegter Kriterien und eines benannten Verfahrens zu bewerten.",
+     "Genannt werden Wirksamkeit, örtliche Zustimmung, Umsetzbarkeit und Kosten. Vor der endgültigen Wahl sind Mittel, Rückmeldungen der Akteure und Machbarkeit zu prüfen, und die Gewichtung der Ziele ist über ein nachvollziehbares und übertragbares Verfahren zu bestimmen.",
+     "3 Bewertung und Auswahl",
+     "Q01, Q29, Q34, Q48, Q57",
+     "=IF(E47=\"\",\"\",LEN(E47)-LEN(SUBSTITUTE(E47,\",\",\"\"))+1)",
+     "=IF(F47=\"\",\"\",IF(F47=1,\"ja\",\"nein\"))",
+     15
+    ],
+    [
+     47,
+     "Die Bewertungskriterien sind gemeinsam mit den Betroffenen zu erarbeiten, und ihre unterschiedlichen Vorstellungen von gelungener Anpassung sind zu erheben.",
+     "Aus der gemeinsamen Erarbeitung erwächst die Rechtmäßigkeit des Vorgangs. Neben den Kenngrößen sind qualitative Zugänge nötig, die die verschiedenen Deutungen und Interessen erfassen, und von der Verständigung ist kein vollständiges Einvernehmen, sondern ein ausgewiesenes Maß der Widerspruchsfreiheit zu verlangen.",
+     "3 Bewertung und Auswahl",
+     "Q07, Q24, Q33, Q48",
+     "=IF(E48=\"\",\"\",LEN(E48)-LEN(SUBSTITUTE(E48,\",\",\"\"))+1)",
+     "=IF(F48=\"\",\"\",IF(F48=1,\"ja\",\"nein\"))",
+     15
+    ],
+    [
+     48,
+     "Die Bewertung ist auf biophysikalische und gesellschaftlich-wirtschaftliche Größen gemeinsam zu stützen.",
+     "Die Auswahl der Kenngrößen hat Klima-, Natur-, Sozial- und Umweltgrößen zu umfassen und ausdrücklich auch baulich-räumliche Bestimmungsgrößen. Für den Tourismus sind Gästeaufkommen, Erreichbarkeit und Erholungseinrichtungen als eigene Kenngrößen aufzunehmen, und die klimatische Eignung ist mit den räumlichen Merkmalen der Destination zu verbinden.",
+     "3 Bewertung und Auswahl",
+     "Q08, Q43, Q55, Q57, Q59, Q67",
+     "=IF(E49=\"\",\"\",LEN(E49)-LEN(SUBSTITUTE(E49,\",\",\"\"))+1)",
+     "=IF(F49=\"\",\"\",IF(F49=1,\"ja\",\"nein\"))",
+     16
+    ],
+    [
+     49,
+     "Die Kenngrößen sind auf örtlichem Maßstab und getrennt nach Wirtschaftszweigen zu bilden, und die Gewichte der Zusammenführung sind auszuweisen.",
+     "Allgemeine Auswertungen zu Temperatur und Niederschlag genügen für handlungsfähige Angaben nicht. Die Zusammenführung zu einer Risikokennzahl ist über ausgewiesene Gewichte je Kenngröße, Bestandteil und Faktor zu führen, und die Tourismusplanung hat eigene Kenngrößen der Klimafestigkeit zu bewerten.",
+     "3 Bewertung und Auswahl",
+     "Q47, Q59, Q62",
+     "=IF(E50=\"\",\"\",LEN(E50)-LEN(SUBSTITUTE(E50,\",\",\"\"))+1)",
+     "=IF(F50=\"\",\"\",IF(F50=1,\"ja\",\"nein\"))",
+     16
+    ],
+    [
+     50,
+     "Die angestrebte Widerstandsfähigkeit ist über ausdrückliche Eigenschaften zu bestimmen und nicht als Sammelbegriff zu führen.",
+     "Zu benennen sind Eigenschaften wie Belastbarkeit, Mehrfachabsicherung und Schnelligkeit. Der Bewertungsrahmen hat über den Vermögensbestand hinaus die Beweglichkeit der Einrichtungen, die Wissensfähigkeit und den Erhalt der Vielfalt gemeinsam zu prüfen.",
+     "3 Bewertung und Auswahl",
+     "Q22, Q24",
+     "=IF(E51=\"\",\"\",LEN(E51)-LEN(SUBSTITUTE(E51,\",\",\"\"))+1)",
+     "=IF(F51=\"\",\"\",IF(F51=1,\"ja\",\"nein\"))",
+     16
+    ],
+    [
+     51,
+     "Die Wirkung einer einzelnen Entscheidung auf die übrigen Systeme sowie auf Gerechtigkeit und Umwelt ist ausdrücklich zu prüfen.",
+     "Die Wechselwirkungen zwischen ökologischer, öffentlicher und privater Infrastruktur sind anzuerkennen. Jeder Eingriff ist daraufhin zu bewerten, wie er soziale Gerechtigkeit und Umweltunversehrtheit begrenzt oder stärkt, und vor der Entscheidung über ein Ausbauvorhaben ist dessen Tragfähigkeit zu bewerten.",
+     "3 Bewertung und Auswahl",
+     "Q16, Q19, Q28",
+     "=IF(E52=\"\",\"\",LEN(E52)-LEN(SUBSTITUTE(E52,\",\",\"\"))+1)",
+     "=IF(F52=\"\",\"\",IF(F52=1,\"ja\",\"nein\"))",
+     17
+    ],
+    [
+     52,
+     "Die behördliche Bewertung und die Wahrnehmung der Bevölkerung sind getrennt zu erheben und danach zusammenzuführen.",
+     "Zu unterscheiden ist, was dem behördlichen Umgang innewohnt, von dem, was aus Gefühlen und Identitätsbindung der Bevölkerung stammt. Neben der Dringlichkeit ist die gesellschaftliche Bedeutung der betroffenen Tätigkeit als eigene Größe zu erfassen.",
+     "3 Bewertung und Auswahl",
+     "Q23, Q45",
+     "=IF(E53=\"\",\"\",LEN(E53)-LEN(SUBSTITUTE(E53,\",\",\"\"))+1)",
+     "=IF(F53=\"\",\"\",IF(F53=1,\"ja\",\"nein\"))",
+     15
+    ],
+    [
+     53,
+     "Die Anpassungsvorhaben sind in eine ausdrückliche und offengelegte Rangfolge zu bringen.",
+     "Weil die Mittel begrenzt sind, ist zu ordnen und nicht nach bloßer Betroffenheit zu verteilen. Bei knappen Mitteln richtet sich die Ordnung nach der Bedeutung der einzelnen Bestandteile des Angebots, und die Rangfolge ist offenzulegen.",
+     "3 Bewertung und Auswahl",
+     "Q23, Q48, Q49, Q55, Q56",
+     "=IF(E54=\"\",\"\",LEN(E54)-LEN(SUBSTITUTE(E54,\",\",\"\"))+1)",
+     "=IF(F54=\"\",\"\",IF(F54=1,\"ja\",\"nein\"))",
+     18
+    ],
+    [
+     54,
+     "Der Vorrang ist aus Verwundbarkeit, gesellschaftlicher Bedeutung und Bindungsdauer der Investitionen zusammenzusetzen.",
+     "Manche Tätigkeiten passen sich rasch an, andere sind über lange Zeit durch Infrastrukturinvestitionen gebunden. Die Bewertung hat Häufigkeit und Stärke der Gefahren mit den Befunden der Verwundbarkeitsbewertung zu verknüpfen, und die durch den Klimawandel gefährdeten tragenden Angebote und Betriebe sind zu bestimmen.",
+     "3 Bewertung und Auswahl",
+     "Q13, Q23, Q57",
+     "=IF(E55=\"\",\"\",LEN(E55)-LEN(SUBSTITUTE(E55,\",\",\"\"))+1)",
+     "=IF(F55=\"\",\"\",IF(F55=1,\"ja\",\"nein\"))",
+     18
+    ],
+    [
+     55,
+     "Erwünschtheit und Machbarkeit einer Maßnahme sind getrennt auszuweisen, und ihr Zweck ist ausdrücklich abzuwägen.",
+     "Eine Strategie kann in hohem Maße erwünscht und zugleich nicht bezahlbar sein, weshalb beide Größen nicht zu vermengen sind. Abzuwägen ist ferner, ob eine Maßnahme dem Erhalt, der Verringerung der Verwundbarkeit oder beidem dient.",
+     "3 Bewertung und Auswahl",
+     "Q20, Q42",
+     "=IF(E56=\"\",\"\",LEN(E56)-LEN(SUBSTITUTE(E56,\",\",\"\"))+1)",
+     "=IF(F56=\"\",\"\",IF(F56=1,\"ja\",\"nein\"))",
+     18
+    ],
+    [
+     56,
+     "Die Eingriffe sind auf die jeweils begrenzenden Größen des einzelnen Teilraums zu richten und nicht gleichförmig zu verteilen.",
+     "Statt gleichförmiger Investitionen über alle Teilräume hinweg ist der Eingriff auf die räumlichen Größen zu richten, die die Anpassungsfähigkeit des jeweiligen Teilraums begrenzen.",
+     "3 Bewertung und Auswahl",
+     "Q67",
+     "=IF(E57=\"\",\"\",LEN(E57)-LEN(SUBSTITUTE(E57,\",\",\"\"))+1)",
+     "=IF(F57=\"\",\"\",IF(F57=1,\"ja\",\"nein\"))",
+     18
+    ],
+    [
+     57,
+     "Die Anpassung ist als Bedingung der Tragfähigkeit zu behandeln und der weiteren touristischen Entwicklung voranzustellen.",
+     "Eine Destination bleibt wirtschaftlich, ökologisch und gesellschaftlich nur tragfähig, wenn sie sich anpasst. Die Anpassungsmaßnahmen sind mit der Entwicklung eines tragfähigen Tourismus zu verbinden, statt sie der Selbstregelung der Betriebe zu überlassen.",
+     "3 Bewertung und Auswahl",
+     "Q09, Q18",
+     "=IF(E58=\"\",\"\",LEN(E58)-LEN(SUBSTITUTE(E58,\",\",\"\"))+1)",
+     "=IF(F58=\"\",\"\",IF(F58=1,\"ja\",\"nein\"))",
+     19
+    ],
+    [
+     58,
+     "Örtlicher Nutzen, Zustimmung der Akteure und langfristige Tragfähigkeit sind in der Entscheidung zusammenzuführen.",
+     "Die Verringerung der Klimaverwundbarkeit ist eines von mehreren miteinander wetteifernden Anliegen der Gemeinschaft und mit ihnen zusammenzuführen. Das gemeinsame Interesse ist in jeder Gemeinschaft eigens zu bestimmen, und die Belange einzelner Teilsysteme sind gegen die Widerstandsfähigkeit der Destination als Ganzes abzuwägen.",
+     "3 Bewertung und Auswahl",
+     "Q04, Q07, Q56",
+     "=IF(E59=\"\",\"\",LEN(E59)-LEN(SUBSTITUTE(E59,\",\",\"\"))+1)",
+     "=IF(F59=\"\",\"\",IF(F59=1,\"ja\",\"nein\"))",
+     19
+    ],
+    [
+     59,
+     "Die Anpassungsstrategie ist an Dauerhaftigkeit, Einbeziehung und Widerstandsfähigkeit zu binden und die Außendarstellung an ihr auszurichten.",
+     "Um von veränderten Bedingungen zu profitieren und dabei die Rechtmäßigkeit zu wahren, sind Dauerhaftigkeit, Einbeziehung und Solidarität zugrunde zu legen. Auch die Entwicklung von Ausweichdestinationen ist an Nachhaltigkeit und Widerstandsfähigkeit zu binden, und die Vermarktung ist mit der Anpassungsstrategie in Übereinstimmung zu bringen.",
+     "3 Bewertung und Auswahl",
+     "Q36, Q60, Q67",
+     "=IF(E60=\"\",\"\",LEN(E60)-LEN(SUBSTITUTE(E60,\",\",\"\"))+1)",
+     "=IF(F60=\"\",\"\",IF(F60=1,\"ja\",\"nein\"))",
+     19
+    ],
+    [
+     60,
+     "Minderung, Anpassung, Betrachtung der Umweltfolgen und Entscheidung auf Destinationsebene sind zusammenzuführen.",
+     "Der Tourismus ist zugleich vom Klimawandel betroffen und an seiner Verschärfung beteiligt. Aus dieser doppelten Rolle folgt, dass die Steuerung des Klimarisikos als Planungsfrage zu behandeln ist, die alle vier Bereiche verbindet.",
+     "3 Bewertung und Auswahl",
+     "Q67",
+     "=IF(E61=\"\",\"\",LEN(E61)-LEN(SUBSTITUTE(E61,\",\",\"\"))+1)",
+     "=IF(F61=\"\",\"\",IF(F61=1,\"ja\",\"nein\"))",
+     19
+    ],
+    [
+     61,
+     "Die Anpassungsmaßnahmen sind auf Fehlanpassung zu prüfen, insbesondere auf ihre ebenen- und bereichsübergreifenden Wirkungen.",
+     "Anpassungen wirken häufig über die Ebene und den Bereich hinaus, in dem sie beschlossen werden. Die Planung ist nachvollziehbar zu halten, um Überinvestitionen in unpassende Einrichtungen zu vermeiden, und es ist zu prüfen, ob von außen wirkende Belastungen die eigenen Maßnahmen unterlaufen.",
+     "3 Bewertung und Auswahl",
+     "Q35, Q57, Q62",
+     "=IF(E62=\"\",\"\",LEN(E62)-LEN(SUBSTITUTE(E62,\",\",\"\"))+1)",
+     "=IF(F62=\"\",\"\",IF(F62=1,\"ja\",\"nein\"))",
+     20
+    ],
+    [
+     62,
+     "Die Maßnahmen sind so zu wählen, dass nicht umkehrbare Zustände vermieden und die Ursachen des Risikos bearbeitet werden.",
+     "Neben Vorbereitung und Reaktion sind die ursächlichen Größen anzugehen, die das Risiko hervorbringen. Die Entscheidenden haben Maßnahmen zu betrachten, die das Gebiet in Betrieb halten und Kipppunkte vermeiden.",
+     "3 Bewertung und Auswahl",
+     "Q12, Q37",
+     "=IF(E63=\"\",\"\",LEN(E63)-LEN(SUBSTITUTE(E63,\",\",\"\"))+1)",
+     "=IF(F63=\"\",\"\",IF(F63=1,\"ja\",\"nein\"))",
+     20
+    ],
+    [
+     63,
+     "Vor Ausbau- und Umlenkungsentscheidungen ist deren Tragfähigkeit zu prüfen.",
+     "Vor jeder weiteren schneegebundenen Entwicklungsplanung ist eine sorgfältige Bewertung durchzuführen. Vor der Förderung einer Ausweichdestination sind Ausstattung, Erreichbarkeit, Umweltgrenzen und Angebotsvielfalt zu prüfen, und eine auf höhere Wertschöpfung gerichtete Strategie ist mit der Entlastung der Naturgrundlage zu verbinden.",
+     "3 Bewertung und Auswahl",
+     "Q06, Q27, Q67",
+     "=IF(E64=\"\",\"\",LEN(E64)-LEN(SUBSTITUTE(E64,\",\",\"\"))+1)",
+     "=IF(F64=\"\",\"\",IF(F64=1,\"ja\",\"nein\"))",
+     20
+    ],
+    [
+     64,
+     "Die nicht gegeneinander aufrechenbaren Ziele sind offenzulegen und über Ausgleichslösungen zu verhandeln.",
+     "Politiken für tragfähigen Tourismus verfolgen mehrere Ziele, die sich nicht ineinander umrechnen lassen. Zwischen den wirtschaftlichen, gesellschaftlichen und umweltbezogenen Belangen ist ein ausdrücklicher Ausgleich zu suchen, und der Ausgleich zwischen kurzfristigem Lebensunterhalt und langfristigen Zielen ist ausdrücklich zu behandeln.",
+     "3 Bewertung und Auswahl",
+     "Q19, Q54",
+     "=IF(E65=\"\",\"\",LEN(E65)-LEN(SUBSTITUTE(E65,\",\",\"\"))+1)",
+     "=IF(F65=\"\",\"\",IF(F65=1,\"ja\",\"nein\"))",
+     21
+    ],
+    [
+     65,
+     "Die Rückwirkungen örtlicher Anpassungsentscheidungen auf die übergeordneten Ebenen sind zu bedenken.",
+     "Örtliche Anpassung kann weltweite Vorgänge verstärken oder abschwächen, weshalb die Rückkopplung zwischen örtlicher und globaler Ebene mitzudenken ist.",
+     "3 Bewertung und Auswahl",
+     "Q16, Q34",
+     "=IF(E66=\"\",\"\",LEN(E66)-LEN(SUBSTITUTE(E66,\",\",\"\"))+1)",
+     "=IF(F66=\"\",\"\",IF(F66=1,\"ja\",\"nein\"))",
+     17
+    ],
+    [
+     66,
+     "Umweltempfindlichkeit und örtliche Tragfähigkeit sind vor der Umlenkung der Nachfrage zu prüfen, und naturgestützte Lösungen sind auf ihre Raumeignung zu bewerten.",
+     "Andernfalls entstehen Umweltdruck und gesellschaftliche Kosten sowohl in den bestehenden als auch in den neuen Destinationen. Ökosystemgestützte Anpassungsmaßnahmen sind daraufhin zu bewerten, ob sie im jeweiligen Raum tragfähig und widerstandsfähig wirken.",
+     "3 Bewertung und Auswahl",
+     "Q57, Q67",
+     "=IF(E67=\"\",\"\",LEN(E67)-LEN(SUBSTITUTE(E67,\",\",\"\"))+1)",
+     "=IF(F67=\"\",\"\",IF(F67=1,\"ja\",\"nein\"))",
+     20
+    ],
+    [
+     67,
+     "Die Nutzung klimabedingter Vorteile ist gegen die damit verbundenen sittlichen und ansehensbezogenen Risiken abzuwägen.",
+     "Für die Verantwortlichen begünstigter Destinationen besteht ein doppeltes Gebot, nämlich die entstehenden Gelegenheiten zu nutzen und zugleich die sittlichen und ansehensbezogenen Risiken dieser Nutzung zu bedenken.",
+     "3 Bewertung und Auswahl",
+     "Q60",
+     "=IF(E68=\"\",\"\",LEN(E68)-LEN(SUBSTITUTE(E68,\",\",\"\"))+1)",
+     "=IF(F68=\"\",\"\",IF(F68=1,\"ja\",\"nein\"))",
+     21
+    ],
+    [
+     68,
+     "Der Entscheidung ist eine Abwägung der künftigen Kosten und Nutzen von Handeln und Nichthandeln zugrunde zu legen.",
+     "Nicht jede verfolgte Anpassung bringt gute Ergebnisse, weshalb nach dem Nettonutzen auszuwählen ist. Die vorausschauende Anpassung ist dabei gegen die Kosten unvorbereiteter Notmaßnahmen zu stellen, und die Abwägung soll den politisch Verantwortlichen als Grundlage dienen.",
+     "3 Bewertung und Auswahl",
+     "Q01, Q16, Q24, Q56",
+     "=IF(E69=\"\",\"\",LEN(E69)-LEN(SUBSTITUTE(E69,\",\",\"\"))+1)",
+     "=IF(F69=\"\",\"\",IF(F69=1,\"ja\",\"nein\"))",
+     21
+    ],
+    [
+     69,
+     "Vor dem Abtausch zwischen wirtschaftlicher Möglichkeit und Risiko sind die örtlichen Klimawirkungen und das Gestaltungspotenzial der Siedlung zu bestimmen.",
+     "Anpassungsvorhaben suchen einen Abtausch zwischen wirtschaftlicher Möglichkeit und der Minderung gegenwärtiger wie künftiger Klimarisiken. Dieser Abtausch setzt die vorherige Bestimmung beider Seiten voraus.",
+     "3 Bewertung und Auswahl",
+     "Q43",
+     "=IF(E70=\"\",\"\",LEN(E70)-LEN(SUBSTITUTE(E70,\",\",\"\"))+1)",
+     "=IF(F70=\"\",\"\",IF(F70=1,\"ja\",\"nein\"))",
+     21
+    ],
+    [
+     70,
+     "Kenngrößen und Schwellenwerte der Anpassung sind eindeutig zu bestimmen.",
+     "Die fehlende klare Bestimmung gilt als Hindernis der Klimaanpassung. Weil sich die Empfindlichkeit meist nicht mit einer einzelnen Kennzahl beschreiben lässt, ist für jede maßgebliche Klimagröße ein eigener Schwellenwert je Betrieb zu bestimmen.",
+     "3 Bewertung und Auswahl",
+     "Q23, Q59",
+     "=IF(E71=\"\",\"\",LEN(E71)-LEN(SUBSTITUTE(E71,\",\",\"\"))+1)",
+     "=IF(F71=\"\",\"\",IF(F71=1,\"ja\",\"nein\"))",
+     22
+    ],
+    [
+     71,
+     "Der hinnehmbare Verlust ist vorab als Schwellenwert festzulegen und nach Teilräumen abzustufen.",
+     "Der Schwellenwert, bis zu dem ein Verlust an Tragfähigkeit hingenommen wird, ist von den Verantwortlichen zu setzen. Dabei sind die Grenzen der Ökosysteme und der natürlichen Ressourcen als nicht überwindbare Grenzen von den überwindbaren Hemmnissen zu trennen.",
+     "3 Bewertung und Auswahl",
+     "Q15, Q56",
+     "=IF(E72=\"\",\"\",LEN(E72)-LEN(SUBSTITUTE(E72,\",\",\"\"))+1)",
+     "=IF(F72=\"\",\"\",IF(F72=1,\"ja\",\"nein\"))",
+     22
+    ],
+    [
+     72,
+     "Die Schwellenwerte der Bewertung sind bei Übertragung auf andere Regionen neu zu bestimmen.",
+     "Die für eine Destination bestimmten Schwellenwerte gelten nicht unbesehen anderswo und sind bei Anwendung auf eine andere Region neu zu eichen.",
+     "3 Bewertung und Auswahl",
+     "Q67",
+     "=IF(E73=\"\",\"\",LEN(E73)-LEN(SUBSTITUTE(E73,\",\",\"\"))+1)",
+     "=IF(F73=\"\",\"\",IF(F73=1,\"ja\",\"nein\"))",
+     22
+    ],
+    [
+     73,
+     "Die Einzelmaßnahmen sind in Anpassungspfade einzubetten und die Anpassung als Vorgang über die Zeit anzulegen.",
+     "Die Pfade verbinden verschiedene Ziele, Maßnahmen und Umsetzungswege miteinander. An die Stelle einzelner, auf kurzfristige Wirtschaftlichkeit ausgerichteter Zeitpunktentscheidungen tritt damit ein fortlaufender Vorgang.",
+     "3 Bewertung und Auswahl",
+     "Q35, Q56",
+     "=IF(E74=\"\",\"\",LEN(E74)-LEN(SUBSTITUTE(E74,\",\",\"\"))+1)",
+     "=IF(F74=\"\",\"\",IF(F74=1,\"ja\",\"nein\"))",
+     22
+    ],
+    [
+     74,
+     "Vor der Wahl der Maßnahmen ist der gegenwärtige Entwicklungsverlauf der Destination und dessen Lage im Pfadgefüge zu bestimmen.",
+     "Ein grundlegender Schritt besteht darin, den gegenwärtigen Verlauf zu erkennen, bevor über Abweichungen von ihm entschieden wird. Widerstandsfähigkeit ist dabei nicht als Rückkehr in den vorherigen Zustand, sondern als Vermögen zur Umgestaltung zu bestimmen.",
+     "3 Bewertung und Auswahl",
+     "Q35, Q67",
+     "=IF(E75=\"\",\"\",LEN(E75)-LEN(SUBSTITUTE(E75,\",\",\"\"))+1)",
+     "=IF(F75=\"\",\"\",IF(F75=1,\"ja\",\"nein\"))",
+     22
+    ],
+    [
+     75,
+     "Zu Beginn sind Systemgrenzen, Zeitrahmen und maßgebliche Akteure ausdrücklich zu bestimmen.",
+     "Am Anfang steht die Bestimmung des Tourismussystems der Destination mit Angebots- und Nachfrageseite sowie der Akteure entlang der gesamten Wertschöpfungskette einschließlich der Gäste. Zu klären ist ferner, wessen Widerstandsfähigkeit wogegen betrachtet wird, und die Systembeziehungen und Abtauschverhältnisse sind vor der Strategieentwicklung zu bestimmen.",
+     "1 Zuschnitt der Betrachtung",
+     "Q01, Q07, Q08, Q36, Q57",
+     "=IF(E76=\"\",\"\",LEN(E76)-LEN(SUBSTITUTE(E76,\",\",\"\"))+1)",
+     "=IF(F76=\"\",\"\",IF(F76=1,\"ja\",\"nein\"))",
+     1
+    ],
+    [
+     76,
+     "Die Destination ist als Mensch-Umwelt-System mit wechselseitigen Abhängigkeiten zu fassen.",
+     "Gesellschaftliche, wirtschaftliche und umweltbezogene Größen wirken darin zusammen, und eine Störung an einer Stelle hallt im ganzen System nach. Der Blick ist auf das System und seine Elemente und nicht allein auf die Folgen zu richten, und die Verflechtung der Risikoelemente ist über den gesamten Steuerungsvorgang mitzuführen.",
+     "1 Zuschnitt der Betrachtung",
+     "Q09, Q12, Q24, Q57, Q62",
+     "=IF(E77=\"\",\"\",LEN(E77)-LEN(SUBSTITUTE(E77,\",\",\"\"))+1)",
+     "=IF(F77=\"\",\"\",IF(F77=1,\"ja\",\"nein\"))",
+     1
+    ],
+    [
+     77,
+     "Der Klimawandel ist gemeinsam mit den übrigen Belastungen und Antriebskräften zu betrachten und nicht für sich allein.",
+     "Er wirkt mit einer Reihe natürlicher und menschgemachter Belastungen zusammen, und nichtklimatische Antriebe wie Verschmutzung und Flächennutzungswandel gehören dazu. Die Anpassungsfähigkeit ist gegenüber allen Ursachen der Veränderung aufzubauen, die Risikobetrachtung zugleich zweigbezogen und mehrfachrisikobezogen anzulegen, und der Klimawandel ist auch als Folge der eigenen Entwicklung zu behandeln.",
+     "1 Zuschnitt der Betrachtung",
+     "Q17, Q35, Q44, Q45, Q47, Q57, Q67",
+     "=IF(E78=\"\",\"\",LEN(E78)-LEN(SUBSTITUTE(E78,\",\",\"\"))+1)",
+     "=IF(F78=\"\",\"\",IF(F78=1,\"ja\",\"nein\"))",
+     2
+    ],
+    [
+     78,
+     "Die Betrachtung hat Gäste, Betriebe, Destination und Quellgebiet gemeinsam zu erfassen.",
+     "Eine Gesamtbetrachtung schließt die örtliche Gemeinschaft und die mit dem Tourismus verflochtenen Einrichtungen ein. Quellgebiet, Zielgebiet und die verbindenden Wege gehören in dieselbe Bewertung, und die Verwundbarkeitsbestimmung hat alle Saisons der Destination zu umfassen und nicht nur eine.",
+     "1 Zuschnitt der Betrachtung",
+     "Q07, Q14, Q17, Q18",
+     "=IF(E79=\"\",\"\",LEN(E79)-LEN(SUBSTITUTE(E79,\",\",\"\"))+1)",
+     "=IF(F79=\"\",\"\",IF(F79=1,\"ja\",\"nein\"))",
+     1
+    ],
+    [
+     79,
+     "Das tragende Naturgut und seine verschiedenen Leistungen sind ausdrücklich zu benennen.",
+     "Die langfristige Tragfähigkeit hängt an der Erhaltung des Naturguts, das zugleich natürliches und wirtschaftliches Gut ist. Dasselbe Ökosystem erbringt für die Bestandteile der Destination unterschiedliche Leistungen, weshalb diese vollständig zu erfassen und die tragenden Umweltmerkmale je Sehenswürdigkeit zu benennen sind.",
+     "1 Zuschnitt der Betrachtung",
+     "Q33, Q49, Q55, Q62",
+     "=IF(E80=\"\",\"\",LEN(E80)-LEN(SUBSTITUTE(E80,\",\",\"\"))+1)",
+     "=IF(F80=\"\",\"\",IF(F80=1,\"ja\",\"nein\"))",
+     1
+    ],
+    [
+     80,
+     "Auch die örtlich nicht steuerbaren äußeren Antriebe sind als eigene Größe zu führen.",
+     "Der Klimawandel ist eine Belastung, deren Ursachen örtlich nicht steuerbar sind und die dennoch anzugehen ist. Die von außen wirkenden Antriebskräfte sind eigens auszuweisen, und die zusammenwirkenden Veränderungen auf den verschiedenen räumlichen und zeitlichen Ebenen sind gemeinsam zu betrachten.",
+     "1 Zuschnitt der Betrachtung",
+     "Q19, Q35, Q62",
+     "=IF(E81=\"\",\"\",LEN(E81)-LEN(SUBSTITUTE(E81,\",\",\"\"))+1)",
+     "=IF(F81=\"\",\"\",IF(F81=1,\"ja\",\"nein\"))",
+     2
+    ],
+    [
+     81,
+     "Die Anpassungslösung ist von der örtlichen Fragestellung her und nicht von einer einzelnen Ressource her zu bestimmen.",
+     "Ressourcenbezogene Zugänge richten sich auf eine einzelne Ressource und verfehlen dadurch die Frage, die sich vor Ort tatsächlich stellt. Das Steuerungssystem hat dabei Verwundbarkeit und Vorteil gemeinsam zu steuern.",
+     "1 Zuschnitt der Betrachtung",
+     "Q35, Q60",
+     "=IF(E82=\"\",\"\",LEN(E82)-LEN(SUBSTITUTE(E82,\",\",\"\"))+1)",
+     "=IF(F82=\"\",\"\",IF(F82=1,\"ja\",\"nein\"))",
+     1
+    ],
+    [
+     82,
+     "Die Anpassung ist von der örtlichen bis zur staatlichen Ebene durchgehend zu verankern und über die Ebenen abzustimmen.",
+     "Die Risikovorsorge reicht von der Betriebsebene bis zur nationalen Tourismusorganisation, und wirksame Anpassung bindet alle Ebenen bis zur dörflichen ein. Die Abstimmung über mehrere Maßstabsebenen kann regionale Übereinkünfte und grenzüberschreitende Absprachen einschließen, weil die Widerstandsfähigkeit auf einer Ebene von den anderen abhängt.",
+     "1 Zuschnitt der Betrachtung",
+     "Q07, Q12, Q46, Q60, Q67",
+     "=IF(E83=\"\",\"\",LEN(E83)-LEN(SUBSTITUTE(E83,\",\",\"\"))+1)",
+     "=IF(F83=\"\",\"\",IF(F83=1,\"ja\",\"nein\"))",
+     3
+    ],
+    [
+     83,
+     "Die Steuerung der Anpassung ist vor Ort zu führen, und Vorgaben der übergeordneten Ebene sind ortsbezogen zu ergänzen.",
+     "Ein von oben gesteuerter nationaler Ansatz trägt nicht für alle Destinationen. Die Wirkung des Klimawandels wird örtlich empfunden, die Anpassungsentscheidungen fallen häufig örtlich, und zwischen dem Weg von oben und dem Weg von unten ist ein ausdrücklicher Ausgleich zu finden.",
+     "1 Zuschnitt der Betrachtung",
+     "Q02, Q08, Q16, Q35, Q52",
+     "=IF(E84=\"\",\"\",LEN(E84)-LEN(SUBSTITUTE(E84,\",\",\"\"))+1)",
+     "=IF(F84=\"\",\"\",IF(F84=1,\"ja\",\"nein\"))",
+     3
+    ],
+    [
+     84,
+     "Die Strategien sind je Handlungsebene, Teilraum und Betriebsart gesondert zuzuschneiden.",
+     "Die Anpassungsfähigkeit schwankt zwischen Regionen und sogar zwischen Haushalten. Innerhalb eines Gebietes sind unterschiedliche Ziele je Teilraum zuzulassen statt einheitlicher Vorgaben, die Strategie kann bis auf die Ebene der Quartiere anzusetzen sein, und die Maßnahmen zur Überwindung der Hemmnisse sind auf System, Raum und beteiligte Akteure zuzuschneiden.",
+     "1 Zuschnitt der Betrachtung",
+     "Q02, Q10, Q15, Q24, Q36, Q56",
+     "=IF(E85=\"\",\"\",LEN(E85)-LEN(SUBSTITUTE(E85,\",\",\"\"))+1)",
+     "=IF(F85=\"\",\"\",IF(F85=1,\"ja\",\"nein\"))",
+     4
+    ],
+    [
+     85,
+     "Die ortsbezogenen Maßnahmen sind mit einem destinationsweiten Rahmen zu verbinden.",
+     "Erforderlich ist ein geschlossenes Modell, das örtliche Handlungen und destinationsweite Rahmen zusammenführt. Dazu gehört, die Flächen nach ausgeschöpftem, erkanntem und nicht verwirklichtem Nutzungspotenzial zu ordnen und statt weniger bestehender Zentren einen Verbund einander ergänzender Teilräume zu entwickeln.",
+     "1 Zuschnitt der Betrachtung",
+     "Q43, Q53, Q67",
+     "=IF(E86=\"\",\"\",LEN(E86)-LEN(SUBSTITUTE(E86,\",\",\"\"))+1)",
+     "=IF(F86=\"\",\"\",IF(F86=1,\"ja\",\"nein\"))",
+     4
+    ],
+    [
+     86,
+     "Der Betrachtungsraum ist nach der räumlichen Reichweite der Wirkungen zu bestimmen und nicht nach der Vorhabengrenze.",
+     "Eingriffe an einem Standort wirken auf benachbarte Standorte, weshalb diese mitzubetrachten sind. Aussetzung, Empfindlichkeit und Anpassungsfähigkeit fallen räumlich verschieden aus, und die Verwundbarkeitsbestimmung ist auf einer Ebene anzusiedeln, die alle Teilbranchen der Destination umfasst.",
+     "1 Zuschnitt der Betrachtung",
+     "Q08, Q17, Q26, Q29",
+     "=IF(E87=\"\",\"\",LEN(E87)-LEN(SUBSTITUTE(E87,\",\",\"\"))+1)",
+     "=IF(F87=\"\",\"\",IF(F87=1,\"ja\",\"nein\"))",
+     3
+    ],
+    [
+     87,
+     "Der Anpassungsplanung ist ein langer Zeithorizont zugrunde zu legen, und zwischen kurz- und langfristigen Zeiträumen ist ausdrücklich zu vermitteln.",
+     "Die Verantwortlichen haben eine langfristige Sicht darauf einzunehmen, wie künftige Bauten und Angebote wirken. Die Strategie hat kurzfristige Bewältigung, mittelfristige Anpassung und langfristige Alternativen zu unterscheiden, die kurzfristig zu treffenden Entscheidungen sind auf den langen Anpassungszeitraum zu beziehen, und die Grundlage für den künftigen Erfolg ist zu legen, während im gegenwärtigen Wettbewerb zu bestehen ist.",
+     "1 Zuschnitt der Betrachtung",
+     "Q05, Q13, Q24, Q29, Q37",
+     "=IF(E88=\"\",\"\",LEN(E88)-LEN(SUBSTITUTE(E88,\",\",\"\"))+1)",
+     "=IF(F88=\"\",\"\",IF(F88=1,\"ja\",\"nein\"))",
+     5
+    ],
+    [
+     88,
+     "Der zu Beginn bestimmte Zeithorizont ist in den späteren Stufen durchzuhalten, und die Planungshorizonte sind als ungefähre Werte auszuweisen.",
+     "Der in der Anfangsstufe bestimmte zeitliche Rahmen der Bewertung ist in den folgenden Stufen beizubehalten. Die angegebenen Planungshorizonte für Einrichtungen, Betriebe und Bauwerke wirken genau, sind aber ungefähr und bestreitbar und als solche zu kennzeichnen.",
+     "1 Zuschnitt der Betrachtung",
+     "Q23, Q57",
+     "=IF(E89=\"\",\"\",LEN(E89)-LEN(SUBSTITUTE(E89,\",\",\"\"))+1)",
+     "=IF(F89=\"\",\"\",IF(F89=1,\"ja\",\"nein\"))",
+     5
+    ],
+    [
+     89,
+     "Für jede Anpassungsmaßnahme ist neben der Art auch der Zeitpunkt zu bestimmen.",
+     "Die Entscheidung betrifft nicht nur, was getan wird, sondern auch wann. Dazu gehört die jahreszeitliche Neuordnung der Nutzung, die an die Stelle einer feststehenden Bewertung des Potenzials tritt.",
+     "1 Zuschnitt der Betrachtung",
+     "Q42, Q67",
+     "=IF(E90=\"\",\"\",LEN(E90)-LEN(SUBSTITUTE(E90,\",\",\"\"))+1)",
+     "=IF(F90=\"\",\"\",IF(F90=1,\"ja\",\"nein\"))",
+     5
+    ],
+    [
+     90,
+     "Die vorherrschenden Entwicklungs- und Wertvorstellungen der Destination sind zu bestimmen.",
+     "Sie bringen die Verwundbarkeit mit hervor, weil sie die Steuerungsstrukturen prägen. Die Untersuchung ist auf die Ziele der Beteiligten zu richten und nicht auf eine äußere Größe wie eine Klimaprojektion, und die Veränderung der Wertvorstellungen über die Zeit ist mitzuerfassen.",
+     "1 Zuschnitt der Betrachtung",
+     "Q03, Q04",
+     "=IF(E91=\"\",\"\",LEN(E91)-LEN(SUBSTITUTE(E91,\",\",\"\"))+1)",
+     "=IF(F91=\"\",\"\",IF(F91=1,\"ja\",\"nein\"))",
+     6
+    ],
+    [
+     91,
+     "Der Anpassungsstrategie ist eine klare Leitvorstellung und eine mittel- bis langfristige Zukunftsvorstellung des Gebietes voranzustellen.",
+     "Ohne sie bleibt die Strategie eine Sammlung von Maßnahmen. Die Vorstellung ist ausdrücklich zu klären und dem Vorhaben zugrunde zu legen, wozu auch das Verständnis der langsamen Vorgänge gehört, die das Gebiet über Jahrzehnte verändern.",
+     "1 Zuschnitt der Betrachtung",
+     "Q13, Q26, Q36",
+     "=IF(E92=\"\",\"\",LEN(E92)-LEN(SUBSTITUTE(E92,\",\",\"\"))+1)",
+     "=IF(F92=\"\",\"\",IF(F92=1,\"ja\",\"nein\"))",
+     6
+    ],
+    [
+     92,
+     "Die Entwicklungspfade sind über örtlich bestimmte Ziele zu lenken und über die überlieferte Leitaktivität hinaus neu zu denken.",
+     "Statt den wirtschaftlichen Wandel nur zu beobachten, ist er über örtlich bestimmte Ziele und belegte Entscheidungsgrundlagen zu lenken. Wo die tragende Naturgrundlage schwindet, ist die Tourismusentwicklung über die überlieferte Vorstellung der bisherigen Leitaktivität hinaus zu denken.",
+     "1 Zuschnitt der Betrachtung",
+     "Q06, Q20",
+     "=IF(E93=\"\",\"\",LEN(E93)-LEN(SUBSTITUTE(E93,\",\",\"\"))+1)",
+     "=IF(F93=\"\",\"\",IF(F93=1,\"ja\",\"nein\"))",
+     6
+    ],
+    [
+     93,
+     "Die Anpassungsplanung ist in die bestehenden Entscheidungsprozesse der Destination einzubinden und nicht neben ihnen zu führen.",
+     "Anzuknüpfen ist an die vorhandenen Entscheidungsvorgänge, damit die Vorhaben überhaupt umgesetzt werden. Weil der Tourismus nur eine von mehreren Tätigkeiten einer Gemeinde ist, haben die touristischen Fachstellen das Destinationsmanagement von sich aus in die gesetzliche Planung einzubringen, und die Klimaanpassung ist als Kernbestandteil der Destinationsentwicklung und nicht als Sonderthema zu führen.",
+     "5 Verankerung und Umsetzung",
+     "Q01, Q02, Q10, Q20, Q25, Q32",
+     "=IF(E94=\"\",\"\",LEN(E94)-LEN(SUBSTITUTE(E94,\",\",\"\"))+1)",
+     "=IF(F94=\"\",\"\",IF(F94=1,\"ja\",\"nein\"))",
+     29
+    ],
+    [
+     94,
+     "Die Anpassungsplanung ist mit der Regional-, Entwicklungs- und Flächennutzungsplanung abzustimmen.",
+     "Die Anpassungspläne sind mit den Zielen der wirtschaftlichen Entwicklung und mit den örtlichen wie nationalen Entwicklungsplänen zu verbinden. Die Klimagröße ist zur Grundlage der Fortschreibung des Flächennutzungswerks zu machen, die Verringerung des Katastrophenrisikos in die Entwicklungsplanung insgesamt einzubinden und die Ergebnisse der Bewertung in Tourismusstrategie, Anpassungsplan, Investitionsprogramm und Beobachtungssystem zu übernehmen.",
+     "5 Verankerung und Umsetzung",
+     "Q01, Q22, Q24, Q36, Q67",
+     "=IF(E95=\"\",\"\",LEN(E95)-LEN(SUBSTITUTE(E95,\",\",\"\"))+1)",
+     "=IF(F95=\"\",\"\",IF(F95=1,\"ja\",\"nein\"))",
+     29
+    ],
+    [
+     95,
+     "Die Anpassungsplanung ist fach- und bereichsübergreifend anzulegen.",
+     "Es besteht breites Einvernehmen, dass ein zusammengeführter Zugang nötig ist. Die Entscheidungen sind über die Fachbereiche hinweg zu treffen, umzusetzen und zu bewerten, und die Maßnahmen sind über die Bereiche und die räumlichen Ebenen hinweg abzustimmen.",
+     "5 Verankerung und Umsetzung",
+     "Q05, Q28, Q33, Q35",
+     "=IF(E96=\"\",\"\",LEN(E96)-LEN(SUBSTITUTE(E96,\",\",\"\"))+1)",
+     "=IF(F96=\"\",\"\",IF(F96=1,\"ja\",\"nein\"))",
+     29
+    ],
+    [
+     96,
+     "Die Anpassungsplanung ist über die betroffenen Handlungsebenen hinweg abzustimmen und zu verschränken.",
+     "Der Klimawandel ist von Natur aus mehrstufig, weshalb die politischen Eingriffe dem entsprechen müssen. Die Maßnahmen auf Destinationsebene sind mit denen der nationalen und der europäischen Ebene zu verschränken, das Klimarisiko ist auf allen Entscheidungsebenen des Wirtschaftszweigs zu berücksichtigen, und die Einrichtungen der Anpassung sind auf mehreren Ebenen ineinandergreifend mit Rückmeldeverfahren auszugestalten.",
+     "5 Verankerung und Umsetzung",
+     "Q17, Q22, Q33, Q36",
+     "=IF(E97=\"\",\"\",LEN(E97)-LEN(SUBSTITUTE(E97,\",\",\"\"))+1)",
+     "=IF(F97=\"\",\"\",IF(F97=1,\"ja\",\"nein\"))",
+     29
+    ],
+    [
+     97,
+     "Der Tourismus ist in den Klimastrategien der übergeordneten Ebene ausdrücklich als Vorrang zu benennen.",
+     "Die Rolle der touristischen Akteure in der nationalen Klimapolitik ist bisher untätig, weshalb sie ausdrücklich einzubeziehen sind. Die Anpassung des Tourismus ist als eigener Bestandteil in die übergeordnete Anpassungsstrategie aufzunehmen, auch um äußere Mittel für die Destinationen einwerben zu können.",
+     "5 Verankerung und Umsetzung",
+     "Q25, Q33",
+     "=IF(E98=\"\",\"\",LEN(E98)-LEN(SUBSTITUTE(E98,\",\",\"\"))+1)",
+     "=IF(F98=\"\",\"\",IF(F98=1,\"ja\",\"nein\"))",
+     30
+    ],
+    [
+     98,
+     "Die bestehenden Vorgaben, Strategien und Rechtswerke sind im Hinblick auf die Anpassung zu überarbeiten und aufeinander abzustimmen.",
+     "Die Klimarisikobewertung ist in die Vorgabenrahmen und die technischen Leitlinien einzubetten. Die herkömmlichen Vorgaben, Strategien und Ausführungspläne sind zu überarbeiten, die bestehenden Gesetzes- und Regelungswerke im Zusammenhang einer anpassungsfähigen Bewirtschaftung aufeinander abzustimmen und die Steuerungsrahmen an die veränderte Wettbewerbslage anzupassen.",
+     "5 Verankerung und Umsetzung",
+     "Q57, Q60, Q62",
+     "=IF(E99=\"\",\"\",LEN(E99)-LEN(SUBSTITUTE(E99,\",\",\"\"))+1)",
+     "=IF(F99=\"\",\"\",IF(F99=1,\"ja\",\"nein\"))",
+     30
+    ],
+    [
+     99,
+     "Die Anpassungsplanung ist mit der Katastrophenrisikosteuerung und dem Katastrophenschutz zu verzahnen.",
+     "Die gesellschaftliche Antwort auf Gefahr, Verwundbarkeit und Aussetzung ist mit der Katastrophenrisikosteuerung zu verbinden. Die Risikovorsorge ist in Zusammenarbeit mit den örtlichen Katastrophenschutzstellen in den touristischen Handlungsplan aufzunehmen, und die Tourismusverwaltung ist mit Katastrophenschutz und Klimafachstelle zu verzahnen.",
+     "5 Verankerung und Umsetzung",
+     "Q12, Q57, Q59",
+     "=IF(E100=\"\",\"\",LEN(E100)-LEN(SUBSTITUTE(E100,\",\",\"\"))+1)",
+     "=IF(F100=\"\",\"\",IF(F100=1,\"ja\",\"nein\"))",
+     30
+    ],
+    [
+     100,
+     "Für den tragenden Wirtschaftszweig ist ein zusammenhängendes Bündel eigener Vorgabenleitlinien aufzustellen.",
+     "Der Inseltourismus verlangt eigene Vorgabenleitlinien, um der Klimakrise zu begegnen. Gefordert ist ein umfassendes Bündel von Vorgaben für den jeweils vorherrschenden Tourismuszweig und nicht eine Sammlung von Einzelregelungen.",
+     "5 Verankerung und Umsetzung",
+     "Q59",
+     "=IF(E101=\"\",\"\",LEN(E101)-LEN(SUBSTITUTE(E101,\",\",\"\"))+1)",
+     "=IF(F101=\"\",\"\",IF(F101=1,\"ja\",\"nein\"))",
+     30
+    ],
+    [
+     101,
+     "Für die Umsetzung sind Zuständigkeit, Federführung, Mittelbedarf und Zeitplan festzulegen.",
+     "Eine Regelung hat Ziel, Begünstigte, Verpflichtete und den Umsetzungsweg eindeutig zu benennen. Die Frage der Federführung ist in der Vorbereitungsphase zu klären, und für die Verständigung ist je Gemeinde eine benannte, örtlich verankerte Anlaufstelle einzurichten.",
+     "5 Verankerung und Umsetzung",
+     "Q01, Q02, Q20, Q30",
+     "=IF(E102=\"\",\"\",LEN(E102)-LEN(SUBSTITUTE(E102,\",\",\"\"))+1)",
+     "=IF(F102=\"\",\"\",IF(F102=1,\"ja\",\"nein\"))",
+     31
+    ],
+    [
+     102,
+     "Die Voraussetzungen und die Hemmnisse der Umsetzung sind vorab zu klären und die Beschränkungen auszuweisen.",
+     "Vorauszusetzen sind Überzeugung vom Klimawandel, Beweggrund, Erprobung, staatliche Unterstützung und Mittel. Die Hemmnisse sind für die öffentliche und die private Seite getrennt zu bestimmen, weil sie unterschiedliche Wege der Behebung verlangen, die Maßnahmen sind an der Fähigkeit und Bereitschaft der Destination zu bemessen, und neben dem Nutzen sind die Beschränkungen auszuweisen.",
+     "5 Verankerung und Umsetzung",
+     "Q02, Q12, Q57",
+     "=IF(E103=\"\",\"\",LEN(E103)-LEN(SUBSTITUTE(E103,\",\",\"\"))+1)",
+     "=IF(F103=\"\",\"\",IF(F103=1,\"ja\",\"nein\"))",
+     31
+    ],
+    [
+     103,
+     "Die örtliche Bewältigungsfähigkeit ist über Wissen, Beweggrund, Netzwerke, Finanzierung und Beteiligung gemeinsam aufzubauen.",
+     "Die fünf Wege sind nicht einzeln, sondern zusammen zu beschreiten. Die dauerhafte Trägerschaft der Anpassung ist dabei auf der einrichtungsbezogenen Ebene zu sichern, weil dort Rechtmäßigkeit, Abstimmung und Stetigkeit entstehen.",
+     "5 Verankerung und Umsetzung",
+     "Q24, Q61",
+     "=IF(E104=\"\",\"\",LEN(E104)-LEN(SUBSTITUTE(E104,\",\",\"\"))+1)",
+     "=IF(F104=\"\",\"\",IF(F104=1,\"ja\",\"nein\"))",
+     32
+    ],
+    [
+     104,
+     "Neben den betrieblichen Änderungen sind die stützenden Regelungen zu benennen, durchzusetzen und beweglich zu halten.",
+     "Die körperlichen Folgen des Klimawandels verlangen Änderungen der Betriebsführung sowie der sie stützenden Vorgaben. Die Vorschriften für klimafeste touristische Einrichtungen sind zu überprüfen und durchzusetzen, Entwurf und Entwicklung der Einrichtungen auf Klimawandel und Meeresspiegelanstieg auszurichten und die Flächennutzungsvorgaben an der Tragfähigkeit des Gebietes auszurichten.",
+     "5 Verankerung und Umsetzung",
+     "Q17, Q43, Q59",
+     "=IF(E105=\"\",\"\",LEN(E105)-LEN(SUBSTITUTE(E105,\",\",\"\"))+1)",
+     "=IF(F105=\"\",\"\",IF(F105=1,\"ja\",\"nein\"))",
+     32
+    ],
+    [
+     105,
+     "Die Anpassungsmaßnahmen sind ganzheitlich und zweigübergreifend anzulegen und haben Vorbeugung, Milderung und Ausgleich zu umfassen.",
+     "Eine auf einen einzelnen Zweig gerichtete Maßnahme greift zu kurz. Neben Anpassung und Minderung sind Katastrophenvorsorge, Frühwarnung und Bildung vorzusehen, und die Antwortmaßnahmen haben alle drei Wirkungsarten abzudecken.",
+     "5 Verankerung und Umsetzung",
+     "Q46, Q57, Q62",
+     "=IF(E106=\"\",\"\",LEN(E106)-LEN(SUBSTITUTE(E106,\",\",\"\"))+1)",
+     "=IF(F106=\"\",\"\",IF(F106=1,\"ja\",\"nein\"))",
+     32
+    ],
+    [
+     106,
+     "Die Umsetzung ist auf der Ebene der Destination zu betreiben, und die Zeit bis zur Umsetzung ist zu verkürzen.",
+     "Entscheidend ist, dass die Destinationen die Maßnahmen tatsächlich umsetzen, weil dort die Tragfähigkeit entschieden wird. Die Zeit zwischen dem Erkennen des Problems und der Umsetzung ist zu verkürzen, und der Planungsvorgang ist durch eigene Handlungen zu stützen und nicht als Selbstlauf zu behandeln.",
+     "5 Verankerung und Umsetzung",
+     "Q26, Q58, Q62",
+     "=IF(E107=\"\",\"\",LEN(E107)-LEN(SUBSTITUTE(E107,\",\",\"\"))+1)",
+     "=IF(F107=\"\",\"\",IF(F107=1,\"ja\",\"nein\"))",
+     31
+    ],
+    [
+     107,
+     "Die Folgewirkungen einer Maßnahme auf Verkehr und Vermarktung sind mitzuplanen.",
+     "Die Umsetzung einer gewählten Anpassungsmaßnahme ist mit einer passenden Vermarktungsstrategie zu verbinden, und eine Strategie jenseits des bisherigen Angebots zieht Folgen für den Verkehr innerhalb der Destination nach sich. Auch die Nutzung klimabedingter Vorteile stellt sich nicht von selbst ein, sondern verlangt Investitionen in Einrichtungen, Außendarstellung und Steuerung.",
+     "5 Verankerung und Umsetzung",
+     "Q09, Q19, Q60",
+     "=IF(E108=\"\",\"\",LEN(E108)-LEN(SUBSTITUTE(E108,\",\",\"\"))+1)",
+     "=IF(F108=\"\",\"\",IF(F108=1,\"ja\",\"nein\"))",
+     33
+    ],
+    [
+     108,
+     "Die Übernahme der Ergebnisse in die örtliche Planung ist förmlich zu vereinbaren, und alle verfügbaren Planungs- und Vorgabenmittel sind einzusetzen.",
+     "Genauere Modelle und Szenarien setzen eine förmliche Einbindung und Anerkennung durch die Verwaltung voraus. Für die Risikosteuerung sind Pläne, Vorhaben, Handlungen, Strategien und Vorgaben gleichermaßen einzusetzen.",
+     "5 Verankerung und Umsetzung",
+     "Q47, Q57",
+     "=IF(E109=\"\",\"\",LEN(E109)-LEN(SUBSTITUTE(E109,\",\",\"\"))+1)",
+     "=IF(F109=\"\",\"\",IF(F109=1,\"ja\",\"nein\"))",
+     33
+    ],
+    [
+     109,
+     "Die für die Anpassung nötigen Mittel sind vor dem Beschluss der Strategie zu sichern, und der über die eigenen Fähigkeiten hinausgehende Bedarf ist auszuweisen.",
+     "Zu sichern sind Menge und Güte der benötigten Mittel. Neben den finanziellen sind auch die personellen Mittel als Grenze der Anpassung zu führen, für dauerhafte Aufgaben wie die Öffentlichkeitsarbeit ist eigenes Personal vorzusehen, und der Bedarf an Können, Daten und Mitteln, der die örtlichen Fähigkeiten übersteigt, ist ausdrücklich zu benennen.",
+     "5 Verankerung und Umsetzung",
+     "Q26, Q55, Q56, Q61",
+     "=IF(E110=\"\",\"\",LEN(E110)-LEN(SUBSTITUTE(E110,\",\",\"\"))+1)",
+     "=IF(F110=\"\",\"\",IF(F110=1,\"ja\",\"nein\"))",
+     34
+    ],
+    [
+     110,
+     "Die Finanzierung der Anpassung ist auf mehrere Träger zu verteilen und über die Klimafinanzierung hinaus zu erschließen.",
+     "Der wachsende Anpassungsbedarf macht mehrere Quellen nötig, genannt werden Landesebene, Gemeinden und internationale Mittel. Für Gästebeiträge zur Anpassung ist eine für alle Betriebe des Ortes einheitliche Regelung zu schaffen, weil einzelbetriebliche Lösungen nicht tragen.",
+     "5 Verankerung und Umsetzung",
+     "Q30, Q56, Q59",
+     "=IF(E111=\"\",\"\",LEN(E111)-LEN(SUBSTITUTE(E111,\",\",\"\"))+1)",
+     "=IF(F111=\"\",\"\",IF(F111=1,\"ja\",\"nein\"))",
+     34
+    ],
+    [
+     111,
+     "Die vorhandenen Förderinstrumente sind auf die Anpassung auszurichten und wirtschaftliche Anreize neben die Auflagen zu stellen.",
+     "Investoren bevorzugen erprobte Vorhaben, weshalb widerstandsfähige Formen ohne Anreiz unterbleiben. Genannt werden Zuschüsse, zinslose Darlehen und Steuern als Mittel, mit denen die öffentliche Hand die Anpassung der Betriebe befördert.",
+     "5 Verankerung und Umsetzung",
+     "Q12, Q15, Q30",
+     "=IF(E112=\"\",\"\",LEN(E112)-LEN(SUBSTITUTE(E112,\",\",\"\"))+1)",
+     "=IF(F112=\"\",\"\",IF(F112=1,\"ja\",\"nein\"))",
+     34
+    ],
+    [
+     112,
+     "Die Anpassungsmittel sind vorrangig dorthin zu lenken, wo die Destination das Risiko aus eigener Kraft verringern kann.",
+     "Zu stärken sind die Rückkopplungen, über die die Destination selbst wirksam werden kann. Ergänzend ist die Destination bei Planung und Umsetzung von öffentlicher Politik und Forschung zu unterstützen, weil sich die künftige Nachfrage aus eigener Kraft schwer bestimmen lässt.",
+     "5 Verankerung und Umsetzung",
+     "Q25, Q33",
+     "=IF(E113=\"\",\"\",LEN(E113)-LEN(SUBSTITUTE(E113,\",\",\"\"))+1)",
+     "=IF(F113=\"\",\"\",IF(F113=1,\"ja\",\"nein\"))",
+     34
+    ],
+    [
+     113,
+     "Das Vorgehen ist als ausdrückliche Schrittfolge anzulegen.",
+     "Vorgeschlagen werden Abfolgen wie Begreifen des Problems, seine Bestimmung, seine Analyse und die Antwort oder Verhütung, Vorbereitung, Reaktion und Wiederherstellung. Die Risikobewertung ist als benannte Schrittfolge nach anerkannten Leitfäden anzuwenden, und Bestimmung, Bewertung und räumliche Verknüpfung sind als getrennte Anforderungen zu erfüllen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q11, Q12, Q49, Q57",
+     "=IF(E114=\"\",\"\",LEN(E114)-LEN(SUBSTITUTE(E114,\",\",\"\"))+1)",
+     "=IF(F114=\"\",\"\",IF(F114=1,\"ja\",\"nein\"))",
+     35
+    ],
+    [
+     114,
+     "Zu Beginn sind Rechtsrahmen, vorliegende Untersuchungen, bestehende Pläne sowie Werte und Ziele zu klären.",
+     "Die erste Stufe beantwortet Fragen zum politischen Zusammenhang aus Vorschriften und Gesetzen. Die Bestandsaufnahme hat das Wesen der Gemeinschaft, ihre Verflechtung mit natürlichen Ressourcen und Tourismus sowie die bereits wahrgenommenen Veränderungen zu umfassen, und vor der Klimaauswertung sind die maßgeblichen Klimagrößen und ihre Kennzahlen zu bestimmen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q10, Q23, Q57",
+     "=IF(E115=\"\",\"\",LEN(E115)-LEN(SUBSTITUTE(E115,\",\",\"\"))+1)",
+     "=IF(F115=\"\",\"\",IF(F115=1,\"ja\",\"nein\"))",
+     35
+    ],
+    [
+     115,
+     "Der Entwicklung der Strategie sind die Risikobewertung und die Bestimmung der Anpassungsfähigkeit voranzustellen.",
+     "Die Bewertung des Risikos ist unabdingbar für die Entwicklung der Strategie. Die Anpassungsfähigkeit ist zu bestimmen, bevor die regionale Anpassungsstrategie aufgestellt wird, und für die Destination ist eine eigene Umweltfolgenabschätzung der Klimawirkungen durchzuführen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q49, Q55, Q67",
+     "=IF(E116=\"\",\"\",LEN(E116)-LEN(SUBSTITUTE(E116,\",\",\"\"))+1)",
+     "=IF(F116=\"\",\"\",IF(F116=1,\"ja\",\"nein\"))",
+     35
+    ],
+    [
+     116,
+     "Die Befunde der vorangegangenen Schritte sind vor der Maßnahmenwahl zusammenzuführen, und daraus sind die Ansatzpunkte abzuleiten.",
+     "Erst die Zusammenführung macht die wesentlichen Größen sichtbar. Auf die Bestimmung der Schwellenwerte hat die Angabe zu folgen, ob und wann sie überschritten werden, und die Wirkungen auf das menschliche Wohlergehen dienen als Brücke von der Analyse zur Strategie.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q23, Q57, Q62",
+     "=IF(E117=\"\",\"\",LEN(E117)-LEN(SUBSTITUTE(E117,\",\",\"\"))+1)",
+     "=IF(F117=\"\",\"\",IF(F117=1,\"ja\",\"nein\"))",
+     35
+    ],
+    [
+     117,
+     "Die Lücke zwischen den vorhandenen und den nötigen Anpassungsmaßnahmen ist zu bestimmen.",
+     "Abschließend ist die Liste der tatsächlich vorhandenen Maßnahmen zu erkunden, um zu erkennen, was noch fehlt. Ohne diesen Abgleich bleibt der Bedarf unbestimmt.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q57",
+     "=IF(E118=\"\",\"\",LEN(E118)-LEN(SUBSTITUTE(E118,\",\",\"\"))+1)",
+     "=IF(F118=\"\",\"\",IF(F118=1,\"ja\",\"nein\"))",
+     36
+    ],
+    [
+     118,
+     "Die Anpassungsentscheidung ist für jede betroffene Ebene und jede betroffene Funktion gesondert zu treffen.",
+     "Zu entscheiden ist jeweils, ob und wie Tätigkeiten, Wirtschaftszweige, Teilsysteme und Elemente angepasst werden. Eine einheitliche Entscheidung für das Ganze verfehlt die Unterschiede zwischen ihnen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q57",
+     "=IF(E119=\"\",\"\",LEN(E119)-LEN(SUBSTITUTE(E119,\",\",\"\"))+1)",
+     "=IF(F119=\"\",\"\",IF(F119=1,\"ja\",\"nein\"))",
+     36
+    ],
+    [
+     119,
+     "Die Anpassungsstrategie hat ihre Bestandteile vollständig zu umfassen.",
+     "Genannt werden Risikosteuerung, Planungsverbindung, Rechtsetzung, Netzwerke, Finanzierung, Wissen, Bildung und Verantwortung. Zu verbinden sind ferner bauliche Erneuerung, naturgestützte Lösungen, Vorgabenreform und Beteiligung sowie auf regionaler Ebene Klimabewertung, Infrastrukturplanung, Erreichbarkeit, Leistungsfähigkeit, Angebotsvielfalt, Umweltschutz und langfristige Steuerung.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q34, Q53, Q67",
+     "=IF(E120=\"\",\"\",LEN(E120)-LEN(SUBSTITUTE(E120,\",\",\"\"))+1)",
+     "=IF(F120=\"\",\"\",IF(F120=1,\"ja\",\"nein\"))",
+     36
+    ],
+    [
+     120,
+     "Die Planung ist auf die Anpassungsfähigkeit und nicht auf einzelne Anpassungsmaßnahmen zu richten.",
+     "Die Widerstandsfähigkeit einer Destination entsteht aus ihrer Fähigkeit zur Anpassung und nicht aus der Summe einzelner Maßnahmen. Die Planung hat deshalb an dieser Fähigkeit anzusetzen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q43",
+     "=IF(E121=\"\",\"\",LEN(E121)-LEN(SUBSTITUTE(E121,\",\",\"\"))+1)",
+     "=IF(F121=\"\",\"\",IF(F121=1,\"ja\",\"nein\"))",
+     36
+    ],
+    [
+     121,
+     "Das Hilfsmittel ist auf Wissen und Bedürfnisse der Nutzenden zuzuschneiden, und der örtliche Zusammenhang ist während der gesamten Entwicklung zu berücksichtigen.",
+     "Wissen und Bedürfnisse der Nutzenden bilden die Grundlage der Anforderungen an das Hilfsmittel. Es ist durchsichtig und leicht bedienbar zu gestalten, weil es die Schnittstelle zwischen Analyse und Gespräch mit den Akteuren bildet.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q19, Q58",
+     "=IF(E122=\"\",\"\",LEN(E122)-LEN(SUBSTITUTE(E122,\",\",\"\"))+1)",
+     "=IF(F122=\"\",\"\",IF(F122=1,\"ja\",\"nein\"))",
+     37
+    ],
+    [
+     122,
+     "Zwischen den allgemeinen Anpassungszielen und den konkreten Handlungen ist eine übersetzende Zwischenstufe vorzusehen.",
+     "Entscheidungsträger brauchen ein Mittel, um allgemeine Ziele in konkrete Handlungen zu überführen. Zugleich ist zwischen ganzheitlichem Anspruch und Durchführbarkeit des Anpassungsplans ein Ausgleich zu suchen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q28, Q29",
+     "=IF(E123=\"\",\"\",LEN(E123)-LEN(SUBSTITUTE(E123,\",\",\"\"))+1)",
+     "=IF(F123=\"\",\"\",IF(F123=1,\"ja\",\"nein\"))",
+     37
+    ],
+    [
+     123,
+     "Modelle und Daten sind erkundend und nicht vorhersagend zu verwenden.",
+     "Belastbares Entscheiden setzt voraus, dass Modelle als Erkundungsmittel dienen. Ein brauchbares Planungsmodell hat die maßgeblichen äußeren Unsicherheiten, deren Wirkungen und die darauf folgenden Antworten gemeinsam abzubilden.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q32, Q37",
+     "=IF(E124=\"\",\"\",LEN(E124)-LEN(SUBSTITUTE(E124,\",\",\"\"))+1)",
+     "=IF(F124=\"\",\"\",IF(F124=1,\"ja\",\"nein\"))",
+     37
+    ],
+    [
+     124,
+     "Ungleichartige Modelle und Kenngrößen sind über ein ausgewiesenes Verfahren zusammenzuführen.",
+     "Gefordert werden bessere Verbindungen zwischen wirtschaftlichen und umweltbezogenen Modellen. Die Zusammenführung ungleichartiger umweltbezogener und gesellschaftlich-wirtschaftlicher Kenngrößen zu einer zusammengesetzten Kennzahl ist über ein mehrkriterielles Entscheidungsverfahren zu leisten.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q47, Q55",
+     "=IF(E125=\"\",\"\",LEN(E125)-LEN(SUBSTITUTE(E125,\",\",\"\"))+1)",
+     "=IF(F125=\"\",\"\",IF(F125=1,\"ja\",\"nein\"))",
+     38
+    ],
+    [
+     125,
+     "Ein bestehender Rahmen ist zu ergänzen statt neu aufzubauen, und ein begrifflicher Rahmen ist als Betrachtungshilfe und nicht als Handlungsvorschrift zu verwenden.",
+     "Fehlende Themen sind innerhalb der vorhandenen Klassen zu ergänzen, statt neue Klassen zu bilden. Die Schlüsse eines begrifflichen Rahmens sind am verlässlichsten als geordnete Betrachtungshilfe und als Denkhilfe für die Planung.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q22, Q61",
+     "=IF(E126=\"\",\"\",LEN(E126)-LEN(SUBSTITUTE(E126,\",\",\"\"))+1)",
+     "=IF(F126=\"\",\"\",IF(F126=1,\"ja\",\"nein\"))",
+     38
+    ],
+    [
+     126,
+     "Die Risikosteuerung ist als bewegliches und beteiligungsoffenes Werkzeug der Strategieentwicklung anzulegen.",
+     "Sie hat auf einer nachvollziehbaren und umfassenden Risikobewertung zu gründen. Die Maßnahmen sind innerhalb eines Rahmens der Risikosteuerung zu bestimmen, und die Anpassungsstrategie hat räumlich ausdrückliche Hilfsmittel für die Entscheidung bereitzustellen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q57, Q62, Q67",
+     "=IF(E127=\"\",\"\",LEN(E127)-LEN(SUBSTITUTE(E127,\",\",\"\"))+1)",
+     "=IF(F127=\"\",\"\",IF(F127=1,\"ja\",\"nein\"))",
+     38
+    ],
+    [
+     127,
+     "Die Anpassungsmaßnahme ist so zu gestalten, dass sie zugleich Erlebniswert für die Gäste schafft.",
+     "Eine mehrfach nutzbare Gestaltung verbindet die Schutzwirkung mit einem Gewinn für das touristische Angebot. Die Maßnahme bleibt dadurch nicht bloße Last, sondern trägt zur Attraktivität bei.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q53",
+     "=IF(E128=\"\",\"\",LEN(E128)-LEN(SUBSTITUTE(E128,\",\",\"\"))+1)",
+     "=IF(F128=\"\",\"\",IF(F128=1,\"ja\",\"nein\"))",
+     37
+    ],
+    [
+     128,
+     "Das Planungsverfahren ist durchsichtig anzulegen, und die Entscheidungen sind gegenüber den Betroffenen nachvollziehbar zu begründen.",
+     "Nötig sind ein Umfeld, das den Wissensaustausch fördert, sowie durchschaubare Information und eine gemeinsame Strategie. Die Auswahlentscheidungen sind gegenüber den betroffenen Gemeinden zu begründen, die Entscheidungen über einzelne Objekte nachvollziehbar auszuweisen, und fallbezogene, nachvollziehbare Angaben erhöhen die Verbindlichkeit gegenüber den Beteiligten.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q01, Q15, Q19, Q41, Q42, Q56",
+     "=IF(E129=\"\",\"\",LEN(E129)-LEN(SUBSTITUTE(E129,\",\",\"\"))+1)",
+     "=IF(F129=\"\",\"\",IF(F129=1,\"ja\",\"nein\"))",
+     39
+    ],
+    [
+     129,
+     "Die verwendeten Begriffe sind vorab zu bestimmen, und die Problembestimmung ist ohne vorweggenommene Lösung zu fassen.",
+     "Begriffe wie Bewältigung und Anpassung werden breit gefasst, überlappend und uneinheitlich gebraucht. Die Bestimmung des Problems ist so knapp und unverbindlich wie möglich zu halten, ohne ursächliche oder lösungsbezogene Zuschreibungen vorwegzunehmen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q04, Q13",
+     "=IF(E130=\"\",\"\",LEN(E130)-LEN(SUBSTITUTE(E130,\",\",\"\"))+1)",
+     "=IF(F130=\"\",\"\",IF(F130=1,\"ja\",\"nein\"))",
+     39
+    ],
+    [
+     130,
+     "Zu jeder Schätzung sind Vertrauensniveau, Reichweite und Fehlerquellen anzugeben.",
+     "Die Vertrauensniveaus jeder Risikoschätzung sind ausdrücklich anzugeben und die Reichweite der Bewertung offenzulegen. Die Abhängigkeit der Gewichtung von persönlichen Fachurteilen ist als Fehlerquelle auszuweisen, die Widerspruchsfreiheit der Bewertungsurteile zu prüfen und die Bedeutung berechneter Zeitangaben zu erläutern, damit sie nicht als Kalenderdaten gelesen werden.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q23, Q48, Q55, Q57",
+     "=IF(E131=\"\",\"\",LEN(E131)-LEN(SUBSTITUTE(E131,\",\",\"\"))+1)",
+     "=IF(F131=\"\",\"\",IF(F131=1,\"ja\",\"nein\"))",
+     40
+    ],
+    [
+     131,
+     "Die Anpassungsstrategie ist zu belegen und planvoll zu führen und nicht anlassbezogen.",
+     "Wirksame Anpassung verlangt eine geschlossene Risikosteuerung statt einer Folge von Einzelreaktionen. Der Bewertungsrahmen ist dabei gemeinsam mit den Beteiligten und nachvollziehbar zu schaffen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q57",
+     "=IF(E132=\"\",\"\",LEN(E132)-LEN(SUBSTITUTE(E132,\",\",\"\"))+1)",
+     "=IF(F132=\"\",\"\",IF(F132=1,\"ja\",\"nein\"))",
+     39
+    ],
+    [
+     132,
+     "Das Verfahren ist so anzulegen, dass es auf die einzelne Destination zugeschnitten werden kann.",
+     "Wegen der bleibenden Unsicherheit über künftige Entwicklungen ist ein Rahmen nötig, der sich auf die einzelne Destination zuschneiden lässt. Auch die Anpassungsmöglichkeiten selbst sind maßgeschneidert zu bestimmen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q01, Q57",
+     "=IF(E133=\"\",\"\",LEN(E133)-LEN(SUBSTITUTE(E133,\",\",\"\"))+1)",
+     "=IF(F133=\"\",\"\",IF(F133=1,\"ja\",\"nein\"))",
+     41
+    ],
+    [
+     133,
+     "Übernommene Rahmen und Standardstrategien sind vor der Anwendung an den örtlichen Verhältnissen zu prüfen und anzupassen.",
+     "Anpassungsstrategien dürfen nicht ungeprüft von einer Destination auf eine andere übertragen werden, weil die gesellschaftlichen Bedingungen erheblichen Einfluss haben. Der übernommene Bewertungsrahmen ist vor Ort fachlich zu deuten und nicht schematisch anzuwenden, an die gesellschaftlich-ökologische Dynamik des eigenen Gebietes anzupassen und in seinen Gewichten neu zu eichen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q05, Q24, Q43, Q61, Q67",
+     "=IF(E134=\"\",\"\",LEN(E134)-LEN(SUBSTITUTE(E134,\",\",\"\"))+1)",
+     "=IF(F134=\"\",\"\",IF(F134=1,\"ja\",\"nein\"))",
+     41
+    ],
+    [
+     134,
+     "Ungleichartige Kenngrößen sind vor der Zusammenführung zu vereinheitlichen, damit Teilräume und Angebotsarten vergleichbar werden.",
+     "Die Größen liegen in unterschiedlichen und nicht unmittelbar vergleichbaren Einheiten vor. Alle Kenngrößen sind deshalb in ein einheitliches, dimensionsloses Bewertungssystem zu überführen, und das Ergebnis ist so zu fassen, dass sich Teilräume und Angebotsarten vergleichen lassen.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q08, Q62",
+     "=IF(E135=\"\",\"\",LEN(E135)-LEN(SUBSTITUTE(E135,\",\",\"\"))+1)",
+     "=IF(F135=\"\",\"\",IF(F135=1,\"ja\",\"nein\"))",
+     41
+    ],
+    [
+     135,
+     "Die Bewertungsbegriffe sind gemeinsam und ohne Auslassung anzuwenden.",
+     "Die Begriffe mit ihren Größen sind vollständig anzuwenden, weil ihr Zusammenhang sonst verlorengeht. Eine Auswahl einzelner Begriffe verzerrt das Ergebnis.",
+     "6 Aufbau und Güte des Verfahrens",
+     "Q43",
+     "=IF(E136=\"\",\"\",LEN(E136)-LEN(SUBSTITUTE(E136,\",\",\"\"))+1)",
+     "=IF(F136=\"\",\"\",IF(F136=1,\"ja\",\"nein\"))",
+     41
+    ],
+    [
+     136,
+     "Die Wirkung der umgesetzten Anpassung ist über einen langen Zeitraum zu beobachten und zu bewerten.",
+     "Die gewählten Optionen sind fortlaufend zu beobachten, weil sich die beabsichtigte Wirkung über die Zeit verändert und der Klimawandel ein sich verschiebendes Bezugssystem ist. Die Anpassungsstrategie ist mit einem strengen Beobachtungsprogramm zu verbinden, und die laufende Beobachtung ist als grundlegende Bedingung der Anpassung zu behandeln.",
+     "7 Nachsteuerung",
+     "Q01, Q02, Q27, Q28",
+     "=IF(E137=\"\",\"\",LEN(E137)-LEN(SUBSTITUTE(E137,\",\",\"\"))+1)",
+     "=IF(F137=\"\",\"\",IF(F137=1,\"ja\",\"nein\"))",
+     42
+    ],
+    [
+     137,
+     "Neben dem Zustand der Naturgrundlage sind auch die Wirkungen der Maßnahmen selbst zu beobachten, und auf die Beobachtung haben Maßnahmen zu folgen.",
+     "Die Beobachtung ist für sich genommen keine Maßnahme gegen die Belastungen und darf nicht als solche gezählt werden, auch wenn Maßnahmenprogramme sie häufig so führen. Auf die Beobachtung der Umweltveränderungen haben greifbare Anpassungsmaßnahmen zu folgen.",
+     "7 Nachsteuerung",
+     "Q28, Q45, Q62",
+     "=IF(E138=\"\",\"\",LEN(E138)-LEN(SUBSTITUTE(E138,\",\",\"\"))+1)",
+     "=IF(F138=\"\",\"\",IF(F138=1,\"ja\",\"nein\"))",
+     42
+    ],
+    [
+     138,
+     "Die Wahl der Anpassungsoptionen ist über die Zeit erneut zu prüfen, und ein nachsteuerndes, lernendes Vorgehen ist einzurichten.",
+     "Eine Schutzstrategie beseitigt das zugrunde liegende Risiko nicht, und ein wachsendes Versagensrisiko kann über die Zeit entstehen. Das Entscheidungsverfahren muss erlauben, Maßnahmen im Verlauf zu beobachten, fehlgehende zu beenden und auf gelungenen aufzubauen.",
+     "7 Nachsteuerung",
+     "Q04, Q29, Q56",
+     "=IF(E139=\"\",\"\",LEN(E139)-LEN(SUBSTITUTE(E139,\",\",\"\"))+1)",
+     "=IF(F139=\"\",\"\",IF(F139=1,\"ja\",\"nein\"))",
+     43
+    ],
+    [
+     139,
+     "Zwischen der übergeordneten Vorgabe und der örtlichen Umsetzung ist über Beobachtung und Bewertung zu vermitteln und zurückzumelden.",
+     "Beobachtung und Bewertung überbrücken den Bruch zwischen übergeordneter Vorgabe und örtlichem Vollzug. Die Ergebnisse der örtlichen Anpassung sind an die übergeordneten Ebenen zurückzumelden, und für freiwillige Beiträge der Betriebe ist ein Kontroll- und Beobachtungssystem einzurichten.",
+     "7 Nachsteuerung",
+     "Q30, Q34",
+     "=IF(E140=\"\",\"\",LEN(E140)-LEN(SUBSTITUTE(E140,\",\",\"\"))+1)",
+     "=IF(F140=\"\",\"\",IF(F140=1,\"ja\",\"nein\"))",
+     44
+    ],
+    [
+     140,
+     "Die Bindung der Beteiligten ist bis zur Wirkungskontrolle und Erfolgsbewertung zu erstrecken.",
+     "Die Beteiligung endet nicht mit der Entscheidung über die Maßnahme. Erforderlich ist eine Bindung über den gesamten Vorgang hinweg bis zur Umsetzung, zur Beobachtung und zur Bewertung des Erfolgs.",
+     "7 Nachsteuerung",
+     "Q26",
+     "=IF(E141=\"\",\"\",LEN(E141)-LEN(SUBSTITUTE(E141,\",\",\"\"))+1)",
+     "=IF(F141=\"\",\"\",IF(F141=1,\"ja\",\"nein\"))",
+     42
+    ],
+    [
+     141,
+     "Die Wirksamkeit der nach geltendem Recht bereits festgelegten Maßnahmen ist zu überprüfen.",
+     "Die nach bestehenden Vorgaben und Rechtsnormen festgelegten Maßnahmen sind möglicherweise nicht wirksam. Sie sind deshalb nicht als gegeben hinzunehmen, sondern eigens zu prüfen.",
+     "7 Nachsteuerung",
+     "Q62",
+     "=IF(E142=\"\",\"\",LEN(E142)-LEN(SUBSTITUTE(E142,\",\",\"\"))+1)",
+     "=IF(F142=\"\",\"\",IF(F142=1,\"ja\",\"nein\"))",
+     44
+    ],
+    [
+     142,
+     "Die Anpassungsplanung ist fortlaufend zu beobachten, zu bewerten und nachzuschärfen.",
+     "Die Anpassung muss selbst anpassungsfähig sein. Der Vorgang ist über die Zeit belegt zu beobachten und schrittweise zu überarbeiten, die Ergebnisse der Bewertung sind regelmäßig fortzuschreiben, und die Veränderung der Vorränge der Beteiligten über die Zeit ist zu verfolgen.",
+     "7 Nachsteuerung",
+     "Q48, Q53, Q57, Q67",
+     "=IF(E143=\"\",\"\",LEN(E143)-LEN(SUBSTITUTE(E143,\",\",\"\"))+1)",
+     "=IF(F143=\"\",\"\",IF(F143=1,\"ja\",\"nein\"))",
+     43
+    ],
+    [
+     143,
+     "Die Regelwerke und Steuerungsmittel sind so anzulegen, dass sie mit den veränderten Verhältnissen fortgeschrieben werden.",
+     "Wirksame Steuerungssysteme zu entwerfen gleicht einem Wettlauf der Mitentwicklung, weil ein für bestimmte Verhältnisse gebautes Regelwerk veraltet. Die eingeführten Verhaltensregeln sind regelmäßig zu überprüfen, die Risikosteuerung beweglich anzulegen und die Steuerungsmittel so nachzuführen, dass die Anpassung über die Förderzyklen hinaus trägt.",
+     "7 Nachsteuerung",
+     "Q22, Q27, Q52, Q54",
+     "=IF(E144=\"\",\"\",LEN(E144)-LEN(SUBSTITUTE(E144,\",\",\"\"))+1)",
+     "=IF(F144=\"\",\"\",IF(F144=1,\"ja\",\"nein\"))",
+     45
+    ],
+    [
+     144,
+     "Die Ergebnisse einer Planungsstufe sind als Ausgangspunkt der nächsten und nicht als Abschluss zu führen.",
+     "Die erarbeiteten Anpassungsverläufe dienen als Ausgangspunkt weiterer Erörterung zwischen Forschung, Praxis und Beteiligten. Die Ziele späterer Planungsstufen sind aus den Ergebnissen der früheren zu bestimmen, weil sich kein ideales Ergebnis in einem Zug erreichen lässt.",
+     "7 Nachsteuerung",
+     "Q41, Q42",
+     "=IF(E145=\"\",\"\",LEN(E145)-LEN(SUBSTITUTE(E145,\",\",\"\"))+1)",
+     "=IF(F145=\"\",\"\",IF(F145=1,\"ja\",\"nein\"))",
+     45
+    ]
+   ]
+  },
+  {
+   "name": "Arbeiten",
+   "freeze_panes": "A2",
+   "autofilter": true,
+   "column_widths": {
+    "A": 9.0,
+    "B": 26.0,
+    "C": 60.0,
+    "D": 20.0,
+    "E": 46.0,
+    "G": 22.0,
+    "H": 52.0,
+    "I": 11.0
+   },
+   "column_styles": {
+    "A": {
+     "horizontal": "center",
+     "wrap": false
+    },
+    "B": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "C": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "D": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "E": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "F": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "G": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "H": {
+     "horizontal": "left",
+     "wrap": true
+    },
+    "I": {
+     "horizontal": "center",
+     "wrap": false
+    }
+   },
+   "row_heights": {
+    "1": 30.0,
+    "2": 35.05,
+    "3": 35.05,
+    "4": 35.05,
+    "5": 35.05,
+    "6": 35.05,
+    "7": 35.05,
+    "8": 35.05,
+    "9": 46.25,
+    "10": 35.05,
+    "11": 46.25,
+    "12": 57.45,
+    "13": 46.25,
+    "14": 46.25,
+    "15": 35.05,
+    "16": 35.05,
+    "17": 35.05,
+    "18": 35.05,
+    "19": 35.05,
+    "20": 35.05,
+    "21": 35.05,
+    "22": 35.05,
+    "23": 35.05,
+    "24": 46.25,
+    "25": 35.05,
+    "26": 35.05,
+    "27": 35.05,
+    "28": 46.25,
+    "29": 35.05,
+    "30": 35.05,
+    "31": 46.25,
+    "32": 46.25,
+    "33": 35.05,
+    "34": 35.05,
+    "35": 35.05,
+    "36": 35.05,
+    "37": 46.25,
+    "38": 35.05,
+    "39": 35.05,
+    "40": 35.05,
+    "41": 46.25,
+    "42": 46.25,
+    "43": 35.05,
+    "44": 35.05,
+    "45": 46.25,
+    "46": 35.05,
+    "47": 35.05,
+    "48": 35.05,
+    "49": 35.05,
+    "50": 46.25,
+    "51": 46.25,
+    "52": 35.05,
+    "53": 35.05,
+    "54": 35.05,
+    "55": 35.05,
+    "56": 35.05,
+    "57": 35.05
+   },
+   "rows": [
+    [
+     "Kennung",
+     "Autorenschaft und Jahr",
+     "Titel",
+     "Publikationstyp",
+     "Untersuchungsraum",
+     "Destinationstyp",
+     "Raeumliche Ebene",
+     "Methodischer Zugang",
+     "Anzahl Fundstellen"
+    ],
+    [
+     "Q01",
+     "Jopp, DeLacy und Mair 2010",
+     "Developing a framework for regional destination adaptation to climate change",
+     "begutachteter Aufsatz",
+     "Australien, konzeptionell entwickelt, Erprobung an der Surf Coast in Victoria angekündigt",
+     "regionale Destination ohne Festlegung auf einen Typ, Beispiele aus Küsten- und Wintersportdestinationen",
+     "Destination und Region",
+     "konzeptionelle Arbeit, Auswertung vorhandener Anpassungsmodelle und Ableitung eines eigenen Rahmenwerks",
+     25
+    ],
+    [
+     "Q02",
+     "Turton und andere 2010",
+     "Developing an approach for tourism climate change assessment: evidence from four contrasting Australian case studies",
+     "begutachteter Aufsatz",
+     "Australien, vier Fallgebiete, Kakadu, Tropisch-Nordqueensland um Cairns, Blue Mountains und Barossa Valley",
+     "regionale Destinationen mit Natur- und Kulturerbe, Riff, Regenwald, Gebirge und Weinbaulandschaft",
+     "Destination und Region, mit Zusammenführung auf nationaler Ebene",
+     "fächerübergreifende Mehrfachfallstudie mit Sekundärdatenauswertung, leitfadengestützten Gesprächen und moderierten Werkstätten des sozialen Lernens",
+     10
+    ],
+    [
+     "Q03",
+     "Manuel-Navarrete, Pelling und Redclift 2011",
+     "Critical adaptation to hurricanes in the Mexican Caribbean: Development visions, governance structures, and coping strategies",
+     "begutachteter Aufsatz",
+     "Mexikanische Karibik, Bundesstaat Quintana Roo, die Orte Cancún, Playa del Carmen, Tulum und Mahahual",
+     "Küstendestinationen des Massentourismus in unterschiedlichen Entwicklungsstufen",
+     "Ort und Region",
+     "qualitative Mehrfachfallstudie mit kritisch politökologischem Rahmen, gerichtet auf Entwicklungsvorstellungen, Steuerungsstrukturen und Bewältigungsstrategien",
+     3
+    ],
+    [
+     "Q04",
+     "Roman, Lynch und Dominey-Howes 2011",
+     "What is the Goal? Framing the Climate Change Adaptation Question through a Problem-Oriented Approach",
+     "begutachteter Aufsatz",
+     "Alpine Shire im Nordosten des australischen Bundesstaates Victoria",
+     "ländliche Bergdestination mit ganzjährigem Angebot aus Wintersport, Natur, Wein und Veranstaltungen",
+     "Gemeinde und Region",
+     "problemorientierte Einzelfallstudie nach dem Zugang der Politikwissenschaften, mit Zielklärung und Kartierung der gesellschaftlichen Prozesse",
+     12
+    ],
+    [
+     "Q05",
+     "Landauer, Pröbstl und Haider 2012",
+     "Managing cross-country skiing destinations under the conditions of climate change - Scenarios for destinations in Austria and Finland",
+     "begutachteter Aufsatz",
+     "Österreich und Finnland, je eine Langlaufdestination, Annaberg und Joupiska",
+     "Langlaufdestinationen mit gegenwärtig hoher natürlicher Schneesicherheit und geringem Ausstattungsgrad",
+     "Destination",
+     "Auswahlexperiment mit latenter Klassenanalyse und daraus abgeleitetem Entscheidungshilfsmittel, Szenarienrechnung für vier Zustände je Fallgebiet",
+     9
+    ],
+    [
+     "Q06",
+     "Balbi und andere 2013",
+     "A spatial agent-based model for assessing strategies of adaptation to climate and tourism demand changes in an alpine tourism destination",
+     "begutachteter Aufsatz",
+     "Auronzo di Cadore in den Dolomiten, Provinz Belluno, Italien",
+     "alpine Destination mit schwacher Wintersaison, zwei kleinen Abfahrtsgebieten und zwei Langlaufzentren",
+     "Gemeinde",
+     "räumliches agentenbasiertes Simulationsmodell, Vergleich von vier Entwicklungsstrategien über zwölf Szenarienkombinationen mit einfacher mehrkriterieller Bewertung",
+     3
+    ],
+    [
+     "Q07",
+     "Becken 2013",
+     "DEVELOPING A FRAMEWORK FOR ASSESSING RESILIENCE OF TOURISM SUB-SYSTEMS TO CLIMATIC FACTORS",
+     "begutachteter Aufsatz",
+     "Region Queenstown und Wanaka auf der Südinsel Neuseelands",
+     "gereifte Ganzjahresdestination in Seen- und Gebirgslandschaft mit Wintersport, Abenteuer- und Naturangeboten",
+     "Destination mit Teilsystemen einzelner Aktivitäten",
+     "begrifflich geleitete Fallstudie, deduktiv und induktiv verbunden, Übertragung des Modells der Stabilitätslandschaft auf den Tourismus",
+     6
+    ],
+    [
+     "Q08",
+     "Csete, Pálvölgyi und Szendro 2013",
+     "Assessment of climate change vulnerability of tourism in Hungary",
+     "begutachteter Aufsatz",
+     "Ungarn, neun Tourismusregionen des Landes",
+     "binnenländische Destinationen ohne Küste mit Seen, Thermalwasser, Kulturerbe, Freiluftveranstaltungen und einem kleinen Wintersportgebiet",
+     "Tourismusregion, mit Ausblick auf die Gemeindeebene",
+     "kenngrößengestützte Verwundbarkeitsbewertung nach einem übernommenen Bewertungsschema, Matrizenrechnung aus Aussetzung, Empfindlichkeit und Anpassungsfähigkeit, Verwundbarkeitskarte",
+     6
+    ],
+    [
+     "Q09",
+     "Jopp und andere 2013",
+     "Using a Regional Tourism Adaptation Framework to Determine Climate Change Adaptation Options for Victoria's Surf Coast",
+     "begutachteter Aufsatz",
+     "Surf Coast im Bundesstaat Victoria, Australien, mit einem Abschnitt der Great Ocean Road",
+     "regionale Küstendestination mit Stränden, Regenwald und Küstenstraße, zugleich buschfeuergefährdet",
+     "Region und Destination",
+     "Einzelfallstudie zur Erprobung eines vorhandenen Anpassungsrahmens, mit zweistufiger Delphi-Befragung eines Fachpanels",
+     5
+    ],
+    [
+     "Q10",
+     "Kaján 2013",
+     "An integrated methodological framework: engaging local communities in Arctic tourism development and community-based adaptation",
+     "begutachteter Aufsatz",
+     "Nordfinnland, zwei Gemeinschaften in Lappland nördlich des Polarkreises, Saariselkä und Kilpisjärvi",
+     "arktische, naturraumgebundene Destinationen mit kleiner Dauerbevölkerung und hoher Abhängigkeit von natürlichen Ressourcen",
+     "örtliche Gemeinschaft",
+     "Entwicklung eines integrierten methodischen Rahmens aus Katastrophenvorsorge, Klimaanpassung und Tourismusentwicklung, erprobt in einer Vorstudie mit beteiligungsorientierten Erhebungswerkzeugen",
+     9
+    ],
+    [
+     "Q11",
+     "Prideaux, McKercher und McNamara 2013",
+     "Modelling a Tourism Response to Climate Change Using a Four Stage Problem Definition and Response Framework",
+     "begutachteter Aufsatz",
+     "Großes Barriereriff vor der Küste Queenslands, Australien, als Anwendungsbeispiel",
+     "riffabhängige Küstendestinationen mit einer einzigen tragenden Naturattraktion",
+     "Ökosystem und davon abhängige Destinationen, mit Ausblick auf die regionale und nationale Ebene",
+     "begriffliche Arbeit, Entwicklung eines vierstufigen Rahmens zur Problembestimmung und Antwort mit verknüpften Modellen, am Beispiel teilweise erprobt",
+     7
+    ],
+    [
+     "Q12",
+     "Becken und andere 2014",
+     "The tourism disaster vulnerability framework: an application to tourism in small island destinations",
+     "begutachteter Aufsatz",
+     "Inselstaaten der Karibik, des Südpazifiks und des Indischen Ozeans, sieben Destinationen",
+     "kleine Inseldestinationen mit strandgebundenem Tourismus und hoher wirtschaftlicher Abhängigkeit von ihm",
+     "Destination, teils bis zur einzelnen Insel, mit regionaler und nationaler Einbettung",
+     "Entwicklung eines Rahmens zur Verwundbarkeit touristischer Katastrophen und dessen Prüfung an qualitativem Material aus drei Weltregionen",
+     9
+    ],
+    [
+     "Q13",
+     "Hughey und Becken 2014",
+     "Understanding climate coping as a basis for strategic climate change adaptation - The case of Queenstown-Lake Wanaka, New Zealand",
+     "begutachteter Aufsatz",
+     "Region Queenstown und Lake Wanaka auf der Südinsel Neuseelands",
+     "naturraumgebundene Ganzjahresdestination mit Wintersport, Abenteuer- und Naturangeboten",
+     "Betrieb und Destination",
+     "Übertragung des ökologischen Toleranzbegriffs auf touristische Betriebe, Entwicklung einer Bewältigungs- und Tragfähigkeitskurve, geprüft an Gesprächen und einer Werkstatt auf Destinationsebene",
+     5
+    ],
+    [
+     "Q14",
+     "Lépy und andere 2014",
+     "Multidisciplinary and Participatory Approach for Assessing Local Vulnerability of Tourism Industry to Climate Change",
+     "begutachteter Aufsatz",
+     "Nordfinnland, die Tourismusgemeinden Kuusamo mit Ruka und Sotkamo mit Vuokatti",
+     "nordische, naturraumgebundene Wintersportdestinationen in Randlage mit hoher wirtschaftlicher Abhängigkeit vom Tourismus",
+     "Gemeinde",
+     "beteiligungsorientierte und fächerübergreifende Verwundbarkeitsbestimmung über drei Jahre, mit Datenzusammenstellung, Zukunftserzählungen und Werkstätten",
+     3
+    ],
+    [
+     "Q15",
+     "Matasci und andere 2014",
+     "Exploring barriers to climate change adaptation in the Swiss tourism sector",
+     "begutachteter Aufsatz",
+     "Schweizer Alpenraum",
+     "alpine Tourismusgemeinden und Skigebiete mit langer Erfahrung im Umgang mit Naturgefahren",
+     "Region und Betrieb",
+     "netzgestützte Befragung touristischer Akteure zu Hemmnissen der Anpassung, geordnet nach den Phasen des Anpassungsvorgangs",
+     5
+    ],
+    [
+     "Q16",
+     "Njoroge 2014",
+     "An enhanced framework for regional tourism sustainable adaptation to climate change",
+     "begutachteter Aufsatz",
+     "ohne eigenes Fallgebiet, begriffliche Arbeit mit Bezug auf regionale Destinationen",
+     "regionale Destinationen allgemein, ohne Festlegung auf einen Typ",
+     "Region",
+     "Durchsicht vorhandener touristischer Anpassungsrahmen anhand der Grundsätze tragfähiger Anpassung und Vorschlag eines erweiterten Rahmens",
+     8
+    ],
+    [
+     "Q17",
+     "Hopkins 2015",
+     "Applying a Comprehensive Contextual Climate Change Vulnerability Framework to New Zealand's Tourism Industry",
+     "begutachteter Aufsatz",
+     "Neuseeland, Tourismuswirtschaft des Landes",
+     "nationale Tourismuswirtschaft mit starker Ausrichtung auf Naturerleben und Fernmärkte",
+     "Land, mit Ausblick auf die regionale Ebene",
+     "begriffliche Arbeit, Entwicklung eines umfassenden zusammenhangbezogenen Verwundbarkeitsrahmens und dessen Anwendung auf einen Fall",
+     9
+    ],
+    [
+     "Q18",
+     "Shakeela und Becken 2015",
+     "Understanding tourism leaders' perceptions of risks from climate change: an assessment of policy-making processes in the Maldives using the social amplification of risk framework (SARF)",
+     "begutachteter Aufsatz",
+     "Malediven",
+     "sehr flach liegende Inseldestination mit ausschließlich strand- und meergebundenem Tourismus",
+     "Land und Destination",
+     "qualitative Untersuchung der Risikowahrnehmung auf Steuerungsebene anhand des Rahmens der gesellschaftlichen Verstärkung von Risiko",
+     4
+    ],
+    [
+     "Q19",
+     "Bonzanigo, Giupponi und Balbi 2016",
+     "Sustainable tourism planning and climate change adaptation in the Alps: a case study of winter tourism in mountain communities in the Dolomites",
+     "begutachteter Aufsatz",
+     "Auronzo di Cadore in den Dolomiten, Provinz Belluno, Italien",
+     "alpine Gemeinde mit überwiegendem Sommertourismus, zwei kleinen Abfahrtsgebieten und zwei Langlaufzentren",
+     "Gemeinde",
+     "beteiligungsorientiertes Entscheidungshilfeverfahren aus Netzwerkanalyse, schöpferischer Modellbildung und mehrkriterieller Bewertung, umgesetzt in zwei Werkstätten",
+     10
+    ],
+    [
+     "Q20",
+     "Dawson und andere 2016",
+     "Identifying and evaluating adaptation strategies for cruise tourism in Arctic Canada",
+     "begutachteter Aufsatz",
+     "Arktisches Kanada, Kreuzfahrttourismus mit Werkstätten in Gjoa Haven, Pond Inlet und Iqaluit",
+     "arktische Gemeinden mit schiffsgebundenem Expeditionstourismus und geringer Infrastruktur",
+     "Gemeinde und Region, mit Bezug auf die nationale Regelsetzung",
+     "politisches Delphi-Verfahren in zwei Runden mit Ideenerzeugung, Verdichtung und Bewertung nach Vorrang, Bezahlbarkeit und Umsetzbarkeit",
+     5
+    ],
+    [
+     "Q22",
+     "Hogarth und Wójcik 2016",
+     "An evolutionary approach to adaptive capacity assessment: A case study of Whitehouse, Jamaica",
+     "begutachteter Aufsatz",
+     "Whitehouse im Bezirk Westmoreland an der Südküste Jamaikas, mit den Nachbargemeinden Bluefields und Beeston Springs",
+     "kleine Küstengemeinde mit Tourismus, Fischerei und Landwirtschaft als tragenden Erwerbszweigen",
+     "Gemeinde, mit Bezug auf die nationale und die internationale Ebene",
+     "gemeinschaftsgetragene Verwundbarkeitsbestimmung mit qualitativen Verfahren, ausgewertet entlang eines Rahmens der örtlichen Anpassungsfähigkeit mit fünf Bestandteilen",
+     10
+    ],
+    [
+     "Q23",
+     "Paquin und andere 2016",
+     "A multiple timescales approach to assess urgency in adaptation to climate change with an application to the tourism industry",
+     "begutachteter Aufsatz",
+     "Québec in Kanada, Beispiele aus dem Tourismus der Region Laurentides und ein Skigebiet in den Eastern Townships",
+     "Wintersportgebiete und naturgebundene Erholungsangebote in gemäßigten Breiten",
+     "Betrieb und Region",
+     "Entwicklung eines Hilfsmittels aus zwei Zeitskalen und der gesellschaftlichen Bedeutung, erprobt an angenommenen Beispielen in einer Werkstatt und an einem wirklichen Skigebiet",
+     15
+    ],
+    [
+     "Q24",
+     "Luna-Galvan, Vargas-Chaves und Franco-Gantiva 2017",
+     "Towards an Inclusive Approach for Climate Change Adaptation Strategies: The Case of the Plan 4C in the City of Cartagena de Indias",
+     "begutachteter Aufsatz",
+     "Cartagena de Indias an der Karibikküste Kolumbiens",
+     "tropische Küstenstadt mit Strand-, Kultur- und Kreuzfahrttourismus neben Hafen und Industrie, mit ausgedehnten informellen Siedlungen",
+     "Stadt und Quartier",
+     "begriffliche und dokumentengestützte Auswertung des städtischen Anpassungsplans anhand gesellschaftlicher, wirtschaftlicher und ökologischer Größen, mit Vergleich zu Fällen anderer Städte",
+     15
+    ],
+    [
+     "Q25",
+     "Landauer, Goodsite und Juhola 2018",
+     "Nordic national climate adaptation and tourism strategies - (how) are they interlinked?",
+     "begutachteter Aufsatz",
+     "Dänemark, Finnland, Island, Norwegen und Schweden",
+     "nordische Destinationen mit naturgebundenem und ländlichem Tourismus, Kreuzfahrt-, Küsten-, Gesundheits- und Städtetourismus",
+     "Land, mit Bezug auf die Destination",
+     "Durchsicht der nationalen Klima- und Tourismusstrategien nach festgelegten Stichwörtern mit anschließender inhaltlicher Auswertung",
+     8
+    ],
+    [
+     "Q26",
+     "Schernewski und andere 2018",
+     "A combined coastal protection, realignment and wetland restoration scheme in the southern Baltic: planning process, public information and participation",
+     "begutachteter Aufsatz, zugleich Konferenzbeitrag",
+     "Markgrafenheide und Hütelmoor im Nordwesten von Rostock an der deutschen Ostseeküste",
+     "kleiner Ostseebadeort mit dem größten Campingplatz und Ferienpark der Stadt, angrenzend an ein Küstenmoor",
+     "Ortsteil und Stadt, mit Bezug auf die Landesebene",
+     "rückblickende Auswertung des Planungs- und Beteiligungsvorgangs eines verbundenen Küstenschutz-, Rückverlegungs- und Moorwiederherstellungsvorhabens",
+     12
+    ],
+    [
+     "Q27",
+     "Wabnitz und andere 2018",
+     "Ecotourism, climate change and reef fish consumption in Palau: Benefits, trade-offs and adaptation strategies",
+     "begutachteter Aufsatz",
+     "Republik Palau im westlichen Pazifik, mit Schwerpunkt auf der südlichen Lagune",
+     "kleine Inseldestination mit tauch- und riffgebundenem Naturtourismus und hoher wirtschaftlicher Abhängigkeit von ihm",
+     "Land und Teilraum der Destination",
+     "mengenmäßiges gesellschaftlich-ökologisches Modell mit sieben Politikszenarien über zwanzig Jahre, verbunden aus Klimawirkung, Riffzustand, Fischbeständen und Nachfrage",
+     4
+    ],
+    [
+     "Q28",
+     "Guerbois und andere 2019",
+     "Nurturing ecosystem-based adaptations in South Africa's Garden Route: a common pool resource governance perspective",
+     "begutachteter Aufsatz",
+     "Garden-Route-Distrikt an der Südküste Südafrikas",
+     "landschaftsgebundene Küstendestination mit Natur- und Erholungstourismus und starkem Zuzug an die Küste",
+     "Distrikt und Gemeinde",
+     "Auswertung von Gesprächen und Befragungen anhand eines Belastbarkeitsrahmens und der Gestaltungsgrundsätze für gemeinsame Güter, mit Abbildung der Grundsätze auf den Rahmen",
+     6
+    ],
+    [
+     "Q29",
+     "O'Toole und andere 2019",
+     "Climate Change Adaptation Strategies and Approaches for Outdoor Recreation",
+     "begutachtete Übersichtsarbeit",
+     "Vereinigte Staaten, erprobt im Green Mountain National Forest in Vermont und im San Bernardino National Forest in Kalifornien",
+     "Erholungsgebiete auf Bundesforstflächen mit Winter-, Wasser- und Wandererholung",
+     "Vorhabenebene innerhalb eines Schutz- und Erholungsgebietes",
+     "Übersichtsarbeit mit Ableitung eines gestuften Handlungskatalogs, dreißig Fachgespräche und Erprobung in zwei mehrtägigen Werkstätten",
+     7
+    ],
+    [
+     "Q30",
+     "Rahmawati, Jiang und DeLacy 2019",
+     "Framework for stakeholder collaboration in harnessing corporate social responsibility implementation in tourist destination to build community adaptive capacity to climate change",
+     "begutachteter Aufsatz",
+     "Bali in Indonesien",
+     "Inseldestination mit sehr hoher wirtschaftlicher Abhängigkeit vom Tourismus und dichter Besiedlung",
+     "Insel und Gemeinde",
+     "qualitative Fallstudie zur Frage, wie freiwillige Leistungen der Tourismusbetriebe die Anpassungsfähigkeit der Gemeinschaft stärken, mit Ableitung eines fortgeschriebenen Rahmens",
+     9
+    ],
+    [
+     "Q32",
+     "Kemp-Benedict, Drakes und Canales 2020",
+     "A Climate-Economy Policy Model for Barbados",
+     "begutachteter Aufsatz",
+     "Barbados in der östlichen Karibik",
+     "kleiner Inselstaat mit hoher Abhängigkeit von Tourismus und Ausfuhr",
+     "Land",
+     "wirtschaftliches Simulationsmodell nach der Strategie belastbaren Entscheidens, verbunden aus Makromodell, Sturmschadensmodell, Tourismusmodell und Versicherungsmodell, gerechnet in Zufalls- und Szenarienläufen",
+     4
+    ],
+    [
+     "Q33",
+     "Loehr 2020",
+     "The Vanuatu Tourism Adaptation System: a holistic approach to reducing climate risk",
+     "begutachteter Aufsatz",
+     "Vanuatu im Südpazifik",
+     "kleine Inseldestination mit ländlichen Teildestinationen und hoher Abhängigkeit der Gemeinschaften vom Tourismus",
+     "Land und Destination, mit Bezug auf die internationale und die örtliche Ebene",
+     "systemisches Vorgehen mit Erweiterung des Risikorahmens des Weltklimarats zu einem Rahmen des Destinationsklimarisikos und Entwicklung eines Wirkungsschleifendiagramms in mehreren Stufen",
+     9
+    ],
+    [
+     "Q34",
+     "Njoroge und andere 2020",
+     "Employing the enhanced Regional Tourism Sustainable Adaptation Framework with a case study of climate change vulnerability in Mombasa, Kenya",
+     "begutachteter Aufsatz",
+     "Mombasa an der Küste Kenias",
+     "tropische Küstendestination mit Strand- und Kulturtourismus und schwacher einrichtungsbezogener Ausstattung",
+     "Stadt und Region",
+     "begrifflich beschreibende Anwendung eines erweiterten regionalen Rahmens tragfähiger Anpassung in zwei Phasen mit anschließender Verständigungs- und Rückmeldephase",
+     8
+    ],
+    [
+     "Q35",
+     "Skrimizea und Parra 2020",
+     "An adaptation pathways approach to water management and governance of tourist islands: the example of the Southern Aegean Region in Greece",
+     "begutachteter Aufsatz",
+     "Südägäis in Griechenland mit Schwerpunkt auf Rhodos",
+     "Inseldestinationen des Mittelmeers mit saisonalem Massentourismus und Wasserknappheit",
+     "Region und Insel",
+     "begriffliche Ausarbeitung des Zugangs über Anpassungspfade für die Wasserbewirtschaftung und die Wassersteuerung, veranschaulicht an einem Beispiel",
+     12
+    ],
+    [
+     "Q36",
+     "Pröbstl-Haider, Mostegl und Damm 2021",
+     "Tourism and climate change - A discussion of suitable strategies for Austria",
+     "begutachteter Aufsatz",
+     "Österreich",
+     "alpine Destination mit Winter- und Sommertourismus, zugleich als Staat betrachtet",
+     "Gast, Betrieb, Region und Staat",
+     "Erörterung geeigneter Anpassungs- und Minderungsstrategien getrennt nach vier Handlungsebenen auf der Grundlage eines Sachstandsberichts",
+     8
+    ],
+    [
+     "Q37",
+     "Vaghefi und andere 2021",
+     "Using Decision Making under Deep Uncertainty (DMDU) approaches to support climate change adaptation of Swiss Ski Resorts",
+     "begutachteter Aufsatz",
+     "sechs Skigebiete der Schweizer Alpen in niedriger, mittlerer und hoher Lage",
+     "alpine Wintersportgebiete",
+     "Skigebiet",
+     "Entscheiden unter tiefer Unsicherheit mit erkundender Modellierung, Merkmalsgewichtung, Szenarienentdeckung und dynamisch anpassungsfähigen Politikpfaden",
+     5
+    ],
+    [
+     "Q41",
+     "Leon und andere 2022",
+     "Assessing Climate Change Adaptation and Risk Management Programmes: Stakeholder Participation Process and Policy Implications for Transport, Energy and Tourism Sectors on the Island of Sicily",
+     "begutachteter Aufsatz",
+     "Insel Sizilien in Italien",
+     "große Mittelmeerinsel mit ganzjährigem Kultur- und Naturtourismus und schwacher Ausstattung",
+     "Insel als autonome Region",
+     "vierstufiges Beteiligungsverfahren zur Bewertung und Rangbildung von Anpassungs- und Risikosteuerungsprogrammen mit mehrkriterieller Bewertung und Bildung von vier Anpassungsverläufen über drei Zeitfenster",
+     4
+    ],
+    [
+     "Q42",
+     "Li, Xiao und Seekamp 2022",
+     "Climate adaptation planning for cultural heritages in coastal tourism destinations: A multi-objective optimization approach",
+     "begutachteter Aufsatz",
+     "Cape Lookout National Seashore an der Küste von North Carolina in den Vereinigten Staaten",
+     "Küstenschutzgebiet auf einer Nehrungsinselkette mit geschichtlichem Baubestand",
+     "Schutzgebiet mit zwei geschichtlichen Ortsteilen",
+     "mehrzieliges Rechenmodell der günstigsten Erhaltung nach dem geordneten Entscheiden über einen Planungszeitraum von dreißig Jahren",
+     5
+    ],
+    [
+     "Q43",
+     "Dhar und Khirfan 2023",
+     "A sixfold urban design framework to assess climate resilience: Generative transformation in Negril, Jamaica",
+     "begutachteter Aufsatz",
+     "Long Bay in Negril an der Nordwestküste Jamaikas",
+     "karibischer Badeort mit bandartiger Siedlungsstruktur zwischen Meer und Sumpf",
+     "Ortsteil einer Küstenstadt",
+     "begriffliche Herleitung eines sechsteiligen städtebaulichen Rahmens der Klimawiderstandsfähigkeit und dessen Anwendung auf einen Einzelfall",
+     8
+    ],
+    [
+     "Q44",
+     "Strong und andere 2023",
+     "The Tourism Adaptation Classification (TAC) framework: An application to New Zealand's Glacier country",
+     "begutachteter Aufsatz",
+     "Glacier Country im Westland Tai Poutini National Park auf der Südinsel Neuseelands",
+     "naturnahe Gletscherdestination in abgelegener Lage mit hoher Abhängigkeit von einer einzigen Sehenswürdigkeit",
+     "Destination innerhalb eines Nationalparks",
+     "begriffliche Entwicklung eines Rahmens zur Einordnung der Anpassung in drei Stufen und drei Dimensionen mit anschließender Anwendung auf einen Fall",
+     3
+    ],
+    [
+     "Q45",
+     "Campos und andere 2024",
+     "Heritage Resilience and Identity: Lesson from Trabocchi Coast about Climate Change Adaptation Strategies",
+     "begutachteter Aufsatz",
+     "Trabocchi-Küste in der Provinz Chieti in den Abruzzen in Italien",
+     "adriatische Badeküste mit baulichem Kulturerbe und Erlebnistourismus",
+     "Küstenabschnitt mit mehreren Gemeinden",
+     "fachübergreifende und beteiligungsoffene Untersuchung des Entwicklungsverlaufs der Küste aus klimatischer, technikgeschichtlicher, erhaltungsbezogener und gesellschaftlicher Sicht",
+     5
+    ],
+    [
+     "Q46",
+     "Chikuta, Kupika und Nthoi 2024",
+     "Mainstreaming climate change in policy frameworks for community-based natural resource management in a semi-arid savannah environment: case study of Botswana",
+     "begutachtete Übersichtsarbeit",
+     "Botsuana im südlichen Afrika",
+     "Binnenland mit halbtrockener Savanne und naturgestütztem Wildtiertourismus in gemeinschaftsgetragenen Gebieten",
+     "Staat mit gemeinschaftsgetragenen Gebieten als örtlicher Bezugsebene",
+     "gemischtes Vorgehen aus überblickender Schrifttumsauswertung, Dokumentenanalyse, Vorgabenprüfung und Zeitreihenauswertung",
+     3
+    ],
+    [
+     "Q47",
+     "Giupponi und andere 2024",
+     "Spatial risk assessment for climate proofing of economic activities: The case of Belluno Province (North-East Italy)",
+     "begutachteter Aufsatz",
+     "Provinz Belluno in den italienischen Alpen",
+     "alpine Provinz mit Sommertourismus, Wintersport und weiteren Erwerbszweigen",
+     "Provinz mit Auflösung bis auf die Gemeindeebene",
+     "räumliche Risikobewertung nach dem Verfahren der gesellschaftlich-wirtschaftlichen regionalen Risikoabschätzung in sieben Schritten mit wirtschaftlicher Schadensbezifferung",
+     8
+    ],
+    [
+     "Q48",
+     "Kibria und andere 2024",
+     "Multi-criteria decision approach for climate adaptation of cultural resources along the Atlantic coast of the southeastern United States: Application of AHP method",
+     "begutachteter Aufsatz",
+     "Cape Lookout National Seashore an der Küste von North Carolina in den Vereinigten Staaten",
+     "Küstenschutzgebiet auf einer Nehrungsinselkette mit geschichtlichem Baubestand",
+     "Schutzgebiet mit zwei geschichtlichen Ortsteilen",
+     "zweistufige Bestimmung der Gewichte der Bewirtschaftungsziele über das Verfahren der abgestuften Rangbildung, zuerst einzeln und danach gemeinsam",
+     8
+    ],
+    [
+     "Q49",
+     "Kilungu und Munishi 2024",
+     "Eco-parcel: An approach to identify and describe attractions to support adapting nature-based tourism destinations to climate-change impacts",
+     "begutachteter Aufsatz",
+     "Serengeti-Nationalpark und Kilimandscharo-Nationalpark in Tansania",
+     "naturgestützte Großschutzgebiete mit Wildtier- und Bergtourismus",
+     "Schutzgebiet mit Auflösung bis auf abgegrenzte Landschaftsflächen",
+     "Entwicklung und Erprobung eines dreistufigen Zugangs zur Bestimmung der einzelnen Sehenswürdigkeiten, ihrer tragenden Kleinumwelten und ihrer Bedeutung für den Tourismus",
+     6
+    ],
+    [
+     "Q52",
+     "Aliperti und Cruz 2025",
+     "A framework for collaborative governance in tourism destinations exposed to sea level rise hazards. The case of Zurriola Beach in the Basque Country",
+     "begutachteter Aufsatz, Vorabveröffentlichung",
+     "Zurriola-Strand in San Sebastián im Baskenland in Spanien",
+     "städtischer Badestrand mit Wellenreiten und Gastronomie in einem Stadtviertel",
+     "Strand mit angrenzendem Stadtviertel",
+     "Vergleich der Denkmodelle von Fachleuten und Nichtfachleuten zum Risiko des Meeresspiegelanstiegs und dessen Steuerung",
+     9
+    ],
+    [
+     "Q53",
+     "Bozkurt 2025",
+     "Sustainable design in a changing climate: resilience and adaptation strategies for tourism's built environment",
+     "begutachteter Aufsatz, Vorabveröffentlichung",
+     "kein eigenes Fallgebiet",
+     "touristische Destinationen allgemein mit Unterscheidung nach Küsten-, Berg-, Stadt- und gemeinschaftsgetragenen Zielen",
+     "Gebäude, Ort und Destination sowie Vorgaben",
+     "gemischte Auswertung begutachteter Beiträge zu Anpassungsstrategien der baulichen Umwelt auf drei Eingriffsebenen",
+     5
+    ],
+    [
+     "Q54",
+     "Loedphacharakamon und Naruetharadhol 2025",
+     "Integrating AHP and scenario planning for low-carbon community-based tourism: strengthening rural resilience in Khon Kaen, Thailand",
+     "begutachteter Aufsatz, Vorabveröffentlichung",
+     "Dorf Huai Muang in der Provinz Khon Kaen in Thailand",
+     "ländliche gemeinschaftsgetragene Destination mit jahreszeitlich geprägtem Natur- und Flusstourismus",
+     "Dorf innerhalb einer Provinz",
+     "Verbindung eines geordneten Rangbildungsverfahrens mit Szenarienplanung auf der Grundlage von Gesprächen und thematischer Auswertung",
+     4
+    ],
+    [
+     "Q55",
+     "Monioudi und andere 2025",
+     "A Prioritization Framework for Adaptation Responses for Climate Change-Induced Erosion in Island Beaches-Cases from the Aegean Islands, Greece",
+     "begutachteter Aufsatz",
+     "Inseln Lesbos und Kos in der Nordostägäis in Griechenland",
+     "griechische Inseldestinationen mit Strandtourismus",
+     "Insel mit Auflösung bis auf den einzelnen Strand",
+     "Bildung einer Rangfolge der Strandverwundbarkeit über eine Stärken- und Schwächenbetrachtung zur Kenngrößenwahl und drei mehrkriterielle Verfahren zur Gewichtung und Ordnung",
+     9
+    ],
+    [
+     "Q56",
+     "Romero-Martín und andere 2025",
+     "Adapting beaches to sea level rise: A sediment-based strategy for protecting coastal tourism in Catalonia (NW Mediterranean)",
+     "begutachteter Aufsatz",
+     "Katalonien im Nordwesten des Mittelmeers, rund sechshundert Kilometer Küste mit siebzig Gemeinden und zwölf Kreisen",
+     "Küstendestination mit Sonne-und-Strand-Tourismus, städtische, halbstädtische und naturnahe Strände",
+     "Strand, Gemeinde und Kreis, zusammengeführt auf Ebene der Küstenregion",
+     "Fallstudie mit Modellrechnung, Verbindung von Küstenlinienentwicklung, Tragfähigkeitsmodell, Meeresspiegelszenarien und volkswirtschaftlicher Verflechtungsrechnung",
+     13
+    ],
+    [
+     "Q57",
+     "Zovko, Vukadin und Zovko 2025",
+     "Understanding the IPCC Climate Risk-Centered Framework and Its Applications to Assessing Tourism Resilience",
+     "begutachteter Aufsatz",
+     "kein eigenes Fallgebiet",
+     "touristische Destinationen allgemein",
+     "System, Teilsystem, Element und Region",
+     "Schreibtischauswertung des risikobezogenen Rahmens des Weltklimarats und der zugehörigen Wissensplattformen mit Ableitung einer fünfstufigen Vorgehensweise für die Klimarisikobewertung im Tourismus",
+     41
+    ],
+    [
+     "Q58",
+     "de la Vara und andere 2025",
+     "Co-creation of a scalable, climate service tool for the sustainable management of key blue economy sectors in the Spanish Mediterranean coast",
+     "begutachteter Aufsatz",
+     "spanische Mittelmeerküste",
+     "Küstenraum mit Badetourismus neben Aquakultur und Fischerei",
+     "Küstenregion",
+     "gemeinsame Erarbeitung eines Klimadienstwerkzeugs mit den Nutzenden aus quantitativer Klimadatenaufbereitung und beteiligungsoffener qualitativer Erhebung",
+     6
+    ],
+    [
+     "Q59",
+     "Allen 2026",
+     "Climate-resilient actor-networks for island tourism",
+     "begutachteter Aufsatz, Vorabveröffentlichung",
+     "Bahamas in der Karibik",
+     "Inselstaat mit vorherrschendem Küsten- und Kreuzfahrttourismus",
+     "Inselstaat als Destination",
+     "Netzwerkanalyse klimafester Handlungsgefüge aus einem Vorgabendokument mit Bestimmung der Schlüsselakteure und Auswertung der Netzstruktur",
+     13
+    ],
+    [
+     "Q60",
+     "Csapó 2026",
+     "Climate-strategic tourism: from shared crisis to strategic advantage and global asymmetry - a conceptual exploration",
+     "begutachteter Aufsatz, Vorabveröffentlichung",
+     "sechs Weltregionen, nämlich Arktis, Nord- und Westeuropa, Nordamerika, Asien-Pazifik, Mittelmeerraum und kleine Inselstaaten",
+     "Destinationen aller Typen im weltweiten Vergleich",
+     "Weltregion mit Bezug auf die einzelne Destination",
+     "begriffliche Entwicklung eines Rahmens aus Wettbewerbsfähigkeit, politischer Ökonomie und Klimagerechtigkeit mit Veranschaulichung an sechs Regionen",
+     9
+    ],
+    [
+     "Q61",
+     "Ferdowsi und Esmaili 2026",
+     "Adaptive Nature-Based Tourism Framework: A Multi-Theoretical Response to Climate and Environmental Change",
+     "begutachtete Übersichtsarbeit, Vorabveröffentlichung",
+     "weltweit ohne Bindung an einen einzelnen Raum",
+     "naturgestützte Destinationen mit Schutzgebieten, Küsten und Bergräumen",
+     "Destination als Handlungsebene im begrifflichen Rahmen",
+     "begriffliche Rahmenbildung durch Metasynthese mit Verbindung von Widerstandsfähigkeits-, Sozialkapital- und Institutionentheorie",
+     6
+    ],
+    [
+     "Q62",
+     "Karditsa und andere 2026",
+     "Plugging climate-risk tool into an integrated management model for coastal adaptation",
+     "begutachteter Aufsatz",
+     "Ionische Region in Griechenland",
+     "insulare Küstenregion mit Badetourismus und Hafenbetrieb",
+     "Küstenregion mit Bezug auf den einzelnen Strand",
+     "Verbindung des Wirkungskettenwerkzeugs mit der Fliegenkrawattenanalyse innerhalb der Rahmen des sechsten Sachstandsberichts und DAPSI(W)R(M)",
+     15
+    ],
+    [
+     "Q67",
+     "Ogur 2026",
+     "Assessing the regional adaptive capacity of tourism destinations under climate change: a spatial multi-criteria assessment in Denizli, Turkiye",
+     "begutachteter Aufsatz",
+     "Provinz Denizli in der Türkei",
+     "binnenländische Ausweichdestination neben den klimabelasteten Küstenzielen",
+     "Provinz mit Bezug auf den einzelnen Bezirk",
+     "räumliche Mehrkriterienbewertung mit Ferienklimakennzahl, hierarchischem Analyseverfahren und gewichteter Überlagerung im geografischen Informationssystem",
+     24
+    ]
+   ]
+  }
+ ]
+}
